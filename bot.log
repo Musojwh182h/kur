@@ -1,0 +1,496 @@
+2026-02-13 17:28:28,551 - py3xui.async_api.async_api_base - INFO - Logging in with username: JUHEyo8TCy
+2026-02-13 17:28:29,801 - httpx - INFO - HTTP Request: POST https://94.183.186.146:55591/cwb9fj6JhB8r8EIlNY/login "HTTP/1.1 200 OK"
+2026-02-13 17:28:29,802 - py3xui.async_api.async_api_base - INFO - Session cookie successfully retrieved for username: JUHEyo8TCy
+2026-02-13 17:28:29,803 - py3xui.async_api.async_api - INFO - Logged in successfully.
+2026-02-13 17:28:29,803 - py3xui.async_api.async_api_base - INFO - Getting inbounds...
+2026-02-13 17:28:30,576 - httpx - INFO - HTTP Request: GET https://94.183.186.146:55591/cwb9fj6JhB8r8EIlNY/panel/api/inbounds/list "HTTP/1.1 200 OK"
+2026-02-13 17:28:30,692 - aiogram.dispatcher - INFO - Start polling
+2026-02-13 17:28:30,804 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - 'KUR VPN'
+2026-02-13 17:29:36,859 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:29:36,865 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-13 17:29:36,865 - sqlalchemy.engine.Engine - INFO - [generated in 0.00027s] (7946439246,)
+2026-02-13 17:29:36,869 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (telegram_id, reg_date, referal_count) VALUES (?, ?, ?)
+2026-02-13 17:29:36,870 - sqlalchemy.engine.Engine - INFO - [generated in 0.00129s] (7946439246, '2026-02-13 17:29:36.867815', 0)
+2026-02-13 17:29:36,873 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-13 17:29:36,885 - ServiceClasses.user_service - INFO - Новый пользователь создан: Telegram ID 7946439246
+2026-02-13 17:29:36,885 - common.handler - INFO - Пользователь с Telegram ID 7946439246 создан в базе данных.
+2026-02-13 17:29:36,885 - py3xui.async_api.async_api_base - INFO - Logging in with username: JUHEyo8TCy
+2026-02-13 17:29:37,836 - httpx - INFO - HTTP Request: POST https://94.183.186.146:55591/cwb9fj6JhB8r8EIlNY/login "HTTP/1.1 200 OK"
+2026-02-13 17:29:37,838 - py3xui.async_api.async_api_base - INFO - Session cookie successfully retrieved for username: JUHEyo8TCy
+2026-02-13 17:29:37,838 - py3xui.async_api.async_api - INFO - Logged in successfully.
+2026-02-13 17:29:37,838 - py3xui.async_api.async_api_base - INFO - Getting inbounds...
+2026-02-13 17:29:38,614 - httpx - INFO - HTTP Request: GET https://94.183.186.146:55591/cwb9fj6JhB8r8EIlNY/panel/api/inbounds/list "HTTP/1.1 200 OK"
+2026-02-13 17:29:38,627 - aiogram.event - INFO - Update id=66294952 is not handled. Duration 1770 ms by bot id=8543122898
+2026-02-13 17:29:38,627 - aiogram.event - ERROR - Cause exception while process update id=66294952 by bot id=8543122898
+AttributeError: 'VPNService' object has no attribute 'inbound_id'
+Traceback (most recent call last):
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\common\handler.py", line 68, in start_cmd
+    logger.info(f"Inbound {client.inbound_id} инициализирован для пользователя")
+                           ^^^^^^^^^^^^^^^^^
+AttributeError: 'VPNService' object has no attribute 'inbound_id'. Did you mean: 'inbound'?
+2026-02-13 17:30:30,060 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-13 17:30:30,060 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-13 17:30:30,060 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-13 17:30:30,320 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - 'KUR VPN'
+2026-02-13 17:30:35,102 - py3xui.async_api.async_api_base - INFO - Logging in with username: JUHEyo8TCy
+2026-02-13 17:30:37,153 - httpx - INFO - HTTP Request: POST https://94.183.186.146:55591/cwb9fj6JhB8r8EIlNY/login "HTTP/1.1 200 OK"
+2026-02-13 17:30:37,154 - py3xui.async_api.async_api_base - INFO - Session cookie successfully retrieved for username: JUHEyo8TCy
+2026-02-13 17:30:37,155 - py3xui.async_api.async_api - INFO - Logged in successfully.
+2026-02-13 17:30:37,155 - py3xui.async_api.async_api_base - INFO - Getting inbounds...
+2026-02-13 17:30:38,094 - httpx - INFO - HTTP Request: GET https://94.183.186.146:55591/cwb9fj6JhB8r8EIlNY/panel/api/inbounds/list "HTTP/1.1 200 OK"
+2026-02-13 17:30:38,213 - aiogram.dispatcher - INFO - Start polling
+2026-02-13 17:30:38,324 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - 'KUR VPN'
+2026-02-13 17:30:48,792 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:30:48,798 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-13 17:30:48,799 - sqlalchemy.engine.Engine - INFO - [generated in 0.00064s] (7946439246,)
+2026-02-13 17:30:48,801 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-13 17:30:48,802 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-13 17:30:49,577 - aiogram.event - INFO - Update id=66294953 is handled. Duration 786 ms by bot id=8543122898
+2026-02-13 17:30:53,110 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:30:53,111 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.subs_tg_id, subscriptions."key", subscriptions.uuid, subscriptions.expired, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.subs_tg_id = ?
+2026-02-13 17:30:53,112 - sqlalchemy.engine.Engine - INFO - [generated in 0.00041s] (7946439246,)
+2026-02-13 17:30:53,348 - common.handler - INFO - Пользователь 7946439246 попытался просмотреть профиль без активной подписки.
+2026-02-13 17:30:53,348 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-13 17:30:53,349 - aiogram.event - INFO - Update id=66294954 is handled. Duration 239 ms by bot id=8543122898
+2026-02-13 17:31:00,921 - aiogram.event - INFO - Update id=66294955 is handled. Duration 221 ms by bot id=8543122898
+2026-02-13 17:31:05,071 - aiogram.event - INFO - Update id=66294956 is handled. Duration 270 ms by bot id=8543122898
+2026-02-13 17:31:07,090 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:31:07,090 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.subs_tg_id, subscriptions."key", subscriptions.uuid, subscriptions.expired, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.subs_tg_id = ?
+2026-02-13 17:31:07,090 - sqlalchemy.engine.Engine - INFO - [cached since 13.98s ago] (7946439246,)
+2026-02-13 17:31:07,208 - common.handler - WARNING - Попытка продлить подписку для несуществующего пользователя: 7946439246
+2026-02-13 17:31:07,208 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-13 17:31:07,208 - aiogram.event - INFO - Update id=66294957 is handled. Duration 249 ms by bot id=8543122898
+2026-02-13 17:31:22,390 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:31:22,390 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-13 17:31:22,390 - sqlalchemy.engine.Engine - INFO - [cached since 33.59s ago] (7946439246,)
+2026-02-13 17:31:22,391 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-13 17:31:22,392 - sqlalchemy.engine.Engine - INFO - SELECT shoping.id, shoping.money, shoping.shop_date, shoping.user_id 
+FROM shoping 
+WHERE shoping.user_id = ?
+2026-02-13 17:31:22,392 - sqlalchemy.engine.Engine - INFO - [generated in 0.00027s] (1,)
+2026-02-13 17:31:22,393 - ServiceClasses.shoping_service - INFO - Получено 0 покупок для пользователя 1
+2026-02-13 17:31:22,507 - common.handler - INFO - Пользователь 7946439246 запросил историю покупок, но покупок не найдено.
+2026-02-13 17:31:22,508 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-13 17:31:22,508 - aiogram.event - INFO - Update id=66294958 is handled. Duration 119 ms by bot id=8543122898
+2026-02-13 17:31:24,885 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:31:24,885 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-13 17:31:24,885 - sqlalchemy.engine.Engine - INFO - [cached since 36.09s ago] (7946439246,)
+2026-02-13 17:31:24,886 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-13 17:31:24,886 - sqlalchemy.engine.Engine - INFO - SELECT shoping.id, shoping.money, shoping.shop_date, shoping.user_id 
+FROM shoping 
+WHERE shoping.user_id = ?
+2026-02-13 17:31:24,887 - sqlalchemy.engine.Engine - INFO - [cached since 2.495s ago] (1,)
+2026-02-13 17:31:24,887 - ServiceClasses.shoping_service - INFO - Получено 0 покупок для пользователя 1
+2026-02-13 17:31:25,073 - common.handler - INFO - Пользователь 7946439246 запросил историю покупок, но покупок не найдено.
+2026-02-13 17:31:25,074 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-13 17:31:25,074 - aiogram.event - INFO - Update id=66294959 is handled. Duration 190 ms by bot id=8543122898
+2026-02-13 17:31:28,128 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:31:28,129 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.subs_tg_id, subscriptions."key", subscriptions.uuid, subscriptions.expired, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.subs_tg_id = ?
+2026-02-13 17:31:28,129 - sqlalchemy.engine.Engine - INFO - [cached since 35.02s ago] (7946439246,)
+2026-02-13 17:31:28,348 - common.handler - INFO - Пользователь 7946439246 попытался просмотреть профиль без активной подписки.
+2026-02-13 17:31:28,348 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-13 17:31:28,349 - aiogram.event - INFO - Update id=66294960 is handled. Duration 221 ms by bot id=8543122898
+2026-02-13 17:32:49,063 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-13 17:32:49,064 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-13 17:32:49,064 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-13 17:32:49,325 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - 'KUR VPN'
+2026-02-13 17:32:59,250 - py3xui.async_api.async_api_base - INFO - Logging in with username: JUHEyo8TCy
+2026-02-13 17:33:00,264 - httpx - INFO - HTTP Request: POST https://94.183.186.146:55591/cwb9fj6JhB8r8EIlNY/login "HTTP/1.1 200 OK"
+2026-02-13 17:33:00,265 - py3xui.async_api.async_api_base - INFO - Session cookie successfully retrieved for username: JUHEyo8TCy
+2026-02-13 17:33:00,265 - py3xui.async_api.async_api - INFO - Logged in successfully.
+2026-02-13 17:33:00,265 - py3xui.async_api.async_api_base - INFO - Getting inbounds...
+2026-02-13 17:33:01,082 - httpx - INFO - HTTP Request: GET https://94.183.186.146:55591/cwb9fj6JhB8r8EIlNY/panel/api/inbounds/list "HTTP/1.1 200 OK"
+2026-02-13 17:33:01,177 - aiogram.dispatcher - INFO - Start polling
+2026-02-13 17:33:01,262 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - 'KUR VPN'
+2026-02-13 17:33:15,628 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:33:15,629 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2026-02-13 17:33:15,629 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-13 17:33:15,630 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("subscriptions")
+2026-02-13 17:33:15,630 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-13 17:33:15,631 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("shoping")
+2026-02-13 17:33:15,631 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-13 17:33:15,631 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("referals")
+2026-02-13 17:33:15,632 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-13 17:33:15,633 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE referals
+2026-02-13 17:33:15,633 - sqlalchemy.engine.Engine - INFO - [no key 0.00029s] ()
+2026-02-13 17:33:15,647 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE shoping
+2026-02-13 17:33:15,648 - sqlalchemy.engine.Engine - INFO - [no key 0.00025s] ()
+2026-02-13 17:33:15,658 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE subscriptions
+2026-02-13 17:33:15,659 - sqlalchemy.engine.Engine - INFO - [no key 0.00094s] ()
+2026-02-13 17:33:15,670 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE users
+2026-02-13 17:33:15,671 - sqlalchemy.engine.Engine - INFO - [no key 0.00023s] ()
+2026-02-13 17:33:15,680 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2026-02-13 17:33:15,681 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-13 17:33:15,681 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("users")
+2026-02-13 17:33:15,681 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-13 17:33:15,682 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("subscriptions")
+2026-02-13 17:33:15,682 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-13 17:33:15,682 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("subscriptions")
+2026-02-13 17:33:15,682 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-13 17:33:15,683 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("shoping")
+2026-02-13 17:33:15,683 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-13 17:33:15,684 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("shoping")
+2026-02-13 17:33:15,684 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-13 17:33:15,685 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("referals")
+2026-02-13 17:33:15,685 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-13 17:33:15,685 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("referals")
+2026-02-13 17:33:15,685 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-13 17:33:15,686 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	telegram_id INTEGER NOT NULL, 
+	reg_date DATETIME NOT NULL, 
+	referal_count INTEGER NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2026-02-13 17:33:15,687 - sqlalchemy.engine.Engine - INFO - [no key 0.00030s] ()
+2026-02-13 17:33:15,696 - sqlalchemy.engine.Engine - INFO - CREATE UNIQUE INDEX ix_users_telegram_id ON users (telegram_id)
+2026-02-13 17:33:15,696 - sqlalchemy.engine.Engine - INFO - [no key 0.00024s] ()
+2026-02-13 17:33:15,707 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE subscriptions (
+	id INTEGER NOT NULL, 
+	subs_tg_id INTEGER NOT NULL, 
+	"key" VARCHAR NOT NULL, 
+	uuid VARCHAR NOT NULL, 
+	expired DATETIME NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2026-02-13 17:33:15,708 - sqlalchemy.engine.Engine - INFO - [no key 0.00031s] ()
+2026-02-13 17:33:15,718 - sqlalchemy.engine.Engine - INFO - CREATE UNIQUE INDEX ix_subscriptions_subs_tg_id ON subscriptions (subs_tg_id)
+2026-02-13 17:33:15,718 - sqlalchemy.engine.Engine - INFO - [no key 0.00037s] ()
+2026-02-13 17:33:15,729 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE shoping (
+	id INTEGER NOT NULL, 
+	money INTEGER NOT NULL, 
+	shop_date VARCHAR NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2026-02-13 17:33:15,729 - sqlalchemy.engine.Engine - INFO - [no key 0.00030s] ()
+2026-02-13 17:33:15,740 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE referals (
+	id INTEGER NOT NULL, 
+	ref_tg_id INTEGER NOT NULL, 
+	invited_by_tg_id BIGINT NOT NULL, 
+	bonus_given BOOLEAN NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (ref_tg_id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2026-02-13 17:33:15,740 - sqlalchemy.engine.Engine - INFO - [no key 0.00032s] ()
+2026-02-13 17:33:15,750 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-13 17:33:15,751 - aiogram.event - INFO - Update id=66294962 is handled. Duration 834 ms by bot id=8543122898
+2026-02-13 17:33:21,141 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:33:21,148 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-13 17:33:21,149 - sqlalchemy.engine.Engine - INFO - [generated in 0.00067s] (7946439246,)
+2026-02-13 17:33:21,152 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (telegram_id, reg_date, referal_count) VALUES (?, ?, ?)
+2026-02-13 17:33:21,153 - sqlalchemy.engine.Engine - INFO - [generated in 0.00074s] (7946439246, '2026-02-13 17:33:21.150972', 0)
+2026-02-13 17:33:21,156 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-13 17:33:21,167 - ServiceClasses.user_service - INFO - Новый пользователь создан: Telegram ID 7946439246
+2026-02-13 17:33:21,167 - common.handler - INFO - Пользователь с Telegram ID 7946439246 создан в базе данных.
+2026-02-13 17:33:21,167 - py3xui.async_api.async_api_base - INFO - Logging in with username: JUHEyo8TCy
+2026-02-13 17:33:22,803 - httpx - INFO - HTTP Request: POST https://94.183.186.146:55591/cwb9fj6JhB8r8EIlNY/login "HTTP/1.1 200 OK"
+2026-02-13 17:33:22,804 - py3xui.async_api.async_api_base - INFO - Session cookie successfully retrieved for username: JUHEyo8TCy
+2026-02-13 17:33:22,804 - py3xui.async_api.async_api - INFO - Logged in successfully.
+2026-02-13 17:33:22,805 - py3xui.async_api.async_api_base - INFO - Getting inbounds...
+2026-02-13 17:33:23,716 - httpx - INFO - HTTP Request: GET https://94.183.186.146:55591/cwb9fj6JhB8r8EIlNY/panel/api/inbounds/list "HTTP/1.1 200 OK"
+2026-02-13 17:33:23,718 - common.handler - INFO - Inbound enable=True port=443 protocol='vless' settings=Settings(clients=[Client(email='xby5s6el', enable=True, id='35673e88-11b5-414f-8589-3753cee3cebc', password='', inbound_id=None, up=0, down=0, expiry_time=0, total=0, reset=0, flow='', method='', limit_ip=0, sub_id='pz3vqev2y851eff7', comment='', tg_id=0, total_gb=0, uuid=None)], decryption='none', fallbacks=[]) stream_settings=StreamSettings(security='reality', network='tcp', tcp_settings={'acceptProxyProtocol': False, 'header': {'type': 'none'}}, kcp_settings={}, external_proxy=[], reality_settings={'show': False, 'xver': 0, 'target': 'www.microsoft.com:443', 'serverNames': ['www.microsoft.com', 'microsoft.com'], 'privateKey': 'wGSguAfvvojJdB2bJs4ljqcfu9evgQ0lWy9PKFQ_RWQ', 'minClientVer': '', 'maxClientVer': '', 'maxTimediff': 0, 'shortIds': ['b6', '6277', '30392505828128f3', '03bd010ab5fda2', 'e7c6bc', '42a1415d', 'a4639daea3', '2285c8b3a1e9'], 'mldsa65Seed': 'ZaTy4HSxx9T5ARzG0QB6hVpoTDPqaXtgRF854_immxw', 'settings': {'publicKey': 'f7Gp0e-L25Esiafe9mUW7KgdUXaz3A6wPP25VKdZe1M', 'fingerprint': 'chrome', 'serverName': '', 'spiderX': '/', 'mldsa65Verify': 'aAcpNBQu5sKltzLD2Psfpw_phO57ebdNcorCHbFwv2VSAAaBQ12s5ciJlAlljzcHr81q5uFqmif3PNQfge19Qk72BIVWtzcrTk_8jpCCgLa65dBYeSVWOD02VNARXnIR1XYb-aYrfX2GZJNQljjfGx4sQLV_0Hblz01r4lGuDvG4wc4MKvmbeaiOmWOhBexi5hIy8PvC_EEmGeDyBIiDj_ilqN3V31SrB9PKKDImb9Ci4DrBDG1zLNCssBpw6GxrKvhVFxwac5GGDoBkgrqDD31j94tmv3dJxet_JZgekJ_y3b_PLXuqMDYpxT3PC-IKKHFbjzX3-QRg1MyxIvOlt_5H1_7oT4e_n1sXcNce8aBy6Gav9qf_kdRoSkEyxQ6Xbh9BDs8hbq5g7610L45pGLO5DJF3iKeY5byblqs3Qhcw16JPHkcFiQuQeQKBq7g5hV9b536dBQRE-QGTGqQg9I5MrFuvbLXSQF9846NDQGwyhKuNBKtBpRQLCXYWURwIzLeHsFNXBDhSuIJzPMDPEHAERudXpzyLT77CjOyqoOYFVcJkyUhkYK671IIYnz3YaGphlFchAcG4qmUim9K3mXHL2bAOH12jrwMuapmXcsMErNugs_dwsH-zVSR7esJ2GdziFgU5KgJont8cCOR7Y6dCmCrRTItADkQCJDHLa-Ncx2CnxGAwAq4nK8YktrAAZTPSavDfHZ0Ky_O5QkshUDJKRrcs5ItnL3G3ZnXUHUaRv9p7UX2O3fmMS6YPEF4iVCreak4W-26CSAgUafqQj9VC4fRL525O2Ss86fPGeJ398lv5nzBVp9MZNoeR9PswC-_hovXoVUrIOdfUGnr77EtQU2GBt9V704LTtxEI1Rfpyyf1iurwUez02aEtV4BRa3-MFKGLQ96hE7S63aPIoGEOVqS7i06iEWaLzd8iOzBM849_KYIxF3s6FbfVhKy8NUMaeYx1fiZ-ZhJiK-Fhv4YNIGtkBAFlxwGKjG9u9wlDCnrPzmmVkPC7lgwl5NcpJXrkWwbfmuvPTwg8xrScW1iVuwBNmZYi8BTVXC0PPn_iFIWz--sQ1AQZ3vjrTLbpcFylbkMrdKCJcnEUaYvcopGQVTyJo5Pi2zeZBhlwiC07IqXIlwFquX0py5DCYcNd-379ryjK7jc5HMNeXWtE99TrqprZ0_L_EzD4DRlE_SkJyPDHn0t0YISmjBOXMKynt7X7gAFHHsxaxOxie7AMlaS3t0LKar47gDtZiWKVv0yVIXgjjeiak8zVjsRUcFOq30ziVY353WFy8ZAfgXoiSsfVFCszIhVYzgPK48j7_oJDRztbD8w3dRQ98NpfV9SVRkktQcBPVfx3plTE28H_V7eSZ0mNtSlg5wkpUazKWnezDwYB9YpWoMu4g3FH7yXI3oyRCiJDFWECaQt9Zvz0otf2LpHVbqs0VocrSu0ZZ5wls0u36eqc9TrgYYzvrPgWkfu73pQLt6XKcTV2h0oqRNEkITyitdwTkJUQCmryAMp9s5kXyRi8tWhFRSWTUMzkCRWBoXOas2sJW86O9mJfEImxAHOyodJvodkmiyWaomablqq-KEAMBa835ZD7XBBGstgj9KCWnhfxslhZiYrECo3mdiCt8U-Ffp9bN2lKawsk4lxLWymMgIGJxLnXAKij_bvC0bppxAdBwrZr5u6enSMdnnEXfLGwLY-GlzGdLo1hsjO49WzE7OskNRXH5-D_f0NFkdBrCZaNOd_769Kslbm9p9uxDuJWtsy5eY_0G7S8L1q3c6XkCG2YxZ0FtFtOiGVRspvYAfBKtAC5CD0Z6G9gD4uG66OsTfiamYU6Te4Sdly33pTB9N9VLHTBgQW9zJp9aiTHPifwBD2YQ5TYgdYZzppBCw3F9DHB_7XpXp4dJt8WRziuJGvqRCws63Kj3gfhJANH9QH8iqiVLUL9zhj-xWLMYKHN-VGCOIUyIgcb-XXIXjdWaP-T-OxEUJOiDaH6QXv7fPE5YwPB1ivTb2bXVaz9Ehivi5--zqCo4Tkwa-1tU-flGDnUsmgSD4G8wExai7JK67UtQszndV73uGFZcI4DhyY0On2a8irY-BJhbQRGo1YLGjns2vGs3H-AcWNTwKSB00aarIlMnG65Dplpboefcrk5aTqXNC1C5I1Ub9CE6Dec5FAHY2J-ApHL10A58mxAr1hYARUFSATUlOmzBz-jGe5nh2ZNINGhZ25mkoltwyex0PuNxdwytMwongFuu3Pf8vRuRAr_Wfl1yMipGMM_tihXfAkuCVtUqSpz2n-n-8A_Dw63jAJ6KUxFozI5CLGuKGSNvsqo3nkHpb2WHYZO_xRjX0UBQQec_LoQ1TY1WGUo7mpO93Z46zthwKW_8NQxC-nBz9zmQrd3g4IPp0ZrfO2zNNeeh-883igx3KrjQv1U2NUW4hHiWKkxF3EzvYbd4wCR0SR7E6D-IjLB6k1dkm0jjyl-5bxk5mW6Ilt1fkYawFnIdRh3HMSBxZaQo1hlKEJq0mQ5iL4M26PINpPFVcDr3jiCmzY1zA7Nefqn0yAastVNS0JB5HHFd9mKRfQSN1Os0dStuMTBuMDoU38lNI1aN32HZjuXxh4'}}, xtls_settings={}, tls_settings={}, xhttp_settings={}) sniffing=Sniffing(enabled=False, dest_override=['http', 'tls', 'quic', 'fakedns'], metadata_only=False, route_only=False) listen='' remark='' id=42 up=0 down=0 total=0 expiry_time=0 client_stats=[Client(email='xby5s6el', enable=True, id=263, password='', inbound_id=42, up=0, down=0, expiry_time=0, total=0, reset=0, flow='', method='', limit_ip=0, sub_id='pz3vqev2y851eff7', comment='', tg_id='', total_gb=0, uuid='35673e88-11b5-414f-8589-3753cee3cebc')] tag='inbound-443' инициализирован для пользователя
+2026-02-13 17:33:23,718 - ServiceClasses.vpn_service - INFO - Создан VPN клиент для пользователя 7946439246 с истечением через 1771252401140 миллисекунд.
+2026-02-13 17:33:23,719 - py3xui.async_api.async_api_base - INFO - Updating inbound: enable=True port=443 protocol='vless' settings=Settings(clients=[Client(email='xby5s6el', enable=True, id='35673e88-11b5-414f-8589-3753cee3cebc', password='', inbound_id=None, up=0, down=0, expiry_time=0, total=0, reset=0, flow='', method='', limit_ip=0, sub_id='pz3vqev2y851eff7', comment='', tg_id=0, total_gb=0, uuid=None), Client(email='7946439246', enable=True, id='d51ed82a-3c1e-48c0-9f8d-cd204a4c8fce', password='', inbound_id=None, up=0, down=0, expiry_time=1771252401140, total=0, reset=None, flow='xtls-rprx-vision', method='', limit_ip=0, sub_id='', comment='', tg_id='', total_gb=0, uuid=None)], decryption='none', fallbacks=[]) stream_settings=StreamSettings(security='reality', network='tcp', tcp_settings={'acceptProxyProtocol': False, 'header': {'type': 'none'}}, kcp_settings={}, external_proxy=[], reality_settings={'show': False, 'xver': 0, 'target': 'www.microsoft.com:443', 'serverNames': ['www.microsoft.com', 'microsoft.com'], 'privateKey': 'wGSguAfvvojJdB2bJs4ljqcfu9evgQ0lWy9PKFQ_RWQ', 'minClientVer': '', 'maxClientVer': '', 'maxTimediff': 0, 'shortIds': ['b6', '6277', '30392505828128f3', '03bd010ab5fda2', 'e7c6bc', '42a1415d', 'a4639daea3', '2285c8b3a1e9'], 'mldsa65Seed': 'ZaTy4HSxx9T5ARzG0QB6hVpoTDPqaXtgRF854_immxw', 'settings': {'publicKey': 'f7Gp0e-L25Esiafe9mUW7KgdUXaz3A6wPP25VKdZe1M', 'fingerprint': 'chrome', 'serverName': '', 'spiderX': '/', 'mldsa65Verify': 'aAcpNBQu5sKltzLD2Psfpw_phO57ebdNcorCHbFwv2VSAAaBQ12s5ciJlAlljzcHr81q5uFqmif3PNQfge19Qk72BIVWtzcrTk_8jpCCgLa65dBYeSVWOD02VNARXnIR1XYb-aYrfX2GZJNQljjfGx4sQLV_0Hblz01r4lGuDvG4wc4MKvmbeaiOmWOhBexi5hIy8PvC_EEmGeDyBIiDj_ilqN3V31SrB9PKKDImb9Ci4DrBDG1zLNCssBpw6GxrKvhVFxwac5GGDoBkgrqDD31j94tmv3dJxet_JZgekJ_y3b_PLXuqMDYpxT3PC-IKKHFbjzX3-QRg1MyxIvOlt_5H1_7oT4e_n1sXcNce8aBy6Gav9qf_kdRoSkEyxQ6Xbh9BDs8hbq5g7610L45pGLO5DJF3iKeY5byblqs3Qhcw16JPHkcFiQuQeQKBq7g5hV9b536dBQRE-QGTGqQg9I5MrFuvbLXSQF9846NDQGwyhKuNBKtBpRQLCXYWURwIzLeHsFNXBDhSuIJzPMDPEHAERudXpzyLT77CjOyqoOYFVcJkyUhkYK671IIYnz3YaGphlFchAcG4qmUim9K3mXHL2bAOH12jrwMuapmXcsMErNugs_dwsH-zVSR7esJ2GdziFgU5KgJont8cCOR7Y6dCmCrRTItADkQCJDHLa-Ncx2CnxGAwAq4nK8YktrAAZTPSavDfHZ0Ky_O5QkshUDJKRrcs5ItnL3G3ZnXUHUaRv9p7UX2O3fmMS6YPEF4iVCreak4W-26CSAgUafqQj9VC4fRL525O2Ss86fPGeJ398lv5nzBVp9MZNoeR9PswC-_hovXoVUrIOdfUGnr77EtQU2GBt9V704LTtxEI1Rfpyyf1iurwUez02aEtV4BRa3-MFKGLQ96hE7S63aPIoGEOVqS7i06iEWaLzd8iOzBM849_KYIxF3s6FbfVhKy8NUMaeYx1fiZ-ZhJiK-Fhv4YNIGtkBAFlxwGKjG9u9wlDCnrPzmmVkPC7lgwl5NcpJXrkWwbfmuvPTwg8xrScW1iVuwBNmZYi8BTVXC0PPn_iFIWz--sQ1AQZ3vjrTLbpcFylbkMrdKCJcnEUaYvcopGQVTyJo5Pi2zeZBhlwiC07IqXIlwFquX0py5DCYcNd-379ryjK7jc5HMNeXWtE99TrqprZ0_L_EzD4DRlE_SkJyPDHn0t0YISmjBOXMKynt7X7gAFHHsxaxOxie7AMlaS3t0LKar47gDtZiWKVv0yVIXgjjeiak8zVjsRUcFOq30ziVY353WFy8ZAfgXoiSsfVFCszIhVYzgPK48j7_oJDRztbD8w3dRQ98NpfV9SVRkktQcBPVfx3plTE28H_V7eSZ0mNtSlg5wkpUazKWnezDwYB9YpWoMu4g3FH7yXI3oyRCiJDFWECaQt9Zvz0otf2LpHVbqs0VocrSu0ZZ5wls0u36eqc9TrgYYzvrPgWkfu73pQLt6XKcTV2h0oqRNEkITyitdwTkJUQCmryAMp9s5kXyRi8tWhFRSWTUMzkCRWBoXOas2sJW86O9mJfEImxAHOyodJvodkmiyWaomablqq-KEAMBa835ZD7XBBGstgj9KCWnhfxslhZiYrECo3mdiCt8U-Ffp9bN2lKawsk4lxLWymMgIGJxLnXAKij_bvC0bppxAdBwrZr5u6enSMdnnEXfLGwLY-GlzGdLo1hsjO49WzE7OskNRXH5-D_f0NFkdBrCZaNOd_769Kslbm9p9uxDuJWtsy5eY_0G7S8L1q3c6XkCG2YxZ0FtFtOiGVRspvYAfBKtAC5CD0Z6G9gD4uG66OsTfiamYU6Te4Sdly33pTB9N9VLHTBgQW9zJp9aiTHPifwBD2YQ5TYgdYZzppBCw3F9DHB_7XpXp4dJt8WRziuJGvqRCws63Kj3gfhJANH9QH8iqiVLUL9zhj-xWLMYKHN-VGCOIUyIgcb-XXIXjdWaP-T-OxEUJOiDaH6QXv7fPE5YwPB1ivTb2bXVaz9Ehivi5--zqCo4Tkwa-1tU-flGDnUsmgSD4G8wExai7JK67UtQszndV73uGFZcI4DhyY0On2a8irY-BJhbQRGo1YLGjns2vGs3H-AcWNTwKSB00aarIlMnG65Dplpboefcrk5aTqXNC1C5I1Ub9CE6Dec5FAHY2J-ApHL10A58mxAr1hYARUFSATUlOmzBz-jGe5nh2ZNINGhZ25mkoltwyex0PuNxdwytMwongFuu3Pf8vRuRAr_Wfl1yMipGMM_tihXfAkuCVtUqSpz2n-n-8A_Dw63jAJ6KUxFozI5CLGuKGSNvsqo3nkHpb2WHYZO_xRjX0UBQQec_LoQ1TY1WGUo7mpO93Z46zthwKW_8NQxC-nBz9zmQrd3g4IPp0ZrfO2zNNeeh-883igx3KrjQv1U2NUW4hHiWKkxF3EzvYbd4wCR0SR7E6D-IjLB6k1dkm0jjyl-5bxk5mW6Ilt1fkYawFnIdRh3HMSBxZaQo1hlKEJq0mQ5iL4M26PINpPFVcDr3jiCmzY1zA7Nefqn0yAastVNS0JB5HHFd9mKRfQSN1Os0dStuMTBuMDoU38lNI1aN32HZjuXxh4'}}, xtls_settings={}, tls_settings={}, xhttp_settings={}) sniffing=Sniffing(enabled=False, dest_override=['http', 'tls', 'quic', 'fakedns'], metadata_only=False, route_only=False) listen='' remark='' id=42 up=0 down=0 total=0 expiry_time=0 client_stats=[Client(email='xby5s6el', enable=True, id=263, password='', inbound_id=42, up=0, down=0, expiry_time=0, total=0, reset=0, flow='', method='', limit_ip=0, sub_id='pz3vqev2y851eff7', comment='', tg_id='', total_gb=0, uuid='35673e88-11b5-414f-8589-3753cee3cebc')] tag='inbound-443'
+2026-02-13 17:33:24,575 - httpx - INFO - HTTP Request: POST https://94.183.186.146:55591/cwb9fj6JhB8r8EIlNY/panel/api/inbounds/update/42 "HTTP/1.1 200 OK"
+2026-02-13 17:33:24,576 - py3xui.async_api.async_api_base - INFO - Inbound updated successfully.
+2026-02-13 17:33:24,576 - common.handler - INFO - Клиент создан для пользователя: 7946439246 с именем: 7946439246
+2026-02-13 17:33:24,577 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:33:24,577 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-13 17:33:24,577 - sqlalchemy.engine.Engine - INFO - [cached since 3.43s ago] (7946439246,)
+2026-02-13 17:33:24,579 - sqlalchemy.engine.Engine - INFO - INSERT INTO subscriptions (subs_tg_id, "key", uuid, expired, user_id) VALUES (?, ?, ?, ?, ?)
+2026-02-13 17:33:24,580 - sqlalchemy.engine.Engine - INFO - [generated in 0.00029s] (7946439246, 'vless://d51ed82a-3c1e-48c0-9f8d-cd204a4c8fce@94.183.186.146:443?type=tcp&encryption=none&security=reality&pbk=f7Gp0e-L25Esiafe9mUW7KgdUXaz3A6wPP25VKdZe1M&fp=chrome&sni=www.microsoft.com&sid=b6&spx=%2F&flow=xtls-rprx-vision#dw-7946439246', 'd51ed82a-3c1e-48c0-9f8d-cd204a4c8fce', '2026-02-16 14:33:21.140000', 1)
+2026-02-13 17:33:24,581 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-13 17:33:24,591 - common.handler - INFO - Подписка создана для пользователя: 7946439246 с ключом: vless://d51ed82a-3c1e-48c0-9f8d-cd204a4c8fce@94.183.186.146:443?type=tcp&encryption=none&security=reality&pbk=f7Gp0e-L25Esiafe9mUW7KgdUXaz3A6wPP25VKdZe1M&fp=chrome&sni=www.microsoft.com&sid=b6&spx=%2F&flow=xtls-rprx-vision#dw-7946439246
+2026-02-13 17:33:24,797 - aiogram.event - INFO - Update id=66294963 is handled. Duration 3656 ms by bot id=8543122898
+2026-02-13 17:33:27,109 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:33:27,110 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.subs_tg_id, subscriptions."key", subscriptions.uuid, subscriptions.expired, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.subs_tg_id = ?
+2026-02-13 17:33:27,111 - sqlalchemy.engine.Engine - INFO - [generated in 0.00041s] (7946439246,)
+2026-02-13 17:33:27,233 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-13 17:33:27,235 - aiogram.event - INFO - Update id=66294964 is handled. Duration 126 ms by bot id=8543122898
+2026-02-13 17:33:35,716 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:33:35,717 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-13 17:33:35,717 - sqlalchemy.engine.Engine - INFO - [cached since 14.57s ago] (7946439246,)
+2026-02-13 17:33:35,718 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-13 17:33:35,720 - sqlalchemy.engine.Engine - INFO - SELECT shoping.id, shoping.money, shoping.shop_date, shoping.user_id 
+FROM shoping 
+WHERE shoping.user_id = ?
+2026-02-13 17:33:35,721 - sqlalchemy.engine.Engine - INFO - [generated in 0.00029s] (1,)
+2026-02-13 17:33:35,722 - ServiceClasses.shoping_service - INFO - Получено 0 покупок для пользователя 1
+2026-02-13 17:33:35,879 - common.handler - INFO - Пользователь 7946439246 запросил историю покупок, но покупок не найдено.
+2026-02-13 17:33:35,880 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-13 17:33:35,880 - aiogram.event - INFO - Update id=66294965 is handled. Duration 164 ms by bot id=8543122898
+2026-02-13 17:33:42,819 - aiogram.event - INFO - Update id=66294966 is handled. Duration 255 ms by bot id=8543122898
+2026-02-13 17:33:44,267 - aiogram.event - INFO - Update id=66294967 is handled. Duration 647 ms by bot id=8543122898
+2026-02-13 17:33:45,778 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:33:45,778 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.subs_tg_id, subscriptions."key", subscriptions.uuid, subscriptions.expired, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.subs_tg_id = ?
+2026-02-13 17:33:45,779 - sqlalchemy.engine.Engine - INFO - [cached since 18.67s ago] (7946439246,)
+2026-02-13 17:33:45,779 - py3xui.async_api.async_api_base - INFO - Logging in with username: JUHEyo8TCy
+2026-02-13 17:33:46,672 - httpx - INFO - HTTP Request: POST https://94.183.186.146:55591/cwb9fj6JhB8r8EIlNY/login "HTTP/1.1 200 OK"
+2026-02-13 17:33:46,673 - py3xui.async_api.async_api_base - INFO - Session cookie successfully retrieved for username: JUHEyo8TCy
+2026-02-13 17:33:46,673 - py3xui.async_api.async_api - INFO - Logged in successfully.
+2026-02-13 17:33:46,674 - py3xui.async_api.async_api_base - INFO - Getting inbounds...
+2026-02-13 17:33:47,550 - httpx - INFO - HTTP Request: GET https://94.183.186.146:55591/cwb9fj6JhB8r8EIlNY/panel/api/inbounds/list "HTTP/1.1 200 OK"
+2026-02-13 17:33:47,553 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.subs_tg_id, subscriptions."key", subscriptions.uuid, subscriptions.expired, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.subs_tg_id = ?
+2026-02-13 17:33:47,553 - sqlalchemy.engine.Engine - INFO - [cached since 20.44s ago] (7946439246,)
+2026-02-13 17:33:47,554 - py3xui.async_api.async_api_base - INFO - Updating inbound: enable=True port=443 protocol='vless' settings=Settings(clients=[Client(email='xby5s6el', enable=True, id='35673e88-11b5-414f-8589-3753cee3cebc', password='', inbound_id=None, up=0, down=0, expiry_time=0, total=0, reset=0, flow='', method='', limit_ip=0, sub_id='pz3vqev2y851eff7', comment='', tg_id=0, total_gb=0, uuid=None), Client(email='7946439246', enable=True, id='d51ed82a-3c1e-48c0-9f8d-cd204a4c8fce', password='', inbound_id=None, up=0, down=0, expiry_time=1773844401140, total=0, reset=None, flow='xtls-rprx-vision', method='', limit_ip=0, sub_id='', comment='', tg_id='', total_gb=0, uuid=None)], decryption='none', fallbacks=[]) stream_settings=StreamSettings(security='reality', network='tcp', tcp_settings={'acceptProxyProtocol': False, 'header': {'type': 'none'}}, kcp_settings={}, external_proxy=[], reality_settings={'show': False, 'xver': 0, 'target': 'www.microsoft.com:443', 'serverNames': ['www.microsoft.com', 'microsoft.com'], 'privateKey': 'wGSguAfvvojJdB2bJs4ljqcfu9evgQ0lWy9PKFQ_RWQ', 'minClientVer': '', 'maxClientVer': '', 'maxTimediff': 0, 'shortIds': ['b6', '6277', '30392505828128f3', '03bd010ab5fda2', 'e7c6bc', '42a1415d', 'a4639daea3', '2285c8b3a1e9'], 'mldsa65Seed': 'ZaTy4HSxx9T5ARzG0QB6hVpoTDPqaXtgRF854_immxw', 'settings': {'publicKey': 'f7Gp0e-L25Esiafe9mUW7KgdUXaz3A6wPP25VKdZe1M', 'fingerprint': 'chrome', 'serverName': '', 'spiderX': '/', 'mldsa65Verify': 'aAcpNBQu5sKltzLD2Psfpw_phO57ebdNcorCHbFwv2VSAAaBQ12s5ciJlAlljzcHr81q5uFqmif3PNQfge19Qk72BIVWtzcrTk_8jpCCgLa65dBYeSVWOD02VNARXnIR1XYb-aYrfX2GZJNQljjfGx4sQLV_0Hblz01r4lGuDvG4wc4MKvmbeaiOmWOhBexi5hIy8PvC_EEmGeDyBIiDj_ilqN3V31SrB9PKKDImb9Ci4DrBDG1zLNCssBpw6GxrKvhVFxwac5GGDoBkgrqDD31j94tmv3dJxet_JZgekJ_y3b_PLXuqMDYpxT3PC-IKKHFbjzX3-QRg1MyxIvOlt_5H1_7oT4e_n1sXcNce8aBy6Gav9qf_kdRoSkEyxQ6Xbh9BDs8hbq5g7610L45pGLO5DJF3iKeY5byblqs3Qhcw16JPHkcFiQuQeQKBq7g5hV9b536dBQRE-QGTGqQg9I5MrFuvbLXSQF9846NDQGwyhKuNBKtBpRQLCXYWURwIzLeHsFNXBDhSuIJzPMDPEHAERudXpzyLT77CjOyqoOYFVcJkyUhkYK671IIYnz3YaGphlFchAcG4qmUim9K3mXHL2bAOH12jrwMuapmXcsMErNugs_dwsH-zVSR7esJ2GdziFgU5KgJont8cCOR7Y6dCmCrRTItADkQCJDHLa-Ncx2CnxGAwAq4nK8YktrAAZTPSavDfHZ0Ky_O5QkshUDJKRrcs5ItnL3G3ZnXUHUaRv9p7UX2O3fmMS6YPEF4iVCreak4W-26CSAgUafqQj9VC4fRL525O2Ss86fPGeJ398lv5nzBVp9MZNoeR9PswC-_hovXoVUrIOdfUGnr77EtQU2GBt9V704LTtxEI1Rfpyyf1iurwUez02aEtV4BRa3-MFKGLQ96hE7S63aPIoGEOVqS7i06iEWaLzd8iOzBM849_KYIxF3s6FbfVhKy8NUMaeYx1fiZ-ZhJiK-Fhv4YNIGtkBAFlxwGKjG9u9wlDCnrPzmmVkPC7lgwl5NcpJXrkWwbfmuvPTwg8xrScW1iVuwBNmZYi8BTVXC0PPn_iFIWz--sQ1AQZ3vjrTLbpcFylbkMrdKCJcnEUaYvcopGQVTyJo5Pi2zeZBhlwiC07IqXIlwFquX0py5DCYcNd-379ryjK7jc5HMNeXWtE99TrqprZ0_L_EzD4DRlE_SkJyPDHn0t0YISmjBOXMKynt7X7gAFHHsxaxOxie7AMlaS3t0LKar47gDtZiWKVv0yVIXgjjeiak8zVjsRUcFOq30ziVY353WFy8ZAfgXoiSsfVFCszIhVYzgPK48j7_oJDRztbD8w3dRQ98NpfV9SVRkktQcBPVfx3plTE28H_V7eSZ0mNtSlg5wkpUazKWnezDwYB9YpWoMu4g3FH7yXI3oyRCiJDFWECaQt9Zvz0otf2LpHVbqs0VocrSu0ZZ5wls0u36eqc9TrgYYzvrPgWkfu73pQLt6XKcTV2h0oqRNEkITyitdwTkJUQCmryAMp9s5kXyRi8tWhFRSWTUMzkCRWBoXOas2sJW86O9mJfEImxAHOyodJvodkmiyWaomablqq-KEAMBa835ZD7XBBGstgj9KCWnhfxslhZiYrECo3mdiCt8U-Ffp9bN2lKawsk4lxLWymMgIGJxLnXAKij_bvC0bppxAdBwrZr5u6enSMdnnEXfLGwLY-GlzGdLo1hsjO49WzE7OskNRXH5-D_f0NFkdBrCZaNOd_769Kslbm9p9uxDuJWtsy5eY_0G7S8L1q3c6XkCG2YxZ0FtFtOiGVRspvYAfBKtAC5CD0Z6G9gD4uG66OsTfiamYU6Te4Sdly33pTB9N9VLHTBgQW9zJp9aiTHPifwBD2YQ5TYgdYZzppBCw3F9DHB_7XpXp4dJt8WRziuJGvqRCws63Kj3gfhJANH9QH8iqiVLUL9zhj-xWLMYKHN-VGCOIUyIgcb-XXIXjdWaP-T-OxEUJOiDaH6QXv7fPE5YwPB1ivTb2bXVaz9Ehivi5--zqCo4Tkwa-1tU-flGDnUsmgSD4G8wExai7JK67UtQszndV73uGFZcI4DhyY0On2a8irY-BJhbQRGo1YLGjns2vGs3H-AcWNTwKSB00aarIlMnG65Dplpboefcrk5aTqXNC1C5I1Ub9CE6Dec5FAHY2J-ApHL10A58mxAr1hYARUFSATUlOmzBz-jGe5nh2ZNINGhZ25mkoltwyex0PuNxdwytMwongFuu3Pf8vRuRAr_Wfl1yMipGMM_tihXfAkuCVtUqSpz2n-n-8A_Dw63jAJ6KUxFozI5CLGuKGSNvsqo3nkHpb2WHYZO_xRjX0UBQQec_LoQ1TY1WGUo7mpO93Z46zthwKW_8NQxC-nBz9zmQrd3g4IPp0ZrfO2zNNeeh-883igx3KrjQv1U2NUW4hHiWKkxF3EzvYbd4wCR0SR7E6D-IjLB6k1dkm0jjyl-5bxk5mW6Ilt1fkYawFnIdRh3HMSBxZaQo1hlKEJq0mQ5iL4M26PINpPFVcDr3jiCmzY1zA7Nefqn0yAastVNS0JB5HHFd9mKRfQSN1Os0dStuMTBuMDoU38lNI1aN32HZjuXxh4'}}, xtls_settings={}, tls_settings={}, xhttp_settings={}) sniffing=Sniffing(enabled=False, dest_override=['http', 'tls', 'quic', 'fakedns'], metadata_only=False, route_only=False) listen='' remark='' id=42 up=0 down=0 total=0 expiry_time=0 client_stats=[Client(email='xby5s6el', enable=True, id=263, password='', inbound_id=42, up=0, down=0, expiry_time=0, total=0, reset=0, flow='', method='', limit_ip=0, sub_id='pz3vqev2y851eff7', comment='', tg_id='', total_gb=0, uuid='35673e88-11b5-414f-8589-3753cee3cebc'), Client(email='7946439246', enable=True, id=264, password='', inbound_id=42, up=0, down=0, expiry_time=1771252401140, total=0, reset=0, flow='', method='', limit_ip=0, sub_id='', comment='', tg_id='', total_gb=0, uuid='d51ed82a-3c1e-48c0-9f8d-cd204a4c8fce')] tag='inbound-443'
+2026-02-13 17:33:48,381 - httpx - INFO - HTTP Request: POST https://94.183.186.146:55591/cwb9fj6JhB8r8EIlNY/panel/api/inbounds/update/42 "HTTP/1.1 200 OK"
+2026-02-13 17:33:48,383 - py3xui.async_api.async_api_base - INFO - Inbound updated successfully.
+2026-02-13 17:33:48,384 - sqlalchemy.engine.Engine - INFO - UPDATE subscriptions SET expired=? WHERE subscriptions.id = ?
+2026-02-13 17:33:48,384 - sqlalchemy.engine.Engine - INFO - [generated in 0.00029s] ('2026-03-18 14:33:21.140000', 1)
+2026-02-13 17:33:48,385 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-13 17:33:48,395 - common.handler - INFO - Подписка продлена на 30 дней для пользователя: 7946439246
+2026-02-13 17:33:48,395 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:33:48,395 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-13 17:33:48,396 - sqlalchemy.engine.Engine - INFO - [cached since 27.25s ago] (7946439246,)
+2026-02-13 17:33:48,396 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-13 17:33:48,397 - sqlalchemy.engine.Engine - INFO - INSERT INTO shoping (money, shop_date, user_id) VALUES (?, ?, ?)
+2026-02-13 17:33:48,397 - sqlalchemy.engine.Engine - INFO - [generated in 0.00022s] (149, '2026-02-13 14:33', 1)
+2026-02-13 17:33:48,399 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-13 17:33:48,408 - ServiceClasses.shoping_service - INFO - Покупка создана: пользователь 1, сумма 149 Р., дата 2026-02-13 14:33
+2026-02-13 17:33:48,409 - common.handler - INFO - Запись о покупке добавлена для пользователя: 7946439246 с суммой: 149 Р. и датой: 2026-02-13 14:33
+2026-02-13 17:33:48,409 - aiogram.event - INFO - Update id=66294968 is handled. Duration 2731 ms by bot id=8543122898
+2026-02-13 17:33:50,140 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:33:50,140 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-13 17:33:50,140 - sqlalchemy.engine.Engine - INFO - [cached since 28.99s ago] (7946439246,)
+2026-02-13 17:33:50,141 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-13 17:33:50,141 - sqlalchemy.engine.Engine - INFO - SELECT shoping.id, shoping.money, shoping.shop_date, shoping.user_id 
+FROM shoping 
+WHERE shoping.user_id = ?
+2026-02-13 17:33:50,142 - sqlalchemy.engine.Engine - INFO - [cached since 14.42s ago] (1,)
+2026-02-13 17:33:50,143 - ServiceClasses.shoping_service - INFO - Получено 1 покупок для пользователя 1
+2026-02-13 17:33:50,255 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-13 17:33:50,256 - aiogram.event - INFO - Update id=66294969 is handled. Duration 116 ms by bot id=8543122898
+2026-02-13 17:33:52,129 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:33:52,130 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.subs_tg_id, subscriptions."key", subscriptions.uuid, subscriptions.expired, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.subs_tg_id = ?
+2026-02-13 17:33:52,130 - sqlalchemy.engine.Engine - INFO - [cached since 25.02s ago] (7946439246,)
+2026-02-13 17:33:52,273 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-13 17:33:52,273 - aiogram.event - INFO - Update id=66294970 is handled. Duration 144 ms by bot id=8543122898
+2026-02-13 17:33:55,086 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:33:55,086 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.subs_tg_id, subscriptions."key", subscriptions.uuid, subscriptions.expired, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.subs_tg_id = ?
+2026-02-13 17:33:55,086 - sqlalchemy.engine.Engine - INFO - [cached since 27.98s ago] (7946439246,)
+2026-02-13 17:33:55,735 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-13 17:33:55,735 - aiogram.event - INFO - Update id=66294971 is handled. Duration 650 ms by bot id=8543122898
+2026-02-13 17:34:05,542 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:34:05,543 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-13 17:34:05,543 - sqlalchemy.engine.Engine - INFO - [cached since 44.4s ago] (7946439246,)
+2026-02-13 17:34:05,544 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-13 17:34:05,544 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-13 17:34:05,766 - aiogram.event - INFO - Update id=66294972 is handled. Duration 224 ms by bot id=8543122898
+2026-02-13 17:34:08,153 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:34:08,153 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-13 17:34:08,154 - sqlalchemy.engine.Engine - INFO - [cached since 47.01s ago] (7946439246,)
+2026-02-13 17:34:08,154 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-13 17:34:08,154 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-13 17:34:08,290 - aiogram.event - INFO - Update id=66294973 is handled. Duration 137 ms by bot id=8543122898
+2026-02-13 17:34:26,238 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:34:26,238 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-13 17:34:26,238 - sqlalchemy.engine.Engine - INFO - [cached since 65.09s ago] (8016999764,)
+2026-02-13 17:34:26,239 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (telegram_id, reg_date, referal_count) VALUES (?, ?, ?)
+2026-02-13 17:34:26,239 - sqlalchemy.engine.Engine - INFO - [cached since 65.09s ago] (8016999764, '2026-02-13 17:34:26.239441', 0)
+2026-02-13 17:34:26,241 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-13 17:34:26,251 - ServiceClasses.user_service - INFO - Новый пользователь создан: Telegram ID 8016999764
+2026-02-13 17:34:26,251 - common.handler - INFO - Пользователь с Telegram ID 8016999764 создан в базе данных.
+2026-02-13 17:34:26,252 - py3xui.async_api.async_api_base - INFO - Logging in with username: JUHEyo8TCy
+2026-02-13 17:34:27,792 - httpx - INFO - HTTP Request: POST https://94.183.186.146:55591/cwb9fj6JhB8r8EIlNY/login "HTTP/1.1 200 OK"
+2026-02-13 17:34:27,793 - py3xui.async_api.async_api_base - INFO - Session cookie successfully retrieved for username: JUHEyo8TCy
+2026-02-13 17:34:27,793 - py3xui.async_api.async_api - INFO - Logged in successfully.
+2026-02-13 17:34:27,794 - py3xui.async_api.async_api_base - INFO - Getting inbounds...
+2026-02-13 17:34:28,626 - httpx - INFO - HTTP Request: GET https://94.183.186.146:55591/cwb9fj6JhB8r8EIlNY/panel/api/inbounds/list "HTTP/1.1 200 OK"
+2026-02-13 17:34:28,628 - common.handler - INFO - Inbound enable=True port=443 protocol='vless' settings=Settings(clients=[Client(email='xby5s6el', enable=True, id='35673e88-11b5-414f-8589-3753cee3cebc', password='', inbound_id=None, up=0, down=0, expiry_time=0, total=0, reset=0, flow='', method='', limit_ip=0, sub_id='pz3vqev2y851eff7', comment='', tg_id=0, total_gb=0, uuid=None), Client(email='7946439246', enable=True, id='d51ed82a-3c1e-48c0-9f8d-cd204a4c8fce', password='', inbound_id=None, up=0, down=0, expiry_time=1773844401140, total=0, reset=None, flow='xtls-rprx-vision', method='', limit_ip=0, sub_id='', comment='', tg_id='', total_gb=0, uuid=None)], decryption='none', fallbacks=[]) stream_settings=StreamSettings(security='reality', network='tcp', tcp_settings={'acceptProxyProtocol': False, 'header': {'type': 'none'}}, kcp_settings={}, external_proxy=[], reality_settings={'show': False, 'xver': 0, 'target': 'www.microsoft.com:443', 'serverNames': ['www.microsoft.com', 'microsoft.com'], 'privateKey': 'wGSguAfvvojJdB2bJs4ljqcfu9evgQ0lWy9PKFQ_RWQ', 'minClientVer': '', 'maxClientVer': '', 'maxTimediff': 0, 'shortIds': ['b6', '6277', '30392505828128f3', '03bd010ab5fda2', 'e7c6bc', '42a1415d', 'a4639daea3', '2285c8b3a1e9'], 'mldsa65Seed': 'ZaTy4HSxx9T5ARzG0QB6hVpoTDPqaXtgRF854_immxw', 'settings': {'publicKey': 'f7Gp0e-L25Esiafe9mUW7KgdUXaz3A6wPP25VKdZe1M', 'fingerprint': 'chrome', 'serverName': '', 'spiderX': '/', 'mldsa65Verify': 'aAcpNBQu5sKltzLD2Psfpw_phO57ebdNcorCHbFwv2VSAAaBQ12s5ciJlAlljzcHr81q5uFqmif3PNQfge19Qk72BIVWtzcrTk_8jpCCgLa65dBYeSVWOD02VNARXnIR1XYb-aYrfX2GZJNQljjfGx4sQLV_0Hblz01r4lGuDvG4wc4MKvmbeaiOmWOhBexi5hIy8PvC_EEmGeDyBIiDj_ilqN3V31SrB9PKKDImb9Ci4DrBDG1zLNCssBpw6GxrKvhVFxwac5GGDoBkgrqDD31j94tmv3dJxet_JZgekJ_y3b_PLXuqMDYpxT3PC-IKKHFbjzX3-QRg1MyxIvOlt_5H1_7oT4e_n1sXcNce8aBy6Gav9qf_kdRoSkEyxQ6Xbh9BDs8hbq5g7610L45pGLO5DJF3iKeY5byblqs3Qhcw16JPHkcFiQuQeQKBq7g5hV9b536dBQRE-QGTGqQg9I5MrFuvbLXSQF9846NDQGwyhKuNBKtBpRQLCXYWURwIzLeHsFNXBDhSuIJzPMDPEHAERudXpzyLT77CjOyqoOYFVcJkyUhkYK671IIYnz3YaGphlFchAcG4qmUim9K3mXHL2bAOH12jrwMuapmXcsMErNugs_dwsH-zVSR7esJ2GdziFgU5KgJont8cCOR7Y6dCmCrRTItADkQCJDHLa-Ncx2CnxGAwAq4nK8YktrAAZTPSavDfHZ0Ky_O5QkshUDJKRrcs5ItnL3G3ZnXUHUaRv9p7UX2O3fmMS6YPEF4iVCreak4W-26CSAgUafqQj9VC4fRL525O2Ss86fPGeJ398lv5nzBVp9MZNoeR9PswC-_hovXoVUrIOdfUGnr77EtQU2GBt9V704LTtxEI1Rfpyyf1iurwUez02aEtV4BRa3-MFKGLQ96hE7S63aPIoGEOVqS7i06iEWaLzd8iOzBM849_KYIxF3s6FbfVhKy8NUMaeYx1fiZ-ZhJiK-Fhv4YNIGtkBAFlxwGKjG9u9wlDCnrPzmmVkPC7lgwl5NcpJXrkWwbfmuvPTwg8xrScW1iVuwBNmZYi8BTVXC0PPn_iFIWz--sQ1AQZ3vjrTLbpcFylbkMrdKCJcnEUaYvcopGQVTyJo5Pi2zeZBhlwiC07IqXIlwFquX0py5DCYcNd-379ryjK7jc5HMNeXWtE99TrqprZ0_L_EzD4DRlE_SkJyPDHn0t0YISmjBOXMKynt7X7gAFHHsxaxOxie7AMlaS3t0LKar47gDtZiWKVv0yVIXgjjeiak8zVjsRUcFOq30ziVY353WFy8ZAfgXoiSsfVFCszIhVYzgPK48j7_oJDRztbD8w3dRQ98NpfV9SVRkktQcBPVfx3plTE28H_V7eSZ0mNtSlg5wkpUazKWnezDwYB9YpWoMu4g3FH7yXI3oyRCiJDFWECaQt9Zvz0otf2LpHVbqs0VocrSu0ZZ5wls0u36eqc9TrgYYzvrPgWkfu73pQLt6XKcTV2h0oqRNEkITyitdwTkJUQCmryAMp9s5kXyRi8tWhFRSWTUMzkCRWBoXOas2sJW86O9mJfEImxAHOyodJvodkmiyWaomablqq-KEAMBa835ZD7XBBGstgj9KCWnhfxslhZiYrECo3mdiCt8U-Ffp9bN2lKawsk4lxLWymMgIGJxLnXAKij_bvC0bppxAdBwrZr5u6enSMdnnEXfLGwLY-GlzGdLo1hsjO49WzE7OskNRXH5-D_f0NFkdBrCZaNOd_769Kslbm9p9uxDuJWtsy5eY_0G7S8L1q3c6XkCG2YxZ0FtFtOiGVRspvYAfBKtAC5CD0Z6G9gD4uG66OsTfiamYU6Te4Sdly33pTB9N9VLHTBgQW9zJp9aiTHPifwBD2YQ5TYgdYZzppBCw3F9DHB_7XpXp4dJt8WRziuJGvqRCws63Kj3gfhJANH9QH8iqiVLUL9zhj-xWLMYKHN-VGCOIUyIgcb-XXIXjdWaP-T-OxEUJOiDaH6QXv7fPE5YwPB1ivTb2bXVaz9Ehivi5--zqCo4Tkwa-1tU-flGDnUsmgSD4G8wExai7JK67UtQszndV73uGFZcI4DhyY0On2a8irY-BJhbQRGo1YLGjns2vGs3H-AcWNTwKSB00aarIlMnG65Dplpboefcrk5aTqXNC1C5I1Ub9CE6Dec5FAHY2J-ApHL10A58mxAr1hYARUFSATUlOmzBz-jGe5nh2ZNINGhZ25mkoltwyex0PuNxdwytMwongFuu3Pf8vRuRAr_Wfl1yMipGMM_tihXfAkuCVtUqSpz2n-n-8A_Dw63jAJ6KUxFozI5CLGuKGSNvsqo3nkHpb2WHYZO_xRjX0UBQQec_LoQ1TY1WGUo7mpO93Z46zthwKW_8NQxC-nBz9zmQrd3g4IPp0ZrfO2zNNeeh-883igx3KrjQv1U2NUW4hHiWKkxF3EzvYbd4wCR0SR7E6D-IjLB6k1dkm0jjyl-5bxk5mW6Ilt1fkYawFnIdRh3HMSBxZaQo1hlKEJq0mQ5iL4M26PINpPFVcDr3jiCmzY1zA7Nefqn0yAastVNS0JB5HHFd9mKRfQSN1Os0dStuMTBuMDoU38lNI1aN32HZjuXxh4'}}, xtls_settings={}, tls_settings={}, xhttp_settings={}) sniffing=Sniffing(enabled=False, dest_override=['http', 'tls', 'quic', 'fakedns'], metadata_only=False, route_only=False) listen='' remark='' id=42 up=0 down=0 total=0 expiry_time=0 client_stats=[Client(email='xby5s6el', enable=True, id=263, password='', inbound_id=42, up=0, down=0, expiry_time=0, total=0, reset=0, flow='', method='', limit_ip=0, sub_id='pz3vqev2y851eff7', comment='', tg_id='', total_gb=0, uuid='35673e88-11b5-414f-8589-3753cee3cebc'), Client(email='7946439246', enable=True, id=264, password='', inbound_id=42, up=0, down=0, expiry_time=1771252401140, total=0, reset=0, flow='', method='', limit_ip=0, sub_id='', comment='', tg_id='', total_gb=0, uuid='d51ed82a-3c1e-48c0-9f8d-cd204a4c8fce')] tag='inbound-443' инициализирован для пользователя
+2026-02-13 17:34:28,628 - ServiceClasses.vpn_service - INFO - Создан VPN клиент для пользователя 8016999764 с истечением через 1771252466237 миллисекунд.
+2026-02-13 17:34:28,628 - py3xui.async_api.async_api_base - INFO - Updating inbound: enable=True port=443 protocol='vless' settings=Settings(clients=[Client(email='xby5s6el', enable=True, id='35673e88-11b5-414f-8589-3753cee3cebc', password='', inbound_id=None, up=0, down=0, expiry_time=0, total=0, reset=0, flow='', method='', limit_ip=0, sub_id='pz3vqev2y851eff7', comment='', tg_id=0, total_gb=0, uuid=None), Client(email='7946439246', enable=True, id='d51ed82a-3c1e-48c0-9f8d-cd204a4c8fce', password='', inbound_id=None, up=0, down=0, expiry_time=1773844401140, total=0, reset=None, flow='xtls-rprx-vision', method='', limit_ip=0, sub_id='', comment='', tg_id='', total_gb=0, uuid=None), Client(email='8016999764', enable=True, id='e90bd545-ea2b-47bb-b3a5-a5a2290e0e1b', password='', inbound_id=None, up=0, down=0, expiry_time=1771252466237, total=0, reset=None, flow='xtls-rprx-vision', method='', limit_ip=0, sub_id='', comment='', tg_id='', total_gb=0, uuid=None)], decryption='none', fallbacks=[]) stream_settings=StreamSettings(security='reality', network='tcp', tcp_settings={'acceptProxyProtocol': False, 'header': {'type': 'none'}}, kcp_settings={}, external_proxy=[], reality_settings={'show': False, 'xver': 0, 'target': 'www.microsoft.com:443', 'serverNames': ['www.microsoft.com', 'microsoft.com'], 'privateKey': 'wGSguAfvvojJdB2bJs4ljqcfu9evgQ0lWy9PKFQ_RWQ', 'minClientVer': '', 'maxClientVer': '', 'maxTimediff': 0, 'shortIds': ['b6', '6277', '30392505828128f3', '03bd010ab5fda2', 'e7c6bc', '42a1415d', 'a4639daea3', '2285c8b3a1e9'], 'mldsa65Seed': 'ZaTy4HSxx9T5ARzG0QB6hVpoTDPqaXtgRF854_immxw', 'settings': {'publicKey': 'f7Gp0e-L25Esiafe9mUW7KgdUXaz3A6wPP25VKdZe1M', 'fingerprint': 'chrome', 'serverName': '', 'spiderX': '/', 'mldsa65Verify': 'aAcpNBQu5sKltzLD2Psfpw_phO57ebdNcorCHbFwv2VSAAaBQ12s5ciJlAlljzcHr81q5uFqmif3PNQfge19Qk72BIVWtzcrTk_8jpCCgLa65dBYeSVWOD02VNARXnIR1XYb-aYrfX2GZJNQljjfGx4sQLV_0Hblz01r4lGuDvG4wc4MKvmbeaiOmWOhBexi5hIy8PvC_EEmGeDyBIiDj_ilqN3V31SrB9PKKDImb9Ci4DrBDG1zLNCssBpw6GxrKvhVFxwac5GGDoBkgrqDD31j94tmv3dJxet_JZgekJ_y3b_PLXuqMDYpxT3PC-IKKHFbjzX3-QRg1MyxIvOlt_5H1_7oT4e_n1sXcNce8aBy6Gav9qf_kdRoSkEyxQ6Xbh9BDs8hbq5g7610L45pGLO5DJF3iKeY5byblqs3Qhcw16JPHkcFiQuQeQKBq7g5hV9b536dBQRE-QGTGqQg9I5MrFuvbLXSQF9846NDQGwyhKuNBKtBpRQLCXYWURwIzLeHsFNXBDhSuIJzPMDPEHAERudXpzyLT77CjOyqoOYFVcJkyUhkYK671IIYnz3YaGphlFchAcG4qmUim9K3mXHL2bAOH12jrwMuapmXcsMErNugs_dwsH-zVSR7esJ2GdziFgU5KgJont8cCOR7Y6dCmCrRTItADkQCJDHLa-Ncx2CnxGAwAq4nK8YktrAAZTPSavDfHZ0Ky_O5QkshUDJKRrcs5ItnL3G3ZnXUHUaRv9p7UX2O3fmMS6YPEF4iVCreak4W-26CSAgUafqQj9VC4fRL525O2Ss86fPGeJ398lv5nzBVp9MZNoeR9PswC-_hovXoVUrIOdfUGnr77EtQU2GBt9V704LTtxEI1Rfpyyf1iurwUez02aEtV4BRa3-MFKGLQ96hE7S63aPIoGEOVqS7i06iEWaLzd8iOzBM849_KYIxF3s6FbfVhKy8NUMaeYx1fiZ-ZhJiK-Fhv4YNIGtkBAFlxwGKjG9u9wlDCnrPzmmVkPC7lgwl5NcpJXrkWwbfmuvPTwg8xrScW1iVuwBNmZYi8BTVXC0PPn_iFIWz--sQ1AQZ3vjrTLbpcFylbkMrdKCJcnEUaYvcopGQVTyJo5Pi2zeZBhlwiC07IqXIlwFquX0py5DCYcNd-379ryjK7jc5HMNeXWtE99TrqprZ0_L_EzD4DRlE_SkJyPDHn0t0YISmjBOXMKynt7X7gAFHHsxaxOxie7AMlaS3t0LKar47gDtZiWKVv0yVIXgjjeiak8zVjsRUcFOq30ziVY353WFy8ZAfgXoiSsfVFCszIhVYzgPK48j7_oJDRztbD8w3dRQ98NpfV9SVRkktQcBPVfx3plTE28H_V7eSZ0mNtSlg5wkpUazKWnezDwYB9YpWoMu4g3FH7yXI3oyRCiJDFWECaQt9Zvz0otf2LpHVbqs0VocrSu0ZZ5wls0u36eqc9TrgYYzvrPgWkfu73pQLt6XKcTV2h0oqRNEkITyitdwTkJUQCmryAMp9s5kXyRi8tWhFRSWTUMzkCRWBoXOas2sJW86O9mJfEImxAHOyodJvodkmiyWaomablqq-KEAMBa835ZD7XBBGstgj9KCWnhfxslhZiYrECo3mdiCt8U-Ffp9bN2lKawsk4lxLWymMgIGJxLnXAKij_bvC0bppxAdBwrZr5u6enSMdnnEXfLGwLY-GlzGdLo1hsjO49WzE7OskNRXH5-D_f0NFkdBrCZaNOd_769Kslbm9p9uxDuJWtsy5eY_0G7S8L1q3c6XkCG2YxZ0FtFtOiGVRspvYAfBKtAC5CD0Z6G9gD4uG66OsTfiamYU6Te4Sdly33pTB9N9VLHTBgQW9zJp9aiTHPifwBD2YQ5TYgdYZzppBCw3F9DHB_7XpXp4dJt8WRziuJGvqRCws63Kj3gfhJANH9QH8iqiVLUL9zhj-xWLMYKHN-VGCOIUyIgcb-XXIXjdWaP-T-OxEUJOiDaH6QXv7fPE5YwPB1ivTb2bXVaz9Ehivi5--zqCo4Tkwa-1tU-flGDnUsmgSD4G8wExai7JK67UtQszndV73uGFZcI4DhyY0On2a8irY-BJhbQRGo1YLGjns2vGs3H-AcWNTwKSB00aarIlMnG65Dplpboefcrk5aTqXNC1C5I1Ub9CE6Dec5FAHY2J-ApHL10A58mxAr1hYARUFSATUlOmzBz-jGe5nh2ZNINGhZ25mkoltwyex0PuNxdwytMwongFuu3Pf8vRuRAr_Wfl1yMipGMM_tihXfAkuCVtUqSpz2n-n-8A_Dw63jAJ6KUxFozI5CLGuKGSNvsqo3nkHpb2WHYZO_xRjX0UBQQec_LoQ1TY1WGUo7mpO93Z46zthwKW_8NQxC-nBz9zmQrd3g4IPp0ZrfO2zNNeeh-883igx3KrjQv1U2NUW4hHiWKkxF3EzvYbd4wCR0SR7E6D-IjLB6k1dkm0jjyl-5bxk5mW6Ilt1fkYawFnIdRh3HMSBxZaQo1hlKEJq0mQ5iL4M26PINpPFVcDr3jiCmzY1zA7Nefqn0yAastVNS0JB5HHFd9mKRfQSN1Os0dStuMTBuMDoU38lNI1aN32HZjuXxh4'}}, xtls_settings={}, tls_settings={}, xhttp_settings={}) sniffing=Sniffing(enabled=False, dest_override=['http', 'tls', 'quic', 'fakedns'], metadata_only=False, route_only=False) listen='' remark='' id=42 up=0 down=0 total=0 expiry_time=0 client_stats=[Client(email='xby5s6el', enable=True, id=263, password='', inbound_id=42, up=0, down=0, expiry_time=0, total=0, reset=0, flow='', method='', limit_ip=0, sub_id='pz3vqev2y851eff7', comment='', tg_id='', total_gb=0, uuid='35673e88-11b5-414f-8589-3753cee3cebc'), Client(email='7946439246', enable=True, id=264, password='', inbound_id=42, up=0, down=0, expiry_time=1771252401140, total=0, reset=0, flow='', method='', limit_ip=0, sub_id='', comment='', tg_id='', total_gb=0, uuid='d51ed82a-3c1e-48c0-9f8d-cd204a4c8fce')] tag='inbound-443'
+2026-02-13 17:34:29,410 - httpx - INFO - HTTP Request: POST https://94.183.186.146:55591/cwb9fj6JhB8r8EIlNY/panel/api/inbounds/update/42 "HTTP/1.1 200 OK"
+2026-02-13 17:34:29,413 - py3xui.async_api.async_api_base - INFO - Inbound updated successfully.
+2026-02-13 17:34:29,413 - common.handler - INFO - Клиент создан для пользователя: 8016999764 с именем: 8016999764
+2026-02-13 17:34:29,413 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:34:29,414 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-13 17:34:29,414 - sqlalchemy.engine.Engine - INFO - [cached since 68.27s ago] (8016999764,)
+2026-02-13 17:34:29,415 - sqlalchemy.engine.Engine - INFO - INSERT INTO subscriptions (subs_tg_id, "key", uuid, expired, user_id) VALUES (?, ?, ?, ?, ?)
+2026-02-13 17:34:29,417 - sqlalchemy.engine.Engine - INFO - [cached since 64.84s ago] (8016999764, 'vless://e90bd545-ea2b-47bb-b3a5-a5a2290e0e1b@94.183.186.146:443?type=tcp&encryption=none&security=reality&pbk=f7Gp0e-L25Esiafe9mUW7KgdUXaz3A6wPP25VKdZe1M&fp=chrome&sni=www.microsoft.com&sid=b6&spx=%2F&flow=xtls-rprx-vision#dw-8016999764', 'e90bd545-ea2b-47bb-b3a5-a5a2290e0e1b', '2026-02-16 14:34:26.237000', 2)
+2026-02-13 17:34:29,419 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-13 17:34:29,431 - common.handler - INFO - Подписка создана для пользователя: 8016999764 с ключом: vless://e90bd545-ea2b-47bb-b3a5-a5a2290e0e1b@94.183.186.146:443?type=tcp&encryption=none&security=reality&pbk=f7Gp0e-L25Esiafe9mUW7KgdUXaz3A6wPP25VKdZe1M&fp=chrome&sni=www.microsoft.com&sid=b6&spx=%2F&flow=xtls-rprx-vision#dw-8016999764
+2026-02-13 17:34:29,432 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:34:29,432 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-13 17:34:29,432 - sqlalchemy.engine.Engine - INFO - [cached since 68.28s ago] (7946439246,)
+2026-02-13 17:34:29,433 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-13 17:34:29,433 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-13 17:34:29,434 - sqlalchemy.engine.Engine - INFO - [cached since 68.29s ago] (8016999764,)
+2026-02-13 17:34:29,435 - sqlalchemy.engine.Engine - INFO - SELECT referals.id, referals.ref_tg_id, referals.invited_by_tg_id, referals.bonus_given, referals.user_id 
+FROM referals 
+WHERE referals.ref_tg_id = ?
+2026-02-13 17:34:29,435 - sqlalchemy.engine.Engine - INFO - [generated in 0.00040s] (8016999764,)
+2026-02-13 17:34:29,437 - sqlalchemy.engine.Engine - INFO - INSERT INTO referals (ref_tg_id, invited_by_tg_id, bonus_given, user_id) VALUES (?, ?, ?, ?)
+2026-02-13 17:34:29,438 - sqlalchemy.engine.Engine - INFO - [generated in 0.00036s] (8016999764, 7946439246, 0, 2)
+2026-02-13 17:34:29,439 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-13 17:34:29,449 - common.handler - INFO - Создан реферал для пользователя: 8016999764 приглашённым пользователем: 7946439246
+2026-02-13 17:34:29,449 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:34:29,450 - sqlalchemy.engine.Engine - INFO - SELECT referals.id, referals.ref_tg_id, referals.invited_by_tg_id, referals.bonus_given, referals.user_id 
+FROM referals 
+WHERE referals.ref_tg_id = ?
+2026-02-13 17:34:29,450 - sqlalchemy.engine.Engine - INFO - [cached since 0.01505s ago] (8016999764,)
+2026-02-13 17:34:29,451 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.subs_tg_id, subscriptions."key", subscriptions.uuid, subscriptions.expired, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.subs_tg_id = ?
+2026-02-13 17:34:29,451 - sqlalchemy.engine.Engine - INFO - [cached since 62.34s ago] (7946439246,)
+2026-02-13 17:34:29,452 - sqlalchemy.engine.Engine - INFO - UPDATE referals SET bonus_given=? WHERE referals.id = ?
+2026-02-13 17:34:29,453 - sqlalchemy.engine.Engine - INFO - [generated in 0.00034s] (1, 1)
+2026-02-13 17:34:29,454 - sqlalchemy.engine.Engine - INFO - UPDATE subscriptions SET expired=? WHERE subscriptions.id = ?
+2026-02-13 17:34:29,455 - sqlalchemy.engine.Engine - INFO - [cached since 41.07s ago] ('2026-03-23 14:33:21.140000', 1)
+2026-02-13 17:34:29,456 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-13 17:34:29,465 - py3xui.async_api.async_api_base - INFO - Updating inbound: enable=True port=443 protocol='vless' settings=Settings(clients=[Client(email='xby5s6el', enable=True, id='35673e88-11b5-414f-8589-3753cee3cebc', password='', inbound_id=None, up=0, down=0, expiry_time=0, total=0, reset=0, flow='', method='', limit_ip=0, sub_id='pz3vqev2y851eff7', comment='', tg_id=0, total_gb=0, uuid=None), Client(email='7946439246', enable=True, id='d51ed82a-3c1e-48c0-9f8d-cd204a4c8fce', password='', inbound_id=None, up=0, down=0, expiry_time=1774276401140, total=0, reset=None, flow='xtls-rprx-vision', method='', limit_ip=0, sub_id='', comment='', tg_id='', total_gb=0, uuid=None), Client(email='8016999764', enable=True, id='e90bd545-ea2b-47bb-b3a5-a5a2290e0e1b', password='', inbound_id=None, up=0, down=0, expiry_time=1771252466237, total=0, reset=None, flow='xtls-rprx-vision', method='', limit_ip=0, sub_id='', comment='', tg_id='', total_gb=0, uuid=None)], decryption='none', fallbacks=[]) stream_settings=StreamSettings(security='reality', network='tcp', tcp_settings={'acceptProxyProtocol': False, 'header': {'type': 'none'}}, kcp_settings={}, external_proxy=[], reality_settings={'show': False, 'xver': 0, 'target': 'www.microsoft.com:443', 'serverNames': ['www.microsoft.com', 'microsoft.com'], 'privateKey': 'wGSguAfvvojJdB2bJs4ljqcfu9evgQ0lWy9PKFQ_RWQ', 'minClientVer': '', 'maxClientVer': '', 'maxTimediff': 0, 'shortIds': ['b6', '6277', '30392505828128f3', '03bd010ab5fda2', 'e7c6bc', '42a1415d', 'a4639daea3', '2285c8b3a1e9'], 'mldsa65Seed': 'ZaTy4HSxx9T5ARzG0QB6hVpoTDPqaXtgRF854_immxw', 'settings': {'publicKey': 'f7Gp0e-L25Esiafe9mUW7KgdUXaz3A6wPP25VKdZe1M', 'fingerprint': 'chrome', 'serverName': '', 'spiderX': '/', 'mldsa65Verify': 'aAcpNBQu5sKltzLD2Psfpw_phO57ebdNcorCHbFwv2VSAAaBQ12s5ciJlAlljzcHr81q5uFqmif3PNQfge19Qk72BIVWtzcrTk_8jpCCgLa65dBYeSVWOD02VNARXnIR1XYb-aYrfX2GZJNQljjfGx4sQLV_0Hblz01r4lGuDvG4wc4MKvmbeaiOmWOhBexi5hIy8PvC_EEmGeDyBIiDj_ilqN3V31SrB9PKKDImb9Ci4DrBDG1zLNCssBpw6GxrKvhVFxwac5GGDoBkgrqDD31j94tmv3dJxet_JZgekJ_y3b_PLXuqMDYpxT3PC-IKKHFbjzX3-QRg1MyxIvOlt_5H1_7oT4e_n1sXcNce8aBy6Gav9qf_kdRoSkEyxQ6Xbh9BDs8hbq5g7610L45pGLO5DJF3iKeY5byblqs3Qhcw16JPHkcFiQuQeQKBq7g5hV9b536dBQRE-QGTGqQg9I5MrFuvbLXSQF9846NDQGwyhKuNBKtBpRQLCXYWURwIzLeHsFNXBDhSuIJzPMDPEHAERudXpzyLT77CjOyqoOYFVcJkyUhkYK671IIYnz3YaGphlFchAcG4qmUim9K3mXHL2bAOH12jrwMuapmXcsMErNugs_dwsH-zVSR7esJ2GdziFgU5KgJont8cCOR7Y6dCmCrRTItADkQCJDHLa-Ncx2CnxGAwAq4nK8YktrAAZTPSavDfHZ0Ky_O5QkshUDJKRrcs5ItnL3G3ZnXUHUaRv9p7UX2O3fmMS6YPEF4iVCreak4W-26CSAgUafqQj9VC4fRL525O2Ss86fPGeJ398lv5nzBVp9MZNoeR9PswC-_hovXoVUrIOdfUGnr77EtQU2GBt9V704LTtxEI1Rfpyyf1iurwUez02aEtV4BRa3-MFKGLQ96hE7S63aPIoGEOVqS7i06iEWaLzd8iOzBM849_KYIxF3s6FbfVhKy8NUMaeYx1fiZ-ZhJiK-Fhv4YNIGtkBAFlxwGKjG9u9wlDCnrPzmmVkPC7lgwl5NcpJXrkWwbfmuvPTwg8xrScW1iVuwBNmZYi8BTVXC0PPn_iFIWz--sQ1AQZ3vjrTLbpcFylbkMrdKCJcnEUaYvcopGQVTyJo5Pi2zeZBhlwiC07IqXIlwFquX0py5DCYcNd-379ryjK7jc5HMNeXWtE99TrqprZ0_L_EzD4DRlE_SkJyPDHn0t0YISmjBOXMKynt7X7gAFHHsxaxOxie7AMlaS3t0LKar47gDtZiWKVv0yVIXgjjeiak8zVjsRUcFOq30ziVY353WFy8ZAfgXoiSsfVFCszIhVYzgPK48j7_oJDRztbD8w3dRQ98NpfV9SVRkktQcBPVfx3plTE28H_V7eSZ0mNtSlg5wkpUazKWnezDwYB9YpWoMu4g3FH7yXI3oyRCiJDFWECaQt9Zvz0otf2LpHVbqs0VocrSu0ZZ5wls0u36eqc9TrgYYzvrPgWkfu73pQLt6XKcTV2h0oqRNEkITyitdwTkJUQCmryAMp9s5kXyRi8tWhFRSWTUMzkCRWBoXOas2sJW86O9mJfEImxAHOyodJvodkmiyWaomablqq-KEAMBa835ZD7XBBGstgj9KCWnhfxslhZiYrECo3mdiCt8U-Ffp9bN2lKawsk4lxLWymMgIGJxLnXAKij_bvC0bppxAdBwrZr5u6enSMdnnEXfLGwLY-GlzGdLo1hsjO49WzE7OskNRXH5-D_f0NFkdBrCZaNOd_769Kslbm9p9uxDuJWtsy5eY_0G7S8L1q3c6XkCG2YxZ0FtFtOiGVRspvYAfBKtAC5CD0Z6G9gD4uG66OsTfiamYU6Te4Sdly33pTB9N9VLHTBgQW9zJp9aiTHPifwBD2YQ5TYgdYZzppBCw3F9DHB_7XpXp4dJt8WRziuJGvqRCws63Kj3gfhJANH9QH8iqiVLUL9zhj-xWLMYKHN-VGCOIUyIgcb-XXIXjdWaP-T-OxEUJOiDaH6QXv7fPE5YwPB1ivTb2bXVaz9Ehivi5--zqCo4Tkwa-1tU-flGDnUsmgSD4G8wExai7JK67UtQszndV73uGFZcI4DhyY0On2a8irY-BJhbQRGo1YLGjns2vGs3H-AcWNTwKSB00aarIlMnG65Dplpboefcrk5aTqXNC1C5I1Ub9CE6Dec5FAHY2J-ApHL10A58mxAr1hYARUFSATUlOmzBz-jGe5nh2ZNINGhZ25mkoltwyex0PuNxdwytMwongFuu3Pf8vRuRAr_Wfl1yMipGMM_tihXfAkuCVtUqSpz2n-n-8A_Dw63jAJ6KUxFozI5CLGuKGSNvsqo3nkHpb2WHYZO_xRjX0UBQQec_LoQ1TY1WGUo7mpO93Z46zthwKW_8NQxC-nBz9zmQrd3g4IPp0ZrfO2zNNeeh-883igx3KrjQv1U2NUW4hHiWKkxF3EzvYbd4wCR0SR7E6D-IjLB6k1dkm0jjyl-5bxk5mW6Ilt1fkYawFnIdRh3HMSBxZaQo1hlKEJq0mQ5iL4M26PINpPFVcDr3jiCmzY1zA7Nefqn0yAastVNS0JB5HHFd9mKRfQSN1Os0dStuMTBuMDoU38lNI1aN32HZjuXxh4'}}, xtls_settings={}, tls_settings={}, xhttp_settings={}) sniffing=Sniffing(enabled=False, dest_override=['http', 'tls', 'quic', 'fakedns'], metadata_only=False, route_only=False) listen='' remark='' id=42 up=0 down=0 total=0 expiry_time=0 client_stats=[Client(email='xby5s6el', enable=True, id=263, password='', inbound_id=42, up=0, down=0, expiry_time=0, total=0, reset=0, flow='', method='', limit_ip=0, sub_id='pz3vqev2y851eff7', comment='', tg_id='', total_gb=0, uuid='35673e88-11b5-414f-8589-3753cee3cebc'), Client(email='7946439246', enable=True, id=264, password='', inbound_id=42, up=0, down=0, expiry_time=1771252401140, total=0, reset=0, flow='', method='', limit_ip=0, sub_id='', comment='', tg_id='', total_gb=0, uuid='d51ed82a-3c1e-48c0-9f8d-cd204a4c8fce')] tag='inbound-443'
+2026-02-13 17:34:30,261 - httpx - INFO - HTTP Request: POST https://94.183.186.146:55591/cwb9fj6JhB8r8EIlNY/panel/api/inbounds/update/42 "HTTP/1.1 200 OK"
+2026-02-13 17:34:30,263 - py3xui.async_api.async_api_base - INFO - Inbound updated successfully.
+2026-02-13 17:34:30,263 - common.handler - INFO - Реферальный бонус применён для пользователя: 7946439246 за приглашённого пользователя: 8016999764
+2026-02-13 17:34:30,264 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:34:30,264 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-13 17:34:30,265 - sqlalchemy.engine.Engine - INFO - [cached since 69.12s ago] (7946439246,)
+2026-02-13 17:34:30,265 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-13 17:34:30,266 - sqlalchemy.engine.Engine - INFO - UPDATE users SET referal_count=? WHERE users.id = ?
+2026-02-13 17:34:30,266 - sqlalchemy.engine.Engine - INFO - [generated in 0.00029s] (1, 1)
+2026-02-13 17:34:30,268 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-13 17:34:30,281 - ServiceClasses.user_service - INFO - Счётчик рефералов для пользователя 7946439246 увеличен. Новое значение: 1
+2026-02-13 17:34:30,524 - aiogram.event - INFO - Update id=66294974 is handled. Duration 4287 ms by bot id=8543122898
+2026-02-13 17:38:36,500 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-13 17:38:36,501 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-13 17:38:36,501 - sqlalchemy.engine.Engine - INFO - [cached since 315.4s ago] (7946439246,)
+2026-02-13 17:38:36,502 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-13 17:38:36,502 - sqlalchemy.engine.Engine - INFO - SELECT shoping.id, shoping.money, shoping.shop_date, shoping.user_id 
+FROM shoping 
+WHERE shoping.user_id = ?
+2026-02-13 17:38:36,502 - sqlalchemy.engine.Engine - INFO - [cached since 300.8s ago] (1,)
+2026-02-13 17:38:36,503 - ServiceClasses.shoping_service - INFO - Получено 1 покупок для пользователя 1
+2026-02-13 17:38:36,693 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-13 17:38:36,694 - aiogram.event - INFO - Update id=66294975 is handled. Duration 194 ms by bot id=8543122898
+2026-02-13 17:59:35,717 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-13 17:59:35,718 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-13 17:59:35,718 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-13 17:59:35,976 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - 'KUR VPN'

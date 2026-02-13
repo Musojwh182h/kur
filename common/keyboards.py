@@ -1,12 +1,14 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardButton, InlineKeyboardMarkup
-from aiogram.utils.keyboard import InlineKeyboardBuilder
+from aiogram.utils.keyboard import InlineKeyboardBuilder, ReplyKeyboardBuilder
 
 
 
 inl = InlineKeyboardMarkup(inline_keyboard=[
     [InlineKeyboardButton(text='Купить/Продлить💳', callback_data='buyvpn')],
     [InlineKeyboardButton(text='Мой VPN📲', callback_data='my_prof_vpn')],
+    [InlineKeyboardButton(text='История покупок🛍️', callback_data='history_shop')],
     [InlineKeyboardButton(text='Инструкция📖', callback_data='instructions')],
+    [InlineKeyboardButton(text='Реферальная система', callback_data='referal')],
     [InlineKeyboardButton(text='Поддержка🛠️', callback_data='support', url='https://t.me/mdjabrailov')]
 
 ])
@@ -36,3 +38,8 @@ buy_kb = InlineKeyboardMarkup(inline_keyboard=[
     [InlineKeyboardButton(text='⬅Назад', callback_data='back')]
     ])
 
+def res():
+    rp = ReplyKeyboardBuilder()
+    rp.button(text='restart')
+    rp.adjust(1)
+    return rp
