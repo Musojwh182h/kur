@@ -1,9 +1,8 @@
-from db.models import User, Subscription, Shoping, Referal
+from db.models import User, Referal
 from sqlalchemy import select
 import logging
 logger = logging.getLogger(__name__)
-from datetime import timedelta, timezone, datetime
-import time
+
 
 class RerferalService:
     def __init__(self, session, client):

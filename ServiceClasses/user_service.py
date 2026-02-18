@@ -1,4 +1,4 @@
-from db.models import User, Subscription, Shoping, Referal
+from db.models import User
 from datetime import datetime
 from sqlalchemy import select
 import logging

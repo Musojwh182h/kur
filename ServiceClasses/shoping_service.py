@@ -1,9 +1,6 @@
-from db.models import User, Subscription, Shoping
+from db.models import Shoping
 from sqlalchemy import select
-from datetime import timedelta, timezone, datetime
-import time
 import logging
-
 logger = logging.getLogger(__name__)
 
 class ShopingService:

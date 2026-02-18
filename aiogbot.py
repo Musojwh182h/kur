@@ -1,17 +1,22 @@
 import asyncio
 import os
-from py3x import startup
+from py3xui import AsyncApi
 from aiogram import Bot, Dispatcher, types
-from db.models import User, Subscription
-from datetime import datetime,  timedelta
-from sqlalchemy.engine import URL
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from notification import notifications
 from dotenv import find_dotenv, load_dotenv
-from sqlalchemy.util import await_only
-from sqlalchemy import select
-from db.engine import AsyncSessionMaker
 load_dotenv(find_dotenv())
+from ServiceClasses.vpn_service import VPNService
+from common.handlers_flder.start_cmd import start_router
+from common.handlers_flder.history_shops import history_router
+from common.handlers_flder.instructions import instr_router
+from common.handlers_flder.main_menu import main_router
+from common.handlers_flder.my_vpn import my_vpn_router
+from common.handlers_flder.puy_vpn import puy_router
 
-from common.handler import handler_router
+from common.handlers_flder.referal_system import referal_router
+from common.handlers_flder.reset import handler_router
+from common.handlers_flder.time_vpn import time_router
 from common.usr_cmnds import private
 import logging
 
@@ -20,40 +25,44 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('bot.log'),  # Сохранять в файл
-        logging.StreamHandler()           # +Показывать в консоли
+        logging.FileHandler('bot.log'),  
+        logging.StreamHandler()           
     ]
 )
 
 logger = logging.getLogger(__name__)
-
+scheduler = AsyncIOScheduler()
 
 bot = Bot(token=os.getenv('TOKEN'))
 dp = Dispatcher()
+dp.include_router(start_router)
+dp.include_router(history_router)
+dp.include_router(instr_router)
+dp.include_router(main_router)
+dp.include_router(my_vpn_router)
+dp.include_router(puy_router)
 
+dp.include_router(referal_router)
+dp.include_router(time_router)
 dp.include_router(handler_router)
-# async def notification(bot: Bot):
-#     now = datetime.now()
-#     while True:
-#         now = datetime.now()
-#         async with AsyncSessionMaker() as session:
-#             sub = await session.scalars(select(Subscription))
-#             for s in sub:
-#                 delta = s.expired - now
-#                 if 1 <= delta.days < 2:
-#                     await bot.send_message(s.subs_tg_id, 'Срок вашей подписки подходит к концу, продлите чтобы продолжить пользоваться KUR-VPN!')
-#                 if 0 <= delta.days <= 1:
-#                     await bot.send_message(s.subs_tg_id, 'Срок вашей подписки подходит к концу, продлите чтобы продолжить пользоваться KUR-VPN!')
-#         await asyncio.sleep(86400)
+
+
         
 
 
 async def main():
     await bot.delete_webhook(drop_pending_updates=True)
-    await startup()
+
     # await bot.delete_my_commands(scope=types.BotCommandScopeAllPrivateChats())
     await bot.set_my_commands(commands=private, scope=types.BotCommandScopeAllPrivateChats())
-    # asyncio.create_task(notification(bot))
+    scheduler.add_job(
+        notifications, 
+        'cron',
+        hour=12,
+        minute=0,
+        args=[bot]
+    )
+    scheduler.start()
     await dp.start_polling(bot)
     
 asyncio.run(main())
