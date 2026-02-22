@@ -7,7 +7,7 @@ class User(Base):
     __tablename__ = "users"
 
     id: Mapped[int] = mapped_column(primary_key=True)
-    telegram_id: Mapped[int] = mapped_column(unique=True, index=True)
+    telegram_id: Mapped[int] = mapped_column(BigInteger, unique=True, index=True)
     reg_date: Mapped[datetime] = mapped_column(DateTime)
     referal_count: Mapped[int] = mapped_column(Integer)
 
@@ -22,8 +22,7 @@ class Subscription(Base):
     __tablename__ = 'subscriptions'
 
     id: Mapped[int] = mapped_column(primary_key=True)
-    subs_tg_id: Mapped[int] = mapped_column(unique=True, index=True)
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
+    created_at: Mapped[datetime] = mapped_column(DateTime)
     status: Mapped[bool] = mapped_column(String)
 
     user_id: Mapped[int] = mapped_column(ForeignKey('users.id'))
@@ -34,9 +33,10 @@ class Vpn_Account(Base):
     __tablename__ = 'vpn_accounts'
 
     id: Mapped[int] = mapped_column(primary_key=True)
+    vpn_tg_id: Mapped[int] = mapped_column(BigInteger, unique=True)
     key: Mapped[str] = mapped_column(String, nullable=False)
     uuid: Mapped[str] = mapped_column(String)
-    expired_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
+    expired_at: Mapped[datetime] = mapped_column(DateTime)
     
     user_id: Mapped[int] = mapped_column(ForeignKey('users.id'))
     user: Mapped['User'] = relationship('User', back_populates='vpn_account')
@@ -47,7 +47,7 @@ class Shoping(Base):
     
     id: Mapped[int] = mapped_column(primary_key=True)
     money: Mapped[int] = mapped_column(Integer) 
-    shop_date: Mapped[str] = mapped_column(String)
+    shop_date: Mapped[datetime] = mapped_column(DateTime)
 
     user_id: Mapped[int] = mapped_column(ForeignKey('users.id'))
     user: Mapped['User'] = relationship('User', back_populates='shop')
@@ -58,7 +58,7 @@ class Referal(Base):
 
     id: Mapped[int] = mapped_column(primary_key=True)
     invited_by_tg_id: Mapped[int] = mapped_column(BigInteger)
-    ref_tg_id: Mapped[int] = mapped_column(unique=True)
+    ref_tg_id: Mapped[int] = mapped_column(BigInteger, unique=True)
     bonus_given: Mapped[bool] = mapped_column(Boolean, default=False) 
 
     user_id: Mapped[int] = mapped_column(ForeignKey('users.id'))

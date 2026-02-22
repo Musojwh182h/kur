@@ -9,6 +9,7 @@ load_dotenv(find_dotenv())
 from ServiceClasses.vpn_service import VPNService
 from common.handlers_flder.start_cmd import start_router
 from common.handlers_flder.history_shops import history_router
+from common.handlers_flder.admin import admin_router
 from common.handlers_flder.instructions import instr_router
 from common.handlers_flder.main_menu import main_router
 from common.handlers_flder.my_vpn import my_vpn_router
@@ -41,7 +42,7 @@ dp.include_router(instr_router)
 dp.include_router(main_router)
 dp.include_router(my_vpn_router)
 dp.include_router(puy_router)
-
+dp.include_router(admin_router)
 dp.include_router(referal_router)
 dp.include_router(time_router)
 dp.include_router(handler_router)

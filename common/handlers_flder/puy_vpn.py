@@ -30,7 +30,7 @@ async def puy_vpn(callback: CallbackQuery, state: FSMContext):
     days = price[time_butt]
     await callback.message.edit_text('Спасибо за покупку!')
     time_shop = datetime.now()
-    new_date = time_shop.strftime('%Y-%m-%d %H:%M')
+    new_date = time_shop
     async with AsyncSessionMaker() as session:
         vpn = VPNService(session)
         sub = SubscrService(session)

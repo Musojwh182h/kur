@@ -20,7 +20,8 @@ async def history_shoping(callback: CallbackQuery):
                logger.info(f"Пользователь {callback.from_user.id} запросил историю покупок, но покупок не найдено.")
                return
         for shop in shops:
+            shop_date_str = shop.shop_date.strftime('%d.%m.%Y %H:%M') if shop.shop_date else '—'
             text = f'''
-Куплено в {shop.shop_date}.
+Куплено в {shop_date_str}.
 Потрачено {shop.money} Р.'''
             await callback.message.answer(text)

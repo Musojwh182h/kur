@@ -1,5 +1,6 @@
 from db.models import Shoping
 from sqlalchemy import select
+from datetime import datetime, timezone
 import logging
 logger = logging.getLogger(__name__)
 

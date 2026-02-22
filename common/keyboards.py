@@ -3,22 +3,25 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder, ReplyKeyboardBuilder
 
 
 
-inl = InlineKeyboardMarkup(inline_keyboard=[
-    [InlineKeyboardButton(text='Купить/Продлить💳', callback_data='buyvpn')],
-    [InlineKeyboardButton(text='Мой VPN📲', callback_data='my_prof_vpn')],
-    [InlineKeyboardButton(text='История покупок🛍️', callback_data='history_shop')],
-    [InlineKeyboardButton(text='Инструкция📖', callback_data='instructions')],
-    [InlineKeyboardButton(text='Реферальная система', callback_data='referal')],
-    [InlineKeyboardButton(text='Поддержка🛠️', callback_data='support', url='https://t.me/mdjabrailov')]
 
-])
+def inl():
+    kb = InlineKeyboardBuilder()
+    kb.button(text='Купить/Продлить💳', callback_data='buyvpn')
+    kb.button(text='История покупок🛍️', callback_data='history_shop')
+    kb.button(text='Мой VPN📲', callback_data='my_prof_vpn')
+    kb.button(text='Инструкция📖', callback_data='instructions')
+    kb.button(text='Реферальная система', callback_data='referal')
+    kb.button(text='Поддержка🛠️', callback_data='support', url='https://t.me/mdjabrailov')
+    kb.adjust(1)
+    return kb
+
 
 intsr = InlineKeyboardMarkup(inline_keyboard=[
     [InlineKeyboardButton(text='Android📱', callback_data='android')],
     [InlineKeyboardButton(text='IOS📱', callback_data='iphone')],
-    [InlineKeyboardButton(text='Windows 💻', callback_data='wimdows')],
-    [InlineKeyboardButton(text='macOS 💻', callback_data='macos')],
-    [InlineKeyboardButton(text='TV 🖥', callback_data='tv')]
+    [InlineKeyboardButton(text='Windows / Mac💻', callback_data='windows')],
+    [InlineKeyboardButton(text='TV 🖥', callback_data='tv')],
+    [InlineKeyboardButton(text='🏠Меню', callback_data='main_menu')]
 ])
 
 
@@ -43,3 +46,31 @@ def res():
     rp.button(text='restart')
     rp.adjust(1)
     return rp
+
+def admin_panel():
+    kb = InlineKeyboardBuilder()
+    kb.button(text='📊 Статистика', callback_data='static_users')
+    kb.button(text='VPN-операции', callback_data='vpn_operations')
+    kb.button(text='Рассылка', callback_data='mailing')
+    kb.adjust(1)
+    return kb
+
+def back_inst():
+    kb = InlineKeyboardBuilder()
+    kb.button(text='⬅Назад', callback_data='back_instr')
+    kb.adjust(1)
+    return kb
+
+def vpn_operations():
+    kb = InlineKeyboardBuilder()
+    kb.button(text='Продление подписки по Telegram ID', callback_data='extension_sub')
+    kb.button(text='Удалить пользователя по Telegram ID', callback_data='delete_user')
+    kb.adjust(1)
+    return kb
+
+def mailing_butt():
+    kb = InlineKeyboardBuilder()
+    kb.button(text='Истекает на днях', callback_data='expir_days')
+    kb.button(text='Осталось больше 7 дн', callback_data='more_sev_day')
+    return kb
+

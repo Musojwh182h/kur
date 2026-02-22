@@ -1,6 +1,6 @@
 import asyncio
 import os
-from datetime import UTC, datetime, timedelta
+from datetime import datetime, timedelta
 
 from dotenv import find_dotenv, load_dotenv
 from remnawave import RemnawaveSDK
@@ -28,7 +28,7 @@ async def create_or_get_user_by_tg(tg_id: int):
         if getattr(user, "username", None) == username:
             return user
 
-    expire_date = datetime.now(UTC) + timedelta(days=30)
+    expire_date = datetime.now() + timedelta(days=30)
     create_body = CreateUserRequestDto(
         username=username,
         expire_at=expire_date,

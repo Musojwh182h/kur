@@ -14,6 +14,5 @@ async def back(callback: CallbackQuery):
         photo=types.FSInputFile(
             path=photo_path
         ),
-        caption=text,
         parse_mode=ParseMode.HTML,
-        reply_markup=inl)
+        reply_markup=inl().as_markup())

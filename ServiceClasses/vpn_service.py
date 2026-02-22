@@ -2,7 +2,7 @@ import logging
 logger = logging.getLogger(__name__)
 from db.models import Vpn_Account, User
 import os
-from datetime import UTC, datetime, timedelta
+from datetime import datetime, timedelta
 from sqlalchemy import select
 from dotenv import find_dotenv, load_dotenv
 from remnawave import RemnawaveSDK
@@ -21,6 +21,12 @@ if not REMNAWAVE_BASE_URL or not REMNAWAVE_TOKEN:
     )
 rem = RemnawaveSDK(base_url=REMNAWAVE_BASE_URL, token=REMNAWAVE_TOKEN)
 
+
+def _safe_now(expire_at):
+    if expire_at is not None and expire_at.tzinfo is not None:
+        return datetime.now(expire_at.tzinfo)
+    return datetime.now()
+
 class VPNService: 
     def __init__(self, session):
         self.rem = rem
@@ -28,7 +34,7 @@ class VPNService:
 
     async def create_client(self, tg):
         username = str(tg)
-        expire_date = datetime.now(UTC) + timedelta(days=3)
+        expire_date = datetime.now() + timedelta(days=3)
 
         active_internal_squads = None
         if REMNAWAVE_INTERNAL_SQUAD_UUID:
@@ -60,11 +66,13 @@ class VPNService:
         )
         if vpn_account:
             vpn_account.uuid = str(rem_user.uuid)
+            vpn_account.vpn_tg_id = tg
             vpn_account.expired_at = rem_user.expire_at
             vpn_account.key = subscription.subscription_url
         else:
             vpn_account = Vpn_Account(
                 uuid=str(rem_user.uuid),
+                vpn_tg_id=tg,
                 expired_at=rem_user.expire_at,
                 key=subscription.subscription_url,
                 user_id=db_user.id,
@@ -111,8 +119,9 @@ class VPNService:
             return
 
         vpn_exp = await self.rem.users.get_user_by_uuid(str(vpn.uuid))
-        now = datetime.now(UTC)
-        expired = vpn_exp.expire_at or now
+        expired = vpn_exp.expire_at
+        now = _safe_now(expired)
+        expired = expired or now
 
         if expired < now:
             new_date = now + timedelta(days=days)
@@ -136,8 +145,9 @@ class VPNService:
             logger.warning('у пользователя нету впн')
             return
         vpn_exp = await self.rem.users.get_user_by_uuid(str(vpn.uuid))
-        now = datetime.now(UTC)
-        expired = vpn_exp.expire_at or now
+        expired = vpn_exp.expire_at
+        now = _safe_now(expired)
+        expired = expired or now
         if tg_user.bonus_given == True:
             logger.info(f"Бонус для пользователя {invited} уже был предоставлен. Повторное предоставление бонуса не разрешено.")
             return

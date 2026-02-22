@@ -39,6 +39,8 @@ async def my_vpn(callback: CallbackQuery):
             return
         if vpn.expired_at < now:
             await callback.message.answer(f'⏳ Ваша подписка истекла! Продлите чтобы продолжить',reply_markup=kb.as_markup())
+            sub.status = 'expired'
+            await session.commit()
             logger.info(f'Подписка истекла для пользователя: {tg_user}')
             return
         await callback.message.answer(f'⏳ Действует до: {vpn.expired_at}\n🔑 Ключ доступа:\n<pre>{vpn.key}</pre>\n❗️Просто нажмите на ключ один раз, чтобы скопировать его и начать пользоваться',

@@ -21,10 +21,20 @@ logger = logging.getLogger(__name__)
 
 
 start_router = Router()
-
+ADMIN = [
+    int(v.strip())
+    for v in os.getenv('ADMIN', '').split(',')
+    if v.strip().isdigit()
+]
 @start_router.message(CommandStart())
 async def start_cmd(message: Message, command: CommandObject):
     try:
+        kb = inl()
+        if message.from_user.id in ADMIN:
+            kb.button(text='🛠 Админ-панель', callback_data='admin')
+            kb.adjust(1)
+            
+    
         tg_user = message.from_user.id
         async with AsyncSessionMaker() as session:
             user = UserService(session)
@@ -64,15 +74,22 @@ async def start_cmd(message: Message, command: CommandObject):
                         return None
     
     
-    
-        await message.answer_photo(
-            photo=types.FSInputFile(
-                path=photo_path
-            ),
-            caption=text,
-            parse_mode=ParseMode.HTML,
-            reply_markup=inl
-        )
+        if not user_id:
+            await message.answer_photo(
+                photo=types.FSInputFile(
+                    path=photo_path
+                ),
+                caption=text,
+                parse_mode=ParseMode.HTML,
+                reply_markup=kb.as_markup())
+        else:
+            await message.answer_photo(
+                photo=types.FSInputFile(
+                    path=photo_path
+                ),
+                reply_markup=kb.as_markup()
+            )
+
 
     except Exception:
         await message.answer('Произошла неизвестная ошибка, перезайдите в бота по позже')
