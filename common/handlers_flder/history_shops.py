@@ -14,6 +14,9 @@ async def history_shoping(callback: CallbackQuery):
         user = UserService(session)
         shoping = ShopingService(session)
         user_id = await user.check_user(callback.from_user.id)
+        if not user_id:
+             await callback.message.answer('Попробуйте заново нажав /start')
+             return
         shops = await shoping.get_shoping(user_id)
         if not shops:
                await callback.message.answer('У вас пока нету покупок')

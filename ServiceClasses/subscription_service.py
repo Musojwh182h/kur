@@ -9,15 +9,23 @@ class SubscrService:
         self.session = session
 
     async def create_sub(self, tg_id):
-        
-        user = await self.session.scalar(select(User).where(User.telegram_id == tg_id))
-        sub = Subscription(created_at=datetime.now(), status='active', user_id=user.id)
-        self.session.add(sub)
-        await self.session.commit()
+        try:
+            user = await self.session.scalar(select(User).where(User.telegram_id == tg_id))
+            if not user:
+                return None
+            sub = Subscription(created_at=datetime.now(), status='active', user_id=user.id)
+            self.session.add(sub)
+            await self.session.commit()
+        except Exception as e:
+            logging.exception(e)
+            return None
 
     async def get_sub(self, tg):
-        user = await self.session.scalar(select(User).where(User.telegram_id == tg))
-        if not user:
+        try:
+            user = await self.session.scalar(select(User).where(User.telegram_id == tg))
+            if not user:
+                return None
+            return await self.session.scalar(select(Subscription).where(Subscription.user_id == user.id))
+        except Exception as e:
+            logging.exception(e)
             return None
-        return await self.session.scalar(select(Subscription).where(Subscription.user_id == user.id))
-    

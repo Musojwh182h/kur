@@ -52,6 +52,7 @@ def admin_panel():
     kb.button(text='📊 Статистика', callback_data='static_users')
     kb.button(text='VPN-операции', callback_data='vpn_operations')
     kb.button(text='Рассылка', callback_data='mailing')
+    kb.button(text='Назад', callback_data='main_menu')
     kb.adjust(1)
     return kb
 

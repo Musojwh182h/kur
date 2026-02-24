@@ -16,7 +16,7 @@ class ShopingService:
             logger.info(f"Покупка создана: пользователь {user.id}, сумма {money} Р., дата {shop_date}")
         except Exception as e:
             logger.error(f"Ошибка при создании записи о покупке: {e}")
-            raise
+            return None
 
     async def get_shoping(self, user):
         if not user:
@@ -29,6 +29,6 @@ class ShopingService:
             return shops
         except Exception as e:
             logger.error(f"Ошибка при получении покупок для пользователя {user.id}: {e}")
-            raise
+            return None
     
    

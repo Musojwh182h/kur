@@ -28085,3 +28085,1923 @@ TypeError: Message.edit_media() missing 1 required positional argument: 'media'
 2026-02-22 11:45:20,097 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
 2026-02-22 11:45:20,097 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
 2026-02-22 11:45:20,348 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - 'KUR VPN'
+2026-02-23 22:25:52,233 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-23 22:25:52,235 - apscheduler.scheduler - INFO - Added job "notifications" to job store "default"
+2026-02-23 22:25:52,236 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-23 22:25:52,236 - aiogram.dispatcher - INFO - Start polling
+2026-02-23 22:25:52,356 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 22:34:29,494 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 22:34:29,502 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 22:34:29,502 - sqlalchemy.engine.Engine - INFO - [generated in 0.00033s] (7946439246,)
+2026-02-23 22:34:29,518 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 22:34:29,518 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 22:34:46,906 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 22:34:46,907 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 22:34:46,907 - sqlalchemy.engine.Engine - INFO - [cached since 17.41s ago] (7946439246,)
+2026-02-23 22:34:46,908 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 22:34:46,908 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 22:35:02,718 - aiogram.event - INFO - Update id=66296133 is handled. Duration 33320 ms by bot id=8543122898
+2026-02-23 22:35:05,243 - aiogram.event - INFO - Update id=66296134 is handled. Duration 18337 ms by bot id=8543122898
+2026-02-23 22:44:06,463 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-02-23 22:44:06,463 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-23 22:45:07,484 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [None]
+2026-02-23 22:45:07,484 - aiogram.dispatcher - WARNING - Sleep for 1.041873 seconds and try again... (tryings = 1, bot id = 8543122898)
+2026-02-23 22:45:26,277 - aiogram.dispatcher - INFO - Connection established (tryings = 2, bot id = 8543122898)
+2026-02-23 22:45:39,747 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 22:45:39,747 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 22:45:39,747 - sqlalchemy.engine.Engine - INFO - [cached since 670.2s ago] (7946439246,)
+2026-02-23 22:45:39,749 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.created_at, subscriptions.status, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.user_id = ?
+2026-02-23 22:45:39,749 - sqlalchemy.engine.Engine - INFO - [generated in 0.00031s] (2,)
+2026-02-23 22:45:39,750 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 22:45:39,751 - sqlalchemy.engine.Engine - INFO - [cached since 670.2s ago] (7946439246,)
+2026-02-23 22:45:39,753 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-23 22:45:39,753 - sqlalchemy.engine.Engine - INFO - [generated in 0.00035s] (2,)
+2026-02-23 22:45:40,538 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 22:45:40,538 - aiogram.event - INFO - Update id=66296135 is handled. Duration 793 ms by bot id=8543122898
+2026-02-23 22:46:57,036 - aiogram.event - INFO - Update id=66296136 is handled. Duration 546 ms by bot id=8543122898
+2026-02-23 22:46:58,278 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 22:46:58,279 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 22:46:58,280 - sqlalchemy.engine.Engine - INFO - [cached since 748.8s ago] (7946439246,)
+2026-02-23 22:46:58,281 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.created_at, subscriptions.status, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.user_id = ?
+2026-02-23 22:46:58,282 - sqlalchemy.engine.Engine - INFO - [cached since 78.53s ago] (2,)
+2026-02-23 22:46:58,283 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 22:46:58,283 - sqlalchemy.engine.Engine - INFO - [cached since 748.8s ago] (7946439246,)
+2026-02-23 22:46:58,284 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-23 22:46:58,285 - sqlalchemy.engine.Engine - INFO - [cached since 78.53s ago] (2,)
+2026-02-23 22:46:59,299 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 22:46:59,299 - aiogram.event - INFO - Update id=66296137 is handled. Duration 1023 ms by bot id=8543122898
+2026-02-23 22:47:00,859 - aiogram.event - INFO - Update id=66296138 is handled. Duration 151 ms by bot id=8543122898
+2026-02-23 22:47:02,049 - aiogram.event - INFO - Update id=66296139 is handled. Duration 139 ms by bot id=8543122898
+2026-02-23 22:47:05,545 - aiogram.event - INFO - Update id=66296140 is handled. Duration 151 ms by bot id=8543122898
+2026-02-23 22:47:06,606 - aiogram.event - INFO - Update id=66296141 is handled. Duration 137 ms by bot id=8543122898
+2026-02-23 22:47:07,803 - aiogram.event - INFO - Update id=66296142 is handled. Duration 156 ms by bot id=8543122898
+2026-02-23 22:47:08,981 - aiogram.event - INFO - Update id=66296143 is handled. Duration 399 ms by bot id=8543122898
+2026-02-23 22:47:11,896 - aiogram.event - INFO - Update id=66296144 is handled. Duration 137 ms by bot id=8543122898
+2026-02-23 22:47:13,044 - aiogram.event - INFO - Update id=66296145 is handled. Duration 238 ms by bot id=8543122898
+2026-02-23 22:47:16,424 - aiogram.event - INFO - Update id=66296146 is handled. Duration 136 ms by bot id=8543122898
+2026-02-23 22:47:17,489 - aiogram.event - INFO - Update id=66296147 is handled. Duration 447 ms by bot id=8543122898
+2026-02-23 22:48:24,249 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 22:48:24,249 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 22:48:24,249 - sqlalchemy.engine.Engine - INFO - [cached since 834.7s ago] (7946439246,)
+2026-02-23 22:48:24,250 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 22:48:24,251 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 22:48:24,467 - aiogram.event - INFO - Update id=66296148 is handled. Duration 219 ms by bot id=8543122898
+2026-02-23 22:49:09,645 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-23 22:49:09,646 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-23 22:49:09,646 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-23 22:49:09,912 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 22:49:30,936 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-23 22:49:30,937 - apscheduler.scheduler - INFO - Added job "notifications" to job store "default"
+2026-02-23 22:49:30,938 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-23 22:49:30,938 - aiogram.dispatcher - INFO - Start polling
+2026-02-23 22:49:31,056 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 22:49:33,288 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 22:49:33,297 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 22:49:33,297 - sqlalchemy.engine.Engine - INFO - [generated in 0.00048s] (7946439246,)
+2026-02-23 22:49:33,299 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 22:49:33,299 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 22:49:34,085 - common.handlers_flder.start_cmd - ERROR - На стороне клиента Произошла неизвестная ошибка
+Traceback (most recent call last):
+  File "C:\Users\SKM\Desktop\KUR_VPN\common\handlers_flder\start_cmd.py", line 86, in start_cmd
+    await message.answer(
+          ~~~~~~~~~~~~~~^
+        reply_markup=kb.as_markup()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: Message.answer() missing 1 required positional argument: 'text'
+2026-02-23 22:49:34,086 - aiogram.event - INFO - Update id=66296150 is handled. Duration 802 ms by bot id=8543122898
+2026-02-23 22:50:02,244 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-23 22:50:02,245 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-23 22:50:02,245 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-23 22:50:02,506 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 22:50:06,773 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-23 22:50:06,774 - apscheduler.scheduler - INFO - Added job "notifications" to job store "default"
+2026-02-23 22:50:06,774 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-23 22:50:06,774 - aiogram.dispatcher - INFO - Start polling
+2026-02-23 22:50:06,892 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 22:50:07,915 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 22:50:07,923 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 22:50:07,924 - sqlalchemy.engine.Engine - INFO - [generated in 0.00044s] (7946439246,)
+2026-02-23 22:50:07,927 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 22:50:07,927 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 22:50:12,119 - common.handlers_flder.start_cmd - ERROR - На стороне клиента Произошла неизвестная ошибка
+Traceback (most recent call last):
+  File "C:\Users\SKM\Desktop\KUR_VPN\common\handlers_flder\start_cmd.py", line 86, in start_cmd
+    await message.answer(
+          ~~~~~~~~~~~~~~^
+        reply_markup=kb.as_markup()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: Message.answer() missing 1 required positional argument: 'text'
+2026-02-23 22:50:12,121 - aiogram.event - INFO - Update id=66296152 is handled. Duration 4208 ms by bot id=8543122898
+2026-02-23 22:50:36,260 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-23 22:50:36,261 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-23 22:50:36,261 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-23 22:50:36,522 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 22:50:41,290 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-23 22:50:41,291 - apscheduler.scheduler - INFO - Added job "notifications" to job store "default"
+2026-02-23 22:50:41,291 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-23 22:50:41,291 - aiogram.dispatcher - INFO - Start polling
+2026-02-23 22:50:41,409 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 22:50:44,259 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 22:50:44,268 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 22:50:44,268 - sqlalchemy.engine.Engine - INFO - [generated in 0.00033s] (7946439246,)
+2026-02-23 22:50:44,269 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 22:50:44,270 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 22:50:44,940 - aiogram.event - INFO - Update id=66296155 is handled. Duration 684 ms by bot id=8543122898
+2026-02-23 22:51:01,839 - aiogram.event - INFO - Update id=66296156 is handled. Duration 413 ms by bot id=8543122898
+2026-02-23 22:51:04,162 - aiogram.event - INFO - Update id=66296157 is handled. Duration 140 ms by bot id=8543122898
+2026-02-23 22:51:09,276 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 22:51:09,277 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 22:51:09,277 - sqlalchemy.engine.Engine - INFO - [cached since 25.01s ago] (7946439246,)
+2026-02-23 22:51:09,278 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 22:51:09,278 - sqlalchemy.engine.Engine - INFO - SELECT shoping.id, shoping.money, shoping.shop_date, shoping.user_id 
+FROM shoping 
+WHERE shoping.user_id = ?
+2026-02-23 22:51:09,279 - sqlalchemy.engine.Engine - INFO - [generated in 0.00031s] (2,)
+2026-02-23 22:51:09,280 - ServiceClasses.shoping_service - INFO - Получено 0 покупок для пользователя 2
+2026-02-23 22:51:09,452 - common.handlers_flder.history_shops - INFO - Пользователь 7946439246 запросил историю покупок, но покупок не найдено.
+2026-02-23 22:51:09,452 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 22:51:09,453 - aiogram.event - INFO - Update id=66296158 is handled. Duration 177 ms by bot id=8543122898
+2026-02-23 22:51:12,393 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 22:51:12,393 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 22:51:12,393 - sqlalchemy.engine.Engine - INFO - [cached since 28.13s ago] (7946439246,)
+2026-02-23 22:51:12,395 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.created_at, subscriptions.status, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.user_id = ?
+2026-02-23 22:51:12,395 - sqlalchemy.engine.Engine - INFO - [generated in 0.00035s] (2,)
+2026-02-23 22:51:12,396 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 22:51:12,397 - sqlalchemy.engine.Engine - INFO - [cached since 28.13s ago] (7946439246,)
+2026-02-23 22:51:12,398 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-23 22:51:12,399 - sqlalchemy.engine.Engine - INFO - [generated in 0.00067s] (2,)
+2026-02-23 22:51:12,716 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 22:51:12,717 - aiogram.event - INFO - Update id=66296159 is handled. Duration 325 ms by bot id=8543122898
+2026-02-23 22:51:15,106 - aiogram.event - INFO - Update id=66296160 is handled. Duration 141 ms by bot id=8543122898
+2026-02-23 22:51:19,216 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 22:51:19,216 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 22:51:19,217 - sqlalchemy.engine.Engine - INFO - [cached since 34.95s ago] (7946439246,)
+2026-02-23 22:51:19,217 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 22:51:19,218 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 22:51:19,395 - aiogram.event - INFO - Update id=66296161 is handled. Duration 180 ms by bot id=8543122898
+2026-02-23 22:51:21,836 - aiogram.event - INFO - Update id=66296162 is handled. Duration 174 ms by bot id=8543122898
+2026-02-23 22:56:19,764 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-23 22:56:19,765 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-23 22:56:19,765 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-23 22:56:20,022 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 22:56:24,812 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-23 22:56:24,813 - apscheduler.scheduler - INFO - Added job "notifications" to job store "default"
+2026-02-23 22:56:24,813 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-23 22:56:24,814 - aiogram.dispatcher - INFO - Start polling
+2026-02-23 22:56:24,933 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 22:56:30,943 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 22:56:30,950 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 22:56:30,950 - sqlalchemy.engine.Engine - INFO - [generated in 0.00028s] (7946439246,)
+2026-02-23 22:56:30,951 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 22:56:30,951 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 22:56:31,670 - aiogram.event - INFO - Update id=66296163 is handled. Duration 729 ms by bot id=8543122898
+2026-02-23 22:56:40,455 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 22:56:40,455 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 22:56:40,455 - sqlalchemy.engine.Engine - INFO - [cached since 9.506s ago] (8016999764,)
+2026-02-23 22:56:40,457 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 8016999764 найден в базе.
+2026-02-23 22:56:40,458 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 22:56:40,602 - aiogram.event - INFO - Update id=66296164 is handled. Duration 148 ms by bot id=8543122898
+2026-02-23 22:57:24,587 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-23 22:57:24,588 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-23 22:57:24,589 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-23 22:57:24,839 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 22:57:29,392 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-23 22:57:29,393 - apscheduler.scheduler - INFO - Added job "notifications" to job store "default"
+2026-02-23 22:57:29,394 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-23 22:57:29,394 - aiogram.dispatcher - INFO - Start polling
+2026-02-23 22:57:29,507 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 22:57:41,404 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 22:57:41,411 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 22:57:41,411 - sqlalchemy.engine.Engine - INFO - [generated in 0.00028s] (7946439246,)
+2026-02-23 22:57:41,412 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 22:57:41,412 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 22:57:42,133 - aiogram.event - INFO - Update id=66296165 is handled. Duration 731 ms by bot id=8543122898
+2026-02-23 22:59:35,884 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-23 22:59:35,885 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-23 22:59:35,885 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-23 22:59:36,140 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 22:59:40,730 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-23 22:59:40,730 - apscheduler.scheduler - INFO - Added job "notifications" to job store "default"
+2026-02-23 22:59:40,731 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-23 22:59:40,731 - aiogram.dispatcher - INFO - Start polling
+2026-02-23 22:59:40,843 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 22:59:45,177 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 22:59:45,184 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 22:59:45,184 - sqlalchemy.engine.Engine - INFO - [generated in 0.00033s] (7946439246,)
+2026-02-23 22:59:45,186 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 22:59:45,186 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 22:59:46,074 - aiogram.event - INFO - Update id=66296166 is handled. Duration 899 ms by bot id=8543122898
+2026-02-23 22:59:48,405 - aiogram.event - INFO - Update id=66296167 is handled. Duration 256 ms by bot id=8543122898
+2026-02-23 22:59:49,966 - aiogram.event - INFO - Update id=66296168 is handled. Duration 133 ms by bot id=8543122898
+2026-02-23 22:59:56,353 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 22:59:56,354 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 22:59:56,354 - sqlalchemy.engine.Engine - INFO - [cached since 11.17s ago] (7946439246,)
+2026-02-23 22:59:56,355 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.created_at, subscriptions.status, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.user_id = ?
+2026-02-23 22:59:56,356 - sqlalchemy.engine.Engine - INFO - [generated in 0.00030s] (2,)
+2026-02-23 22:59:56,357 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 22:59:56,357 - sqlalchemy.engine.Engine - INFO - [cached since 11.17s ago] (7946439246,)
+2026-02-23 22:59:56,358 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-23 22:59:56,358 - sqlalchemy.engine.Engine - INFO - [generated in 0.00031s] (2,)
+2026-02-23 22:59:56,521 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 22:59:56,522 - aiogram.event - INFO - Update id=66296169 is handled. Duration 170 ms by bot id=8543122898
+2026-02-23 22:59:58,072 - aiogram.event - INFO - Update id=66296170 is handled. Duration 152 ms by bot id=8543122898
+2026-02-23 23:00:13,667 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-23 23:00:13,668 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-23 23:00:13,668 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-23 23:00:13,923 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:00:18,567 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-23 23:00:18,568 - apscheduler.scheduler - INFO - Added job "notifications" to job store "default"
+2026-02-23 23:00:18,568 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-23 23:00:18,568 - aiogram.dispatcher - INFO - Start polling
+2026-02-23 23:00:18,678 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:00:19,958 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:00:19,968 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:00:19,968 - sqlalchemy.engine.Engine - INFO - [generated in 0.00035s] (7946439246,)
+2026-02-23 23:00:19,970 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 23:00:19,971 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:00:20,867 - aiogram.event - INFO - Update id=66296171 is handled. Duration 911 ms by bot id=8543122898
+2026-02-23 23:00:22,249 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:00:22,249 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:00:22,250 - sqlalchemy.engine.Engine - INFO - [cached since 2.282s ago] (7946439246,)
+2026-02-23 23:00:22,252 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.created_at, subscriptions.status, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.user_id = ?
+2026-02-23 23:00:22,252 - sqlalchemy.engine.Engine - INFO - [generated in 0.00036s] (2,)
+2026-02-23 23:00:22,253 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:00:22,253 - sqlalchemy.engine.Engine - INFO - [cached since 2.285s ago] (7946439246,)
+2026-02-23 23:00:22,255 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-23 23:00:22,255 - sqlalchemy.engine.Engine - INFO - [generated in 0.00045s] (2,)
+2026-02-23 23:00:22,423 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:00:22,424 - aiogram.event - INFO - Update id=66296172 is handled. Duration 176 ms by bot id=8543122898
+2026-02-23 23:00:23,247 - aiogram.event - INFO - Update id=66296173 is not handled. Duration 1 ms by bot id=8543122898
+2026-02-23 23:00:23,247 - aiogram.event - ERROR - Cause exception while process update id=66296173 by bot id=8543122898
+TypeError: 'InlineKeyboardBuilder' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\SKM\Desktop\KUR_VPN\common\handlers_flder\main_menu.py", line 33, in back
+    reply_markup=kb().as_markup())
+                 ~~^^
+TypeError: 'InlineKeyboardBuilder' object is not callable
+2026-02-23 23:00:34,843 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-23 23:00:34,844 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-23 23:00:34,845 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-23 23:00:35,099 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:00:40,073 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-23 23:00:40,074 - apscheduler.scheduler - INFO - Added job "notifications" to job store "default"
+2026-02-23 23:00:40,074 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-23 23:00:40,074 - aiogram.dispatcher - INFO - Start polling
+2026-02-23 23:00:40,328 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:00:40,569 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:00:40,578 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:00:40,578 - sqlalchemy.engine.Engine - INFO - [generated in 0.00040s] (7946439246,)
+2026-02-23 23:00:40,580 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 23:00:40,581 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:00:42,250 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:00:42,251 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:00:42,251 - sqlalchemy.engine.Engine - INFO - [cached since 1.673s ago] (7946439246,)
+2026-02-23 23:00:42,252 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 23:00:42,252 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:00:42,544 - aiogram.event - INFO - Update id=66296174 is handled. Duration 1976 ms by bot id=8543122898
+2026-02-23 23:00:43,031 - aiogram.event - INFO - Update id=66296175 is handled. Duration 781 ms by bot id=8543122898
+2026-02-23 23:00:44,557 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:00:44,558 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:00:44,558 - sqlalchemy.engine.Engine - INFO - [cached since 3.98s ago] (7946439246,)
+2026-02-23 23:00:44,560 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.created_at, subscriptions.status, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.user_id = ?
+2026-02-23 23:00:44,560 - sqlalchemy.engine.Engine - INFO - [generated in 0.00029s] (2,)
+2026-02-23 23:00:44,561 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:00:44,561 - sqlalchemy.engine.Engine - INFO - [cached since 3.983s ago] (7946439246,)
+2026-02-23 23:00:44,562 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-23 23:00:44,563 - sqlalchemy.engine.Engine - INFO - [generated in 0.00036s] (2,)
+2026-02-23 23:00:44,731 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:00:44,732 - aiogram.event - INFO - Update id=66296176 is handled. Duration 176 ms by bot id=8543122898
+2026-02-23 23:00:45,737 - aiogram.event - INFO - Update id=66296177 is handled. Duration 149 ms by bot id=8543122898
+2026-02-23 23:00:48,007 - aiogram.event - INFO - Update id=66296178 is handled. Duration 272 ms by bot id=8543122898
+2026-02-23 23:00:49,166 - aiogram.event - INFO - Update id=66296179 is handled. Duration 150 ms by bot id=8543122898
+2026-02-23 23:00:50,513 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:00:50,514 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:00:50,514 - sqlalchemy.engine.Engine - INFO - [cached since 9.936s ago] (7946439246,)
+2026-02-23 23:00:50,515 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 23:00:50,516 - sqlalchemy.engine.Engine - INFO - SELECT shoping.id, shoping.money, shoping.shop_date, shoping.user_id 
+FROM shoping 
+WHERE shoping.user_id = ?
+2026-02-23 23:00:50,517 - sqlalchemy.engine.Engine - INFO - [generated in 0.00056s] (2,)
+2026-02-23 23:00:50,519 - ServiceClasses.shoping_service - INFO - Получено 0 покупок для пользователя 2
+2026-02-23 23:00:50,917 - common.handlers_flder.history_shops - INFO - Пользователь 7946439246 запросил историю покупок, но покупок не найдено.
+2026-02-23 23:00:50,918 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:00:50,918 - aiogram.event - INFO - Update id=66296180 is handled. Duration 405 ms by bot id=8543122898
+2026-02-23 23:00:52,891 - aiogram.event - INFO - Update id=66296181 is handled. Duration 137 ms by bot id=8543122898
+2026-02-23 23:00:53,926 - aiogram.event - INFO - Update id=66296182 is handled. Duration 144 ms by bot id=8543122898
+2026-02-23 23:00:59,246 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:00:59,247 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:00:59,247 - sqlalchemy.engine.Engine - INFO - [cached since 18.67s ago] (7946439246,)
+2026-02-23 23:00:59,249 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 23:00:59,249 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:00:59,407 - aiogram.event - INFO - Update id=66296183 is handled. Duration 162 ms by bot id=8543122898
+2026-02-23 23:01:00,284 - aiogram.event - INFO - Update id=66296184 is handled. Duration 136 ms by bot id=8543122898
+2026-02-23 23:01:07,633 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:01:07,634 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:01:07,634 - sqlalchemy.engine.Engine - INFO - [cached since 27.06s ago] (8016999764,)
+2026-02-23 23:01:07,635 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 8016999764 найден в базе.
+2026-02-23 23:01:07,635 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:01:07,774 - aiogram.event - INFO - Update id=66296185 is handled. Duration 141 ms by bot id=8543122898
+2026-02-23 23:01:10,455 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:01:10,456 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:01:10,456 - sqlalchemy.engine.Engine - INFO - [cached since 29.88s ago] (8016999764,)
+2026-02-23 23:01:10,457 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.created_at, subscriptions.status, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.user_id = ?
+2026-02-23 23:01:10,457 - sqlalchemy.engine.Engine - INFO - [cached since 25.9s ago] (1,)
+2026-02-23 23:01:10,459 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:01:10,459 - sqlalchemy.engine.Engine - INFO - [cached since 29.88s ago] (8016999764,)
+2026-02-23 23:01:10,461 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-23 23:01:10,462 - sqlalchemy.engine.Engine - INFO - [cached since 25.9s ago] (1,)
+2026-02-23 23:01:10,635 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:01:10,636 - aiogram.event - INFO - Update id=66296186 is handled. Duration 183 ms by bot id=8543122898
+2026-02-23 23:01:11,532 - aiogram.event - INFO - Update id=66296187 is handled. Duration 150 ms by bot id=8543122898
+2026-02-23 23:01:13,606 - aiogram.event - INFO - Update id=66296188 is handled. Duration 272 ms by bot id=8543122898
+2026-02-23 23:01:14,367 - aiogram.event - INFO - Update id=66296189 is handled. Duration 142 ms by bot id=8543122898
+2026-02-23 23:01:16,124 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:01:16,124 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:01:16,124 - sqlalchemy.engine.Engine - INFO - [cached since 35.55s ago] (8016999764,)
+2026-02-23 23:01:16,125 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 8016999764 найден в базе.
+2026-02-23 23:01:16,125 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:01:16,356 - aiogram.event - INFO - Update id=66296190 is handled. Duration 234 ms by bot id=8543122898
+2026-02-23 23:01:17,254 - aiogram.event - INFO - Update id=66296191 is handled. Duration 237 ms by bot id=8543122898
+2026-02-23 23:02:10,249 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:02:10,250 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:02:10,250 - sqlalchemy.engine.Engine - INFO - [cached since 89.67s ago] (7946439246,)
+2026-02-23 23:02:10,252 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 23:02:10,252 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:02:10,253 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:02:10,253 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:02:10,253 - sqlalchemy.engine.Engine - INFO - [cached since 89.68s ago] (7946439246,)
+2026-02-23 23:02:10,255 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 23:02:10,255 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:02:10,394 - aiogram.event - INFO - Update id=66296192 is handled. Duration 145 ms by bot id=8543122898
+2026-02-23 23:02:11,094 - aiogram.event - INFO - Update id=66296193 is handled. Duration 844 ms by bot id=8543122898
+2026-02-23 23:02:17,258 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:02:17,258 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:02:17,258 - sqlalchemy.engine.Engine - INFO - [cached since 96.68s ago] (7946439246,)
+2026-02-23 23:02:17,259 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 23:02:17,259 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:02:17,398 - aiogram.event - INFO - Update id=66296194 is handled. Duration 141 ms by bot id=8543122898
+2026-02-23 23:02:20,406 - aiogram.event - INFO - Update id=66296195 is handled. Duration 162 ms by bot id=8543122898
+2026-02-23 23:03:54,763 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-23 23:03:54,764 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-23 23:03:54,764 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-23 23:03:55,022 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:04:00,443 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-23 23:04:00,443 - apscheduler.scheduler - INFO - Added job "notifications" to job store "default"
+2026-02-23 23:04:00,443 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-23 23:04:00,444 - aiogram.dispatcher - INFO - Start polling
+2026-02-23 23:04:00,577 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:04:03,233 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:04:03,240 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:04:03,240 - sqlalchemy.engine.Engine - INFO - [generated in 0.00036s] (7946439246,)
+2026-02-23 23:04:03,243 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 23:04:03,243 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:04:03,964 - aiogram.event - INFO - Update id=66296197 is handled. Duration 733 ms by bot id=8543122898
+2026-02-23 23:04:05,990 - aiogram.event - INFO - Update id=66296198 is handled. Duration 135 ms by bot id=8543122898
+2026-02-23 23:06:01,476 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-23 23:06:01,476 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-23 23:06:01,477 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-23 23:06:01,738 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:06:06,781 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-23 23:06:06,782 - apscheduler.scheduler - INFO - Added job "notifications" to job store "default"
+2026-02-23 23:06:06,782 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-23 23:06:06,783 - aiogram.dispatcher - INFO - Start polling
+2026-02-23 23:06:06,897 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:06:09,785 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:06:09,792 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:06:09,793 - sqlalchemy.engine.Engine - INFO - [generated in 0.00044s] (7946439246,)
+2026-02-23 23:06:09,794 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 23:06:09,794 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:06:10,772 - aiogram.event - INFO - Update id=66296200 is handled. Duration 989 ms by bot id=8543122898
+2026-02-23 23:06:11,780 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:06:11,781 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2026-02-23 23:06:11,781 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:06:11,783 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("subscriptions")
+2026-02-23 23:06:11,784 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:06:11,785 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("vpn_accounts")
+2026-02-23 23:06:11,785 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:06:11,786 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("shoping")
+2026-02-23 23:06:11,786 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:06:11,787 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("referals")
+2026-02-23 23:06:11,787 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:06:11,789 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE referals
+2026-02-23 23:06:11,789 - sqlalchemy.engine.Engine - INFO - [no key 0.00045s] ()
+2026-02-23 23:06:11,808 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE shoping
+2026-02-23 23:06:11,809 - sqlalchemy.engine.Engine - INFO - [no key 0.00023s] ()
+2026-02-23 23:06:11,816 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE vpn_accounts
+2026-02-23 23:06:11,816 - sqlalchemy.engine.Engine - INFO - [no key 0.00020s] ()
+2026-02-23 23:06:11,824 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE subscriptions
+2026-02-23 23:06:11,824 - sqlalchemy.engine.Engine - INFO - [no key 0.00022s] ()
+2026-02-23 23:06:11,833 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE users
+2026-02-23 23:06:11,834 - sqlalchemy.engine.Engine - INFO - [no key 0.00036s] ()
+2026-02-23 23:06:11,845 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2026-02-23 23:06:11,845 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:06:11,846 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("users")
+2026-02-23 23:06:11,846 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:06:11,847 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("subscriptions")
+2026-02-23 23:06:11,847 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:06:11,847 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("subscriptions")
+2026-02-23 23:06:11,847 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:06:11,848 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("vpn_accounts")
+2026-02-23 23:06:11,848 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:06:11,848 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("vpn_accounts")
+2026-02-23 23:06:11,849 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:06:11,849 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("shoping")
+2026-02-23 23:06:11,849 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:06:11,850 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("shoping")
+2026-02-23 23:06:11,850 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:06:11,852 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("referals")
+2026-02-23 23:06:11,852 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:06:11,853 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("referals")
+2026-02-23 23:06:11,853 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:06:11,853 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	telegram_id BIGINT NOT NULL, 
+	reg_date DATETIME NOT NULL, 
+	referal_count INTEGER NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2026-02-23 23:06:11,854 - sqlalchemy.engine.Engine - INFO - [no key 0.00023s] ()
+2026-02-23 23:06:11,863 - sqlalchemy.engine.Engine - INFO - CREATE UNIQUE INDEX ix_users_telegram_id ON users (telegram_id)
+2026-02-23 23:06:11,864 - sqlalchemy.engine.Engine - INFO - [no key 0.00022s] ()
+2026-02-23 23:06:11,873 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE subscriptions (
+	id INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	status VARCHAR NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2026-02-23 23:06:11,873 - sqlalchemy.engine.Engine - INFO - [no key 0.00031s] ()
+2026-02-23 23:06:11,884 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE vpn_accounts (
+	id INTEGER NOT NULL, 
+	vpn_tg_id BIGINT NOT NULL, 
+	"key" VARCHAR NOT NULL, 
+	uuid VARCHAR NOT NULL, 
+	expired_at DATETIME NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (vpn_tg_id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2026-02-23 23:06:11,884 - sqlalchemy.engine.Engine - INFO - [no key 0.00055s] ()
+2026-02-23 23:06:11,894 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE shoping (
+	id INTEGER NOT NULL, 
+	money INTEGER NOT NULL, 
+	shop_date DATETIME NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2026-02-23 23:06:11,894 - sqlalchemy.engine.Engine - INFO - [no key 0.00031s] ()
+2026-02-23 23:06:11,904 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE referals (
+	id INTEGER NOT NULL, 
+	invited_by_tg_id BIGINT NOT NULL, 
+	ref_tg_id BIGINT NOT NULL, 
+	bonus_given BOOLEAN NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (ref_tg_id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2026-02-23 23:06:11,905 - sqlalchemy.engine.Engine - INFO - [no key 0.00052s] ()
+2026-02-23 23:06:11,915 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:06:11,916 - aiogram.event - INFO - Update id=66296201 is handled. Duration 276 ms by bot id=8543122898
+2026-02-23 23:06:14,111 - aiogram.event - INFO - Update id=66296202 is handled. Duration 146 ms by bot id=8543122898
+2026-02-23 23:06:16,420 - aiogram.event - INFO - Update id=66296203 is handled. Duration 135 ms by bot id=8543122898
+2026-02-23 23:06:19,641 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:06:19,642 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:06:19,642 - sqlalchemy.engine.Engine - INFO - [cached since 9.85s ago] (7946439246,)
+2026-02-23 23:06:19,644 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (telegram_id, reg_date, referal_count) VALUES (?, ?, ?)
+2026-02-23 23:06:19,644 - sqlalchemy.engine.Engine - INFO - [generated in 0.00032s] (7946439246, '2026-02-23 23:06:19.643386', 0)
+2026-02-23 23:06:19,646 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:06:19,657 - ServiceClasses.user_service - INFO - Новый пользователь создан: Telegram ID 7946439246
+2026-02-23 23:06:19,657 - common.handlers_flder.start_cmd - INFO - Пользователь с Telegram ID 7946439246 создан в базе данных.
+2026-02-23 23:06:20,627 - httpx - INFO - HTTP Request: POST https://admin.kurvpn.tech/api/users "HTTP/1.1 400 Bad Request"
+2026-02-23 23:06:20,732 - httpx - INFO - HTTP Request: GET https://admin.kurvpn.tech/api/users/by-username/7946439246 "HTTP/1.1 200 OK"
+2026-02-23 23:06:20,845 - httpx - INFO - HTTP Request: GET https://admin.kurvpn.tech/api/subscriptions/by-uuid/34a59fca-d222-490a-bcfe-7e865b27734a "HTTP/1.1 200 OK"
+2026-02-23 23:06:20,846 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:06:20,846 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:06:20,846 - sqlalchemy.engine.Engine - INFO - [cached since 11.05s ago] (7946439246,)
+2026-02-23 23:06:20,848 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-23 23:06:20,848 - sqlalchemy.engine.Engine - INFO - [generated in 0.00021s] (1,)
+2026-02-23 23:06:20,849 - sqlalchemy.engine.Engine - INFO - INSERT INTO vpn_accounts (vpn_tg_id, "key", uuid, expired_at, user_id) VALUES (?, ?, ?, ?, ?)
+2026-02-23 23:06:20,849 - sqlalchemy.engine.Engine - INFO - [generated in 0.00019s] (7946439246, 'https://sub.kurvpn.tech/gTfXyACph5fJCMee', '34a59fca-d222-490a-bcfe-7e865b27734a', '2026-04-25 13:17:04.540000', 1)
+2026-02-23 23:06:20,850 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:06:20,860 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:06:20,860 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:06:20,860 - sqlalchemy.engine.Engine - INFO - [cached since 11.07s ago] (7946439246,)
+2026-02-23 23:06:20,862 - sqlalchemy.engine.Engine - INFO - INSERT INTO subscriptions (created_at, status, user_id) VALUES (?, ?, ?)
+2026-02-23 23:06:20,862 - sqlalchemy.engine.Engine - INFO - [generated in 0.00028s] ('2026-02-23 23:06:20.861827', 'active', 1)
+2026-02-23 23:06:20,864 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:06:20,872 - common.handlers_flder.start_cmd - INFO - Подписка создана для пользователя: 7946439246
+2026-02-23 23:06:21,014 - common.handlers_flder.start_cmd - ERROR - На стороне клиента Произошла неизвестная ошибка
+Traceback (most recent call last):
+  File "C:\Users\SKM\Desktop\KUR_VPN\common\handlers_flder\start_cmd.py", line 82, in start_cmd
+    await message.answer(
+          ~~~~~~~~~~~~~~^
+        caption=text,
+        ^^^^^^^^^^^^^
+        reply_markup=kb.as_markup())
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Message.answer() missing 1 required positional argument: 'text'
+2026-02-23 23:06:21,015 - aiogram.event - INFO - Update id=66296204 is handled. Duration 1374 ms by bot id=8543122898
+2026-02-23 23:06:59,867 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-23 23:06:59,868 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-23 23:06:59,868 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-23 23:07:00,124 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:07:04,719 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-23 23:07:04,720 - apscheduler.scheduler - INFO - Added job "notifications" to job store "default"
+2026-02-23 23:07:04,721 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-23 23:07:04,721 - aiogram.dispatcher - INFO - Start polling
+2026-02-23 23:07:04,840 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:07:05,045 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:07:05,052 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:07:05,052 - sqlalchemy.engine.Engine - INFO - [generated in 0.00038s] (7946439246,)
+2026-02-23 23:07:05,055 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 23:07:05,055 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:07:05,845 - aiogram.event - INFO - Update id=66296205 is handled. Duration 802 ms by bot id=8543122898
+2026-02-23 23:07:08,770 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:07:08,771 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2026-02-23 23:07:08,771 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:07:08,772 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("subscriptions")
+2026-02-23 23:07:08,772 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:07:08,773 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("vpn_accounts")
+2026-02-23 23:07:08,773 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:07:08,774 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("shoping")
+2026-02-23 23:07:08,775 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:07:08,775 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("referals")
+2026-02-23 23:07:08,777 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:07:08,778 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE referals
+2026-02-23 23:07:08,778 - sqlalchemy.engine.Engine - INFO - [no key 0.00037s] ()
+2026-02-23 23:07:08,791 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE shoping
+2026-02-23 23:07:08,791 - sqlalchemy.engine.Engine - INFO - [no key 0.00030s] ()
+2026-02-23 23:07:08,802 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE vpn_accounts
+2026-02-23 23:07:08,802 - sqlalchemy.engine.Engine - INFO - [no key 0.00028s] ()
+2026-02-23 23:07:08,812 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE subscriptions
+2026-02-23 23:07:08,812 - sqlalchemy.engine.Engine - INFO - [no key 0.00025s] ()
+2026-02-23 23:07:08,822 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE users
+2026-02-23 23:07:08,822 - sqlalchemy.engine.Engine - INFO - [no key 0.00025s] ()
+2026-02-23 23:07:08,832 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2026-02-23 23:07:08,832 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:07:08,833 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("users")
+2026-02-23 23:07:08,833 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:07:08,833 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("subscriptions")
+2026-02-23 23:07:08,833 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:07:08,834 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("subscriptions")
+2026-02-23 23:07:08,834 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:07:08,834 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("vpn_accounts")
+2026-02-23 23:07:08,835 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:07:08,835 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("vpn_accounts")
+2026-02-23 23:07:08,835 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:07:08,836 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("shoping")
+2026-02-23 23:07:08,836 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:07:08,836 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("shoping")
+2026-02-23 23:07:08,836 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:07:08,837 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("referals")
+2026-02-23 23:07:08,837 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:07:08,838 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("referals")
+2026-02-23 23:07:08,838 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:07:08,839 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	telegram_id BIGINT NOT NULL, 
+	reg_date DATETIME NOT NULL, 
+	referal_count INTEGER NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2026-02-23 23:07:08,839 - sqlalchemy.engine.Engine - INFO - [no key 0.00025s] ()
+2026-02-23 23:07:08,849 - sqlalchemy.engine.Engine - INFO - CREATE UNIQUE INDEX ix_users_telegram_id ON users (telegram_id)
+2026-02-23 23:07:08,849 - sqlalchemy.engine.Engine - INFO - [no key 0.00023s] ()
+2026-02-23 23:07:08,860 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE subscriptions (
+	id INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	status VARCHAR NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2026-02-23 23:07:08,860 - sqlalchemy.engine.Engine - INFO - [no key 0.00037s] ()
+2026-02-23 23:07:08,871 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE vpn_accounts (
+	id INTEGER NOT NULL, 
+	vpn_tg_id BIGINT NOT NULL, 
+	"key" VARCHAR NOT NULL, 
+	uuid VARCHAR NOT NULL, 
+	expired_at DATETIME NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (vpn_tg_id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2026-02-23 23:07:08,871 - sqlalchemy.engine.Engine - INFO - [no key 0.00034s] ()
+2026-02-23 23:07:08,882 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE shoping (
+	id INTEGER NOT NULL, 
+	money INTEGER NOT NULL, 
+	shop_date DATETIME NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2026-02-23 23:07:08,882 - sqlalchemy.engine.Engine - INFO - [no key 0.00033s] ()
+2026-02-23 23:07:08,893 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE referals (
+	id INTEGER NOT NULL, 
+	invited_by_tg_id BIGINT NOT NULL, 
+	ref_tg_id BIGINT NOT NULL, 
+	bonus_given BOOLEAN NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (ref_tg_id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2026-02-23 23:07:08,893 - sqlalchemy.engine.Engine - INFO - [no key 0.00040s] ()
+2026-02-23 23:07:08,904 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:07:08,904 - aiogram.event - INFO - Update id=66296206 is handled. Duration 268 ms by bot id=8543122898
+2026-02-23 23:07:11,293 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:07:11,294 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:07:11,294 - sqlalchemy.engine.Engine - INFO - [cached since 6.242s ago] (7946439246,)
+2026-02-23 23:07:11,296 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (telegram_id, reg_date, referal_count) VALUES (?, ?, ?)
+2026-02-23 23:07:11,296 - sqlalchemy.engine.Engine - INFO - [generated in 0.00028s] (7946439246, '2026-02-23 23:07:11.295550', 0)
+2026-02-23 23:07:11,297 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:07:11,309 - ServiceClasses.user_service - INFO - Новый пользователь создан: Telegram ID 7946439246
+2026-02-23 23:07:11,310 - common.handlers_flder.start_cmd - INFO - Пользователь с Telegram ID 7946439246 создан в базе данных.
+2026-02-23 23:07:12,068 - httpx - INFO - HTTP Request: POST https://admin.kurvpn.tech/api/users "HTTP/1.1 400 Bad Request"
+2026-02-23 23:07:12,168 - httpx - INFO - HTTP Request: GET https://admin.kurvpn.tech/api/users/by-username/7946439246 "HTTP/1.1 200 OK"
+2026-02-23 23:07:12,270 - httpx - INFO - HTTP Request: GET https://admin.kurvpn.tech/api/subscriptions/by-uuid/34a59fca-d222-490a-bcfe-7e865b27734a "HTTP/1.1 200 OK"
+2026-02-23 23:07:12,270 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:07:12,271 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:07:12,271 - sqlalchemy.engine.Engine - INFO - [cached since 7.219s ago] (7946439246,)
+2026-02-23 23:07:12,272 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-23 23:07:12,273 - sqlalchemy.engine.Engine - INFO - [generated in 0.00027s] (1,)
+2026-02-23 23:07:12,274 - sqlalchemy.engine.Engine - INFO - INSERT INTO vpn_accounts (vpn_tg_id, "key", uuid, expired_at, user_id) VALUES (?, ?, ?, ?, ?)
+2026-02-23 23:07:12,274 - sqlalchemy.engine.Engine - INFO - [generated in 0.00038s] (7946439246, 'https://sub.kurvpn.tech/gTfXyACph5fJCMee', '34a59fca-d222-490a-bcfe-7e865b27734a', '2026-04-25 13:17:04.540000', 1)
+2026-02-23 23:07:12,277 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:07:12,289 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:07:12,290 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:07:12,290 - sqlalchemy.engine.Engine - INFO - [cached since 7.238s ago] (7946439246,)
+2026-02-23 23:07:12,292 - sqlalchemy.engine.Engine - INFO - INSERT INTO subscriptions (created_at, status, user_id) VALUES (?, ?, ?)
+2026-02-23 23:07:12,292 - sqlalchemy.engine.Engine - INFO - [generated in 0.00026s] ('2026-02-23 23:07:12.291568', 'active', 1)
+2026-02-23 23:07:12,293 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:07:12,302 - common.handlers_flder.start_cmd - INFO - Подписка создана для пользователя: 7946439246
+2026-02-23 23:07:12,439 - aiogram.event - INFO - Update id=66296207 is handled. Duration 1146 ms by bot id=8543122898
+2026-02-23 23:07:58,547 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-23 23:07:58,547 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-23 23:07:58,547 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-23 23:07:58,802 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:08:09,146 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-23 23:08:09,147 - apscheduler.scheduler - INFO - Added job "notifications" to job store "default"
+2026-02-23 23:08:09,147 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-23 23:08:09,147 - aiogram.dispatcher - INFO - Start polling
+2026-02-23 23:08:09,255 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:08:11,940 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:08:11,947 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:08:11,947 - sqlalchemy.engine.Engine - INFO - [generated in 0.00039s] (7946439246,)
+2026-02-23 23:08:11,950 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 23:08:11,950 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:08:12,698 - aiogram.event - INFO - Update id=66296210 is handled. Duration 760 ms by bot id=8543122898
+2026-02-23 23:08:26,751 - aiogram.event - INFO - Update id=66296211 is handled. Duration 200 ms by bot id=8543122898
+2026-02-23 23:08:28,037 - aiogram.event - INFO - Update id=66296212 is handled. Duration 151 ms by bot id=8543122898
+2026-02-23 23:08:29,918 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:08:29,918 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2026-02-23 23:08:29,918 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:08:29,919 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("subscriptions")
+2026-02-23 23:08:29,920 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:08:29,920 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("vpn_accounts")
+2026-02-23 23:08:29,920 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:08:29,921 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("shoping")
+2026-02-23 23:08:29,921 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:08:29,922 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("referals")
+2026-02-23 23:08:29,922 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:08:29,923 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE referals
+2026-02-23 23:08:29,924 - sqlalchemy.engine.Engine - INFO - [no key 0.00098s] ()
+2026-02-23 23:08:29,939 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE shoping
+2026-02-23 23:08:29,939 - sqlalchemy.engine.Engine - INFO - [no key 0.00029s] ()
+2026-02-23 23:08:29,948 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE vpn_accounts
+2026-02-23 23:08:29,948 - sqlalchemy.engine.Engine - INFO - [no key 0.00021s] ()
+2026-02-23 23:08:29,959 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE subscriptions
+2026-02-23 23:08:29,959 - sqlalchemy.engine.Engine - INFO - [no key 0.00029s] ()
+2026-02-23 23:08:29,969 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE users
+2026-02-23 23:08:29,969 - sqlalchemy.engine.Engine - INFO - [no key 0.00025s] ()
+2026-02-23 23:08:29,979 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2026-02-23 23:08:29,980 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:08:29,980 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("users")
+2026-02-23 23:08:29,980 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:08:29,981 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("subscriptions")
+2026-02-23 23:08:29,981 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:08:29,981 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("subscriptions")
+2026-02-23 23:08:29,982 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:08:29,982 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("vpn_accounts")
+2026-02-23 23:08:29,982 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:08:29,983 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("vpn_accounts")
+2026-02-23 23:08:29,983 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:08:29,984 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("shoping")
+2026-02-23 23:08:29,984 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:08:29,984 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("shoping")
+2026-02-23 23:08:29,984 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:08:29,985 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("referals")
+2026-02-23 23:08:29,985 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:08:29,986 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("referals")
+2026-02-23 23:08:29,986 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:08:29,987 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	telegram_id BIGINT NOT NULL, 
+	reg_date DATETIME NOT NULL, 
+	referal_count INTEGER NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2026-02-23 23:08:29,987 - sqlalchemy.engine.Engine - INFO - [no key 0.00029s] ()
+2026-02-23 23:08:29,997 - sqlalchemy.engine.Engine - INFO - CREATE UNIQUE INDEX ix_users_telegram_id ON users (telegram_id)
+2026-02-23 23:08:29,997 - sqlalchemy.engine.Engine - INFO - [no key 0.00023s] ()
+2026-02-23 23:08:30,007 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE subscriptions (
+	id INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	status VARCHAR NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2026-02-23 23:08:30,008 - sqlalchemy.engine.Engine - INFO - [no key 0.00031s] ()
+2026-02-23 23:08:30,017 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE vpn_accounts (
+	id INTEGER NOT NULL, 
+	vpn_tg_id BIGINT NOT NULL, 
+	"key" VARCHAR NOT NULL, 
+	uuid VARCHAR NOT NULL, 
+	expired_at DATETIME NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (vpn_tg_id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2026-02-23 23:08:30,018 - sqlalchemy.engine.Engine - INFO - [no key 0.00098s] ()
+2026-02-23 23:08:30,028 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE shoping (
+	id INTEGER NOT NULL, 
+	money INTEGER NOT NULL, 
+	shop_date DATETIME NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2026-02-23 23:08:30,028 - sqlalchemy.engine.Engine - INFO - [no key 0.00040s] ()
+2026-02-23 23:08:30,037 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE referals (
+	id INTEGER NOT NULL, 
+	invited_by_tg_id BIGINT NOT NULL, 
+	ref_tg_id BIGINT NOT NULL, 
+	bonus_given BOOLEAN NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (ref_tg_id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2026-02-23 23:08:30,038 - sqlalchemy.engine.Engine - INFO - [no key 0.00066s] ()
+2026-02-23 23:08:30,048 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:08:30,049 - aiogram.event - INFO - Update id=66296213 is handled. Duration 273 ms by bot id=8543122898
+2026-02-23 23:08:31,221 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:08:31,221 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:08:31,221 - sqlalchemy.engine.Engine - INFO - [cached since 19.27s ago] (7946439246,)
+2026-02-23 23:08:31,223 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:08:31,223 - sqlalchemy.engine.Engine - INFO - [cached since 19.28s ago] (7946439246,)
+2026-02-23 23:08:31,224 - ServiceClasses.vpn_service - WARNING - такого клиента нету
+2026-02-23 23:08:31,359 - common.handlers_flder.my_vpn - INFO - Пользователь 7946439246 попытался просмотреть профиль без активной подписки.
+2026-02-23 23:08:31,359 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:08:31,361 - aiogram.event - INFO - Update id=66296214 is handled. Duration 141 ms by bot id=8543122898
+2026-02-23 23:08:33,348 - aiogram.event - INFO - Update id=66296215 is handled. Duration 144 ms by bot id=8543122898
+2026-02-23 23:08:35,946 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:08:35,946 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:08:35,946 - sqlalchemy.engine.Engine - INFO - [cached since 24s ago] (7946439246,)
+2026-02-23 23:08:36,099 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:08:36,100 - aiogram.event - INFO - Update id=66296216 is handled. Duration 155 ms by bot id=8543122898
+2026-02-23 23:08:40,272 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:08:40,273 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:08:40,273 - sqlalchemy.engine.Engine - INFO - [cached since 28.33s ago] (7946439246,)
+2026-02-23 23:08:40,679 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:08:40,680 - aiogram.event - INFO - Update id=66296217 is handled. Duration 408 ms by bot id=8543122898
+2026-02-23 23:08:41,518 - aiogram.event - INFO - Update id=66296218 is handled. Duration 241 ms by bot id=8543122898
+2026-02-23 23:08:43,051 - aiogram.event - INFO - Update id=66296219 is handled. Duration 303 ms by bot id=8543122898
+2026-02-23 23:08:44,157 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:08:44,157 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:08:44,157 - sqlalchemy.engine.Engine - INFO - [cached since 32.21s ago] (7946439246,)
+2026-02-23 23:08:44,285 - common.handlers_flder.puy_vpn - WARNING - Попытка продлить подписку для несуществующего пользователя: 7946439246
+2026-02-23 23:08:44,285 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:08:44,286 - aiogram.event - INFO - Update id=66296220 is handled. Duration 282 ms by bot id=8543122898
+2026-02-23 23:08:49,433 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:08:49,433 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:08:49,434 - sqlalchemy.engine.Engine - INFO - [cached since 37.49s ago] (7946439246,)
+2026-02-23 23:08:49,435 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (telegram_id, reg_date, referal_count) VALUES (?, ?, ?)
+2026-02-23 23:08:49,435 - sqlalchemy.engine.Engine - INFO - [generated in 0.00031s] (7946439246, '2026-02-23 23:08:49.434728', 0)
+2026-02-23 23:08:49,437 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:08:49,448 - ServiceClasses.user_service - INFO - Новый пользователь создан: Telegram ID 7946439246
+2026-02-23 23:08:49,450 - common.handlers_flder.start_cmd - INFO - Пользователь с Telegram ID 7946439246 создан в базе данных.
+2026-02-23 23:08:50,254 - httpx - INFO - HTTP Request: POST https://admin.kurvpn.tech/api/users "HTTP/1.1 400 Bad Request"
+2026-02-23 23:08:50,355 - httpx - INFO - HTTP Request: GET https://admin.kurvpn.tech/api/users/by-username/7946439246 "HTTP/1.1 200 OK"
+2026-02-23 23:08:50,454 - httpx - INFO - HTTP Request: GET https://admin.kurvpn.tech/api/subscriptions/by-uuid/34a59fca-d222-490a-bcfe-7e865b27734a "HTTP/1.1 200 OK"
+2026-02-23 23:08:50,455 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:08:50,455 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:08:50,455 - sqlalchemy.engine.Engine - INFO - [cached since 38.51s ago] (7946439246,)
+2026-02-23 23:08:50,457 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-23 23:08:50,457 - sqlalchemy.engine.Engine - INFO - [generated in 0.00027s] (1,)
+2026-02-23 23:08:50,458 - sqlalchemy.engine.Engine - INFO - INSERT INTO vpn_accounts (vpn_tg_id, "key", uuid, expired_at, user_id) VALUES (?, ?, ?, ?, ?)
+2026-02-23 23:08:50,459 - sqlalchemy.engine.Engine - INFO - [generated in 0.00048s] (7946439246, 'https://sub.kurvpn.tech/gTfXyACph5fJCMee', '34a59fca-d222-490a-bcfe-7e865b27734a', '2026-04-25 13:17:04.540000', 1)
+2026-02-23 23:08:50,461 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:08:50,474 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:08:50,474 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:08:50,475 - sqlalchemy.engine.Engine - INFO - [cached since 38.53s ago] (7946439246,)
+2026-02-23 23:08:50,476 - sqlalchemy.engine.Engine - INFO - INSERT INTO subscriptions (created_at, status, user_id) VALUES (?, ?, ?)
+2026-02-23 23:08:50,476 - sqlalchemy.engine.Engine - INFO - [generated in 0.00030s] ('2026-02-23 23:08:50.475806', 'active', 1)
+2026-02-23 23:08:50,478 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:08:50,487 - common.handlers_flder.start_cmd - INFO - Подписка создана для пользователя: 7946439246
+2026-02-23 23:08:50,625 - aiogram.event - INFO - Update id=66296221 is handled. Duration 1193 ms by bot id=8543122898
+2026-02-23 23:08:52,143 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:08:52,144 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:08:52,144 - sqlalchemy.engine.Engine - INFO - [cached since 40.2s ago] (7946439246,)
+2026-02-23 23:08:52,145 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.created_at, subscriptions.status, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.user_id = ?
+2026-02-23 23:08:52,145 - sqlalchemy.engine.Engine - INFO - [generated in 0.00029s] (1,)
+2026-02-23 23:08:52,146 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:08:52,146 - sqlalchemy.engine.Engine - INFO - [cached since 40.2s ago] (7946439246,)
+2026-02-23 23:08:52,147 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-23 23:08:52,147 - sqlalchemy.engine.Engine - INFO - [cached since 1.691s ago] (1,)
+2026-02-23 23:08:52,316 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:08:52,318 - aiogram.event - INFO - Update id=66296222 is handled. Duration 175 ms by bot id=8543122898
+2026-02-23 23:09:43,179 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-23 23:09:43,180 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-23 23:09:43,180 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-23 23:09:43,437 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:10:14,619 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-23 23:10:14,620 - apscheduler.scheduler - INFO - Added job "notifications" to job store "default"
+2026-02-23 23:10:14,620 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-23 23:10:14,620 - aiogram.dispatcher - INFO - Start polling
+2026-02-23 23:10:14,732 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:10:17,232 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:10:17,242 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:10:17,243 - sqlalchemy.engine.Engine - INFO - [generated in 0.00152s] (7946439246,)
+2026-02-23 23:10:17,244 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 23:10:17,245 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:10:18,212 - aiogram.event - INFO - Update id=66296226 is handled. Duration 981 ms by bot id=8543122898
+2026-02-23 23:10:19,508 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:10:19,510 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2026-02-23 23:10:19,511 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:10:19,512 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("subscriptions")
+2026-02-23 23:10:19,512 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:10:19,513 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("vpn_accounts")
+2026-02-23 23:10:19,513 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:10:19,514 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("shoping")
+2026-02-23 23:10:19,515 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:10:19,517 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("referals")
+2026-02-23 23:10:19,518 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:10:19,520 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE referals
+2026-02-23 23:10:19,520 - sqlalchemy.engine.Engine - INFO - [no key 0.00033s] ()
+2026-02-23 23:10:19,532 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE shoping
+2026-02-23 23:10:19,533 - sqlalchemy.engine.Engine - INFO - [no key 0.00024s] ()
+2026-02-23 23:10:19,543 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE vpn_accounts
+2026-02-23 23:10:19,543 - sqlalchemy.engine.Engine - INFO - [no key 0.00021s] ()
+2026-02-23 23:10:19,553 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE subscriptions
+2026-02-23 23:10:19,553 - sqlalchemy.engine.Engine - INFO - [no key 0.00021s] ()
+2026-02-23 23:10:19,563 - sqlalchemy.engine.Engine - INFO - 
+DROP TABLE users
+2026-02-23 23:10:19,564 - sqlalchemy.engine.Engine - INFO - [no key 0.00020s] ()
+2026-02-23 23:10:19,574 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2026-02-23 23:10:19,574 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:10:19,574 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("users")
+2026-02-23 23:10:19,574 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:10:19,575 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("subscriptions")
+2026-02-23 23:10:19,575 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:10:19,575 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("subscriptions")
+2026-02-23 23:10:19,576 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:10:19,576 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("vpn_accounts")
+2026-02-23 23:10:19,576 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:10:19,577 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("vpn_accounts")
+2026-02-23 23:10:19,577 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:10:19,577 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("shoping")
+2026-02-23 23:10:19,578 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:10:19,578 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("shoping")
+2026-02-23 23:10:19,579 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:10:19,579 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("referals")
+2026-02-23 23:10:19,580 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:10:19,580 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("referals")
+2026-02-23 23:10:19,580 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2026-02-23 23:10:19,581 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	telegram_id BIGINT NOT NULL, 
+	reg_date DATETIME NOT NULL, 
+	referal_count INTEGER NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2026-02-23 23:10:19,581 - sqlalchemy.engine.Engine - INFO - [no key 0.00027s] ()
+2026-02-23 23:10:19,591 - sqlalchemy.engine.Engine - INFO - CREATE UNIQUE INDEX ix_users_telegram_id ON users (telegram_id)
+2026-02-23 23:10:19,591 - sqlalchemy.engine.Engine - INFO - [no key 0.00024s] ()
+2026-02-23 23:10:19,601 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE subscriptions (
+	id INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	status VARCHAR NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2026-02-23 23:10:19,602 - sqlalchemy.engine.Engine - INFO - [no key 0.00031s] ()
+2026-02-23 23:10:19,612 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE vpn_accounts (
+	id INTEGER NOT NULL, 
+	vpn_tg_id BIGINT NOT NULL, 
+	"key" VARCHAR NOT NULL, 
+	uuid VARCHAR NOT NULL, 
+	expired_at DATETIME NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (vpn_tg_id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2026-02-23 23:10:19,613 - sqlalchemy.engine.Engine - INFO - [no key 0.00033s] ()
+2026-02-23 23:10:19,624 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE shoping (
+	id INTEGER NOT NULL, 
+	money INTEGER NOT NULL, 
+	shop_date DATETIME NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2026-02-23 23:10:19,624 - sqlalchemy.engine.Engine - INFO - [no key 0.00033s] ()
+2026-02-23 23:10:19,635 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE referals (
+	id INTEGER NOT NULL, 
+	invited_by_tg_id BIGINT NOT NULL, 
+	ref_tg_id BIGINT NOT NULL, 
+	bonus_given BOOLEAN NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (ref_tg_id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2026-02-23 23:10:19,635 - sqlalchemy.engine.Engine - INFO - [no key 0.00036s] ()
+2026-02-23 23:10:19,645 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:10:19,646 - aiogram.event - INFO - Update id=66296227 is handled. Duration 273 ms by bot id=8543122898
+2026-02-23 23:10:23,534 - aiogram.event - INFO - Update id=66296228 is handled. Duration 376 ms by bot id=8543122898
+2026-02-23 23:10:24,693 - aiogram.event - INFO - Update id=66296229 is handled. Duration 320 ms by bot id=8543122898
+2026-02-23 23:10:25,512 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:10:25,513 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:10:25,514 - sqlalchemy.engine.Engine - INFO - [cached since 8.272s ago] (7946439246,)
+2026-02-23 23:10:25,704 - common.handlers_flder.puy_vpn - WARNING - Попытка продлить подписку для несуществующего пользователя: 7946439246
+2026-02-23 23:10:25,705 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:10:25,706 - aiogram.event - INFO - Update id=66296230 is handled. Duration 194 ms by bot id=8543122898
+2026-02-23 23:10:29,676 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:10:29,676 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:10:29,676 - sqlalchemy.engine.Engine - INFO - [cached since 12.43s ago] (7946439246,)
+2026-02-23 23:10:29,677 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:10:29,677 - sqlalchemy.engine.Engine - INFO - [cached since 12.44s ago] (7946439246,)
+2026-02-23 23:10:29,678 - ServiceClasses.vpn_service - WARNING - такого клиента нету
+2026-02-23 23:10:29,817 - common.handlers_flder.my_vpn - INFO - Пользователь 7946439246 попытался просмотреть профиль без активной подписки.
+2026-02-23 23:10:29,818 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:10:29,819 - aiogram.event - INFO - Update id=66296231 is handled. Duration 145 ms by bot id=8543122898
+2026-02-23 23:10:56,003 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:10:56,004 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:10:56,004 - sqlalchemy.engine.Engine - INFO - [cached since 38.76s ago] (7946439246,)
+2026-02-23 23:10:56,006 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (telegram_id, reg_date, referal_count) VALUES (?, ?, ?)
+2026-02-23 23:10:56,006 - sqlalchemy.engine.Engine - INFO - [generated in 0.00030s] (7946439246, '2026-02-23 23:10:56.005245', 0)
+2026-02-23 23:10:56,007 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:10:56,016 - ServiceClasses.user_service - INFO - Новый пользователь создан: Telegram ID 7946439246
+2026-02-23 23:10:56,017 - common.handlers_flder.start_cmd - INFO - Пользователь с Telegram ID 7946439246 создан в базе данных.
+2026-02-23 23:10:56,749 - httpx - INFO - HTTP Request: POST https://admin.kurvpn.tech/api/users "HTTP/1.1 400 Bad Request"
+2026-02-23 23:10:56,849 - httpx - INFO - HTTP Request: GET https://admin.kurvpn.tech/api/users/by-username/7946439246 "HTTP/1.1 200 OK"
+2026-02-23 23:10:56,949 - httpx - INFO - HTTP Request: GET https://admin.kurvpn.tech/api/subscriptions/by-uuid/34a59fca-d222-490a-bcfe-7e865b27734a "HTTP/1.1 200 OK"
+2026-02-23 23:10:56,952 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:10:56,953 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:10:56,953 - sqlalchemy.engine.Engine - INFO - [cached since 39.71s ago] (7946439246,)
+2026-02-23 23:10:56,954 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-23 23:10:56,954 - sqlalchemy.engine.Engine - INFO - [generated in 0.00031s] (1,)
+2026-02-23 23:10:56,957 - sqlalchemy.engine.Engine - INFO - INSERT INTO vpn_accounts (vpn_tg_id, "key", uuid, expired_at, user_id) VALUES (?, ?, ?, ?, ?)
+2026-02-23 23:10:56,957 - sqlalchemy.engine.Engine - INFO - [generated in 0.00039s] (7946439246, 'https://sub.kurvpn.tech/gTfXyACph5fJCMee', '34a59fca-d222-490a-bcfe-7e865b27734a', '2026-04-25 13:17:04.540000', 1)
+2026-02-23 23:10:56,959 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:10:56,972 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:10:56,973 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:10:56,973 - sqlalchemy.engine.Engine - INFO - [cached since 39.73s ago] (7946439246,)
+2026-02-23 23:10:56,974 - sqlalchemy.engine.Engine - INFO - INSERT INTO subscriptions (created_at, status, user_id) VALUES (?, ?, ?)
+2026-02-23 23:10:56,975 - sqlalchemy.engine.Engine - INFO - [generated in 0.00026s] ('2026-02-23 23:10:56.974417', 'active', 1)
+2026-02-23 23:10:56,976 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:10:56,985 - common.handlers_flder.start_cmd - INFO - Подписка создана для пользователя: 7946439246
+2026-02-23 23:10:57,126 - aiogram.event - INFO - Update id=66296232 is handled. Duration 1123 ms by bot id=8543122898
+2026-02-23 23:10:58,484 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:10:58,485 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:10:58,485 - sqlalchemy.engine.Engine - INFO - [cached since 41.24s ago] (7946439246,)
+2026-02-23 23:10:58,486 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.created_at, subscriptions.status, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.user_id = ?
+2026-02-23 23:10:58,486 - sqlalchemy.engine.Engine - INFO - [generated in 0.00022s] (1,)
+2026-02-23 23:10:58,487 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:10:58,487 - sqlalchemy.engine.Engine - INFO - [cached since 41.25s ago] (7946439246,)
+2026-02-23 23:10:58,488 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-23 23:10:58,488 - sqlalchemy.engine.Engine - INFO - [cached since 1.534s ago] (1,)
+2026-02-23 23:10:58,694 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:10:58,696 - aiogram.event - INFO - Update id=66296233 is handled. Duration 212 ms by bot id=8543122898
+2026-02-23 23:11:06,911 - aiogram.event - INFO - Update id=66296234 is handled. Duration 249 ms by bot id=8543122898
+2026-02-23 23:14:12,131 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-23 23:14:12,132 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-23 23:14:12,132 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-23 23:14:12,387 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:14:17,141 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-23 23:14:17,142 - apscheduler.scheduler - INFO - Added job "notifications" to job store "default"
+2026-02-23 23:14:17,143 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-23 23:14:17,143 - aiogram.dispatcher - INFO - Start polling
+2026-02-23 23:14:17,255 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:14:19,774 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:14:19,781 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:14:19,781 - sqlalchemy.engine.Engine - INFO - [generated in 0.00035s] (7946439246,)
+2026-02-23 23:14:19,783 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 23:14:19,784 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:14:41,792 - aiogram.event - INFO - Update id=66296235 is handled. Duration 22020 ms by bot id=8543122898
+2026-02-23 23:14:54,707 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-23 23:14:54,708 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-23 23:14:54,708 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-23 23:14:54,972 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:15:00,021 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-23 23:15:00,021 - apscheduler.scheduler - INFO - Added job "notifications" to job store "default"
+2026-02-23 23:15:00,022 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-23 23:15:00,022 - aiogram.dispatcher - INFO - Start polling
+2026-02-23 23:15:00,133 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:15:02,532 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:15:02,540 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:15:02,541 - sqlalchemy.engine.Engine - INFO - [generated in 0.00062s] (7946439246,)
+2026-02-23 23:15:02,542 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 23:15:02,543 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:15:03,337 - aiogram.event - INFO - Update id=66296238 is handled. Duration 807 ms by bot id=8543122898
+2026-02-23 23:15:06,035 - aiogram.event - INFO - Update id=66296239 is handled. Duration 260 ms by bot id=8543122898
+2026-02-23 23:15:07,385 - aiogram.event - INFO - Update id=66296240 is handled. Duration 246 ms by bot id=8543122898
+2026-02-23 23:15:08,130 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:15:08,130 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:15:08,131 - sqlalchemy.engine.Engine - INFO - [cached since 5.59s ago] (7946439246,)
+2026-02-23 23:15:08,132 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.created_at, subscriptions.status, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.user_id = ?
+2026-02-23 23:15:08,132 - sqlalchemy.engine.Engine - INFO - [generated in 0.00022s] (1,)
+2026-02-23 23:15:08,133 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:15:08,133 - sqlalchemy.engine.Engine - INFO - [cached since 5.593s ago] (7946439246,)
+2026-02-23 23:15:08,134 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-23 23:15:08,135 - sqlalchemy.engine.Engine - INFO - [generated in 0.00021s] (1,)
+2026-02-23 23:15:08,905 - httpx - INFO - HTTP Request: GET https://admin.kurvpn.tech/api/users/34a59fca-d222-490a-bcfe-7e865b27734a "HTTP/1.1 200 OK"
+2026-02-23 23:15:09,015 - httpx - INFO - HTTP Request: PATCH https://admin.kurvpn.tech/api/users "HTTP/1.1 200 OK"
+2026-02-23 23:15:09,017 - sqlalchemy.engine.Engine - INFO - UPDATE vpn_accounts SET expired_at=? WHERE vpn_accounts.id = ?
+2026-02-23 23:15:09,017 - sqlalchemy.engine.Engine - INFO - [generated in 0.00033s] ('2026-05-25 13:17:04.540000', 1)
+2026-02-23 23:15:09,018 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:15:09,029 - common.handlers_flder.puy_vpn - INFO - Подписка продлена на 30 дней для пользователя: 7946439246
+2026-02-23 23:15:09,030 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:15:09,030 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:15:09,030 - sqlalchemy.engine.Engine - INFO - [cached since 6.49s ago] (7946439246,)
+2026-02-23 23:15:09,031 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 23:15:09,032 - sqlalchemy.engine.Engine - INFO - INSERT INTO shoping (money, shop_date, user_id) VALUES (?, ?, ?)
+2026-02-23 23:15:09,032 - sqlalchemy.engine.Engine - INFO - [generated in 0.00026s] (149, '2026-02-23 23:15:08.130201', 1)
+2026-02-23 23:15:09,034 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:15:09,043 - ServiceClasses.shoping_service - INFO - Покупка создана: пользователь 1, сумма 149 Р., дата 2026-02-23 23:15:08.130201
+2026-02-23 23:15:09,045 - common.handlers_flder.puy_vpn - INFO - Запись о покупке добавлена для пользователя: 7946439246 с суммой: 149 Р. и датой: 2026-02-23 23:15:08.130201
+2026-02-23 23:15:09,176 - aiogram.event - INFO - Update id=66296241 is handled. Duration 1047 ms by bot id=8543122898
+2026-02-23 23:15:11,709 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:15:11,710 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:15:11,710 - sqlalchemy.engine.Engine - INFO - [cached since 9.17s ago] (7946439246,)
+2026-02-23 23:15:11,711 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.created_at, subscriptions.status, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.user_id = ?
+2026-02-23 23:15:11,712 - sqlalchemy.engine.Engine - INFO - [cached since 3.58s ago] (1,)
+2026-02-23 23:15:11,712 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:15:11,713 - sqlalchemy.engine.Engine - INFO - [cached since 9.172s ago] (7946439246,)
+2026-02-23 23:15:11,714 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-23 23:15:11,714 - sqlalchemy.engine.Engine - INFO - [cached since 3.579s ago] (1,)
+2026-02-23 23:15:11,874 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:15:11,875 - aiogram.event - INFO - Update id=66296242 is handled. Duration 170 ms by bot id=8543122898
+2026-02-23 23:15:15,582 - aiogram.event - INFO - Update id=66296243 is handled. Duration 324 ms by bot id=8543122898
+2026-02-23 23:16:46,259 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-23 23:16:46,259 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-23 23:16:46,260 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-23 23:16:46,526 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:16:51,190 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-23 23:16:51,190 - apscheduler.scheduler - INFO - Added job "notifications" to job store "default"
+2026-02-23 23:16:51,191 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-23 23:16:51,191 - aiogram.dispatcher - INFO - Start polling
+2026-02-23 23:16:51,308 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:16:52,980 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:16:52,987 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:16:52,987 - sqlalchemy.engine.Engine - INFO - [generated in 0.00036s] (7946439246,)
+2026-02-23 23:16:52,990 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.created_at, subscriptions.status, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.user_id = ?
+2026-02-23 23:16:52,991 - sqlalchemy.engine.Engine - INFO - [generated in 0.00066s] (1,)
+2026-02-23 23:16:52,993 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:16:52,995 - sqlalchemy.engine.Engine - INFO - [cached since 0.007902s ago] (7946439246,)
+2026-02-23 23:16:52,997 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-23 23:16:52,997 - sqlalchemy.engine.Engine - INFO - [generated in 0.00056s] (1,)
+2026-02-23 23:16:53,799 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:16:53,800 - aiogram.event - INFO - Update id=66296245 is handled. Duration 822 ms by bot id=8543122898
+2026-02-23 23:16:55,126 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:16:55,127 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:16:55,127 - sqlalchemy.engine.Engine - INFO - [cached since 2.14s ago] (7946439246,)
+2026-02-23 23:16:55,128 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 23:16:55,128 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:16:55,274 - aiogram.event - INFO - Update id=66296246 is handled. Duration 148 ms by bot id=8543122898
+2026-02-23 23:16:59,832 - aiogram.event - INFO - Update id=66296247 is handled. Duration 339 ms by bot id=8543122898
+2026-02-23 23:17:01,564 - aiogram.event - INFO - Update id=66296248 is handled. Duration 247 ms by bot id=8543122898
+2026-02-23 23:17:02,296 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:17:02,297 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:17:02,297 - sqlalchemy.engine.Engine - INFO - [cached since 9.311s ago] (7946439246,)
+2026-02-23 23:17:02,298 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.created_at, subscriptions.status, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.user_id = ?
+2026-02-23 23:17:02,298 - sqlalchemy.engine.Engine - INFO - [cached since 9.308s ago] (1,)
+2026-02-23 23:17:02,299 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:17:02,299 - sqlalchemy.engine.Engine - INFO - [cached since 9.313s ago] (7946439246,)
+2026-02-23 23:17:02,300 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-23 23:17:02,300 - sqlalchemy.engine.Engine - INFO - [cached since 9.303s ago] (1,)
+2026-02-23 23:17:03,177 - httpx - INFO - HTTP Request: GET https://admin.kurvpn.tech/api/users/34a59fca-d222-490a-bcfe-7e865b27734a "HTTP/1.1 200 OK"
+2026-02-23 23:17:03,279 - httpx - INFO - HTTP Request: PATCH https://admin.kurvpn.tech/api/users "HTTP/1.1 200 OK"
+2026-02-23 23:17:03,282 - sqlalchemy.engine.Engine - INFO - UPDATE vpn_accounts SET expired_at=? WHERE vpn_accounts.id = ?
+2026-02-23 23:17:03,283 - sqlalchemy.engine.Engine - INFO - [generated in 0.00042s] ('2026-11-21 13:17:04.540000', 1)
+2026-02-23 23:17:03,285 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:17:03,296 - common.handlers_flder.puy_vpn - INFO - Подписка продлена на 180 дней для пользователя: 7946439246
+2026-02-23 23:17:03,297 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:17:03,297 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:17:03,297 - sqlalchemy.engine.Engine - INFO - [cached since 10.31s ago] (7946439246,)
+2026-02-23 23:17:03,298 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 23:17:03,299 - sqlalchemy.engine.Engine - INFO - INSERT INTO shoping (money, shop_date, user_id) VALUES (?, ?, ?)
+2026-02-23 23:17:03,300 - sqlalchemy.engine.Engine - INFO - [generated in 0.00054s] (600, '2026-02-23 23:17:02.296743', 1)
+2026-02-23 23:17:03,302 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:17:03,311 - ServiceClasses.shoping_service - INFO - Покупка создана: пользователь 1, сумма 600 Р., дата 2026-02-23 23:17:02.296743
+2026-02-23 23:17:03,312 - common.handlers_flder.puy_vpn - INFO - Запись о покупке добавлена для пользователя: 7946439246 с суммой: 600 Р. и датой: 2026-02-23 23:17:02.296743
+2026-02-23 23:17:03,452 - aiogram.event - INFO - Update id=66296249 is handled. Duration 1157 ms by bot id=8543122898
+2026-02-23 23:17:21,746 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-23 23:17:21,747 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-23 23:17:21,747 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-23 23:17:22,002 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:17:27,320 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-23 23:17:27,321 - apscheduler.scheduler - INFO - Added job "notifications" to job store "default"
+2026-02-23 23:17:27,322 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-23 23:17:27,322 - aiogram.dispatcher - INFO - Start polling
+2026-02-23 23:17:27,655 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - '.'
+2026-02-23 23:17:30,681 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:17:30,690 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:17:30,690 - sqlalchemy.engine.Engine - INFO - [generated in 0.00041s] (7946439246,)
+2026-02-23 23:17:30,692 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 23:17:30,692 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-23 23:17:33,719 - aiogram.event - INFO - Update id=66296252 is handled. Duration 3040 ms by bot id=8543122898
+2026-02-23 23:17:38,366 - aiogram.event - INFO - Update id=66296253 is handled. Duration 310 ms by bot id=8543122898
+2026-02-23 23:17:40,627 - aiogram.event - INFO - Update id=66296254 is handled. Duration 242 ms by bot id=8543122898
+2026-02-23 23:17:41,449 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:17:41,450 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:17:41,450 - sqlalchemy.engine.Engine - INFO - [cached since 10.76s ago] (7946439246,)
+2026-02-23 23:17:41,452 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.created_at, subscriptions.status, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.user_id = ?
+2026-02-23 23:17:41,452 - sqlalchemy.engine.Engine - INFO - [generated in 0.00038s] (1,)
+2026-02-23 23:17:41,453 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:17:41,453 - sqlalchemy.engine.Engine - INFO - [cached since 10.76s ago] (7946439246,)
+2026-02-23 23:17:41,455 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-23 23:17:41,456 - sqlalchemy.engine.Engine - INFO - [generated in 0.00066s] (1,)
+2026-02-23 23:17:42,231 - httpx - INFO - HTTP Request: GET https://admin.kurvpn.tech/api/users/34a59fca-d222-490a-bcfe-7e865b27734a "HTTP/1.1 200 OK"
+2026-02-23 23:17:42,377 - httpx - INFO - HTTP Request: PATCH https://admin.kurvpn.tech/api/users "HTTP/1.1 200 OK"
+2026-02-23 23:17:42,378 - sqlalchemy.engine.Engine - INFO - UPDATE vpn_accounts SET expired_at=? WHERE vpn_accounts.id = ?
+2026-02-23 23:17:42,379 - sqlalchemy.engine.Engine - INFO - [generated in 0.00031s] ('2027-02-19 13:17:04.540000', 1)
+2026-02-23 23:17:42,380 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:17:42,390 - common.handlers_flder.puy_vpn - INFO - Подписка продлена на 90 дней для пользователя: 7946439246
+2026-02-23 23:17:42,391 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-23 23:17:42,391 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-23 23:17:42,392 - sqlalchemy.engine.Engine - INFO - [cached since 11.7s ago] (7946439246,)
+2026-02-23 23:17:42,392 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-23 23:17:42,394 - sqlalchemy.engine.Engine - INFO - INSERT INTO shoping (money, shop_date, user_id) VALUES (?, ?, ?)
+2026-02-23 23:17:42,395 - sqlalchemy.engine.Engine - INFO - [generated in 0.00078s] (350, '2026-02-23 23:17:41.449289', 1)
+2026-02-23 23:17:42,397 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-23 23:17:42,408 - ServiceClasses.shoping_service - INFO - Покупка создана: пользователь 1, сумма 350 Р., дата 2026-02-23 23:17:41.449289
+2026-02-23 23:17:42,408 - common.handlers_flder.puy_vpn - INFO - Запись о покупке добавлена для пользователя: 7946439246 с суммой: 350 Р. и датой: 2026-02-23 23:17:41.449289
+2026-02-23 23:17:42,581 - aiogram.event - INFO - Update id=66296255 is handled. Duration 1134 ms by bot id=8543122898
+2026-02-23 23:17:45,163 - aiogram.event - INFO - Update id=66296256 is handled. Duration 152 ms by bot id=8543122898
+2026-02-23 23:26:42,834 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-23 23:26:42,835 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-23 23:26:42,835 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-23 23:26:43,093 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - '.'
+2026-02-24 13:28:19,925 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-24 13:28:19,926 - apscheduler.scheduler - INFO - Added job "notifications" to job store "default"
+2026-02-24 13:28:19,926 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-24 13:28:19,926 - aiogram.dispatcher - INFO - Start polling
+2026-02-24 13:28:20,035 - aiogram.dispatcher - INFO - Run polling for bot @botintestin_bot id=8543122898 - '.'
+2026-02-24 13:28:20,241 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-24 13:28:20,250 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-24 13:28:20,250 - sqlalchemy.engine.Engine - INFO - [generated in 0.00037s] (7946439246,)
+2026-02-24 13:28:20,251 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-24 13:28:20,254 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-24 13:28:20,254 - sqlalchemy.engine.Engine - INFO - [cached since 0.004893s ago] (7946439246,)
+2026-02-24 13:28:20,285 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-24 13:28:20,285 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-24 13:28:20,301 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 7946439246 найден в базе.
+2026-02-24 13:28:20,301 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-24 13:28:23,261 - aiogram.event - INFO - Update id=66296258 is handled. Duration 3090 ms by bot id=8543122898
+2026-02-24 13:28:23,667 - aiogram.event - INFO - Update id=66296257 is handled. Duration 3501 ms by bot id=8543122898
+2026-02-24 13:28:34,302 - aiogram.event - INFO - Update id=66296259 is handled. Duration 253 ms by bot id=8543122898
+2026-02-24 13:31:11,928 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-24 13:31:11,929 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-24 13:31:11,929 - sqlalchemy.engine.Engine - INFO - [cached since 171.7s ago] (8341832184,)
+2026-02-24 13:31:11,932 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (telegram_id, reg_date, referal_count) VALUES (?, ?, ?)
+2026-02-24 13:31:11,932 - sqlalchemy.engine.Engine - INFO - [generated in 0.00031s] (8341832184, '2026-02-24 13:31:11.931518', 0)
+2026-02-24 13:31:11,934 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-24 13:31:11,959 - ServiceClasses.user_service - INFO - Новый пользователь создан: Telegram ID 8341832184
+2026-02-24 13:31:11,960 - common.handlers_flder.start_cmd - INFO - Пользователь с Telegram ID 8341832184 создан в базе данных.
+2026-02-24 13:31:12,960 - httpx - INFO - HTTP Request: POST https://admin.kurvpn.tech/api/users "HTTP/1.1 201 Created"
+2026-02-24 13:31:13,068 - httpx - INFO - HTTP Request: GET https://admin.kurvpn.tech/api/subscriptions/by-uuid/718be7e1-9b7e-423b-a848-9aaf4278324c "HTTP/1.1 200 OK"
+2026-02-24 13:31:13,069 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-24 13:31:13,070 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-24 13:31:13,070 - sqlalchemy.engine.Engine - INFO - [cached since 172.8s ago] (8341832184,)
+2026-02-24 13:31:13,072 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-24 13:31:13,072 - sqlalchemy.engine.Engine - INFO - [generated in 0.00026s] (2,)
+2026-02-24 13:31:13,073 - sqlalchemy.engine.Engine - INFO - INSERT INTO vpn_accounts (vpn_tg_id, "key", uuid, expired_at, user_id) VALUES (?, ?, ?, ?, ?)
+2026-02-24 13:31:13,073 - sqlalchemy.engine.Engine - INFO - [generated in 0.00030s] (8341832184, 'https://sub.kurvpn.tech/heFSaLWxJAyEdp2B', '718be7e1-9b7e-423b-a848-9aaf4278324c', '2026-02-27 13:31:11.960000', 2)
+2026-02-24 13:31:13,076 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-24 13:31:13,128 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-24 13:31:13,128 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-24 13:31:13,128 - sqlalchemy.engine.Engine - INFO - [cached since 172.9s ago] (8341832184,)
+2026-02-24 13:31:13,130 - sqlalchemy.engine.Engine - INFO - INSERT INTO subscriptions (created_at, status, user_id) VALUES (?, ?, ?)
+2026-02-24 13:31:13,130 - sqlalchemy.engine.Engine - INFO - [generated in 0.00040s] ('2026-02-24 13:31:13.129307', 'active', 2)
+2026-02-24 13:31:13,131 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-24 13:31:13,141 - common.handlers_flder.start_cmd - INFO - Подписка создана для пользователя: 8341832184
+2026-02-24 13:31:13,275 - aiogram.event - INFO - Update id=66296260 is handled. Duration 1347 ms by bot id=8543122898
+2026-02-24 13:31:14,644 - aiogram.event - INFO - Update id=66296261 is handled. Duration 256 ms by bot id=8543122898
+2026-02-24 13:31:16,315 - aiogram.event - INFO - Update id=66296262 is handled. Duration 580 ms by bot id=8543122898
+2026-02-24 13:31:17,472 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-24 13:31:17,489 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-24 13:31:17,489 - sqlalchemy.engine.Engine - INFO - [cached since 177.2s ago] (8341832184,)
+2026-02-24 13:31:17,491 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.created_at, subscriptions.status, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.user_id = ?
+2026-02-24 13:31:17,492 - sqlalchemy.engine.Engine - INFO - [generated in 0.00064s] (2,)
+2026-02-24 13:31:17,493 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-24 13:31:17,494 - sqlalchemy.engine.Engine - INFO - [cached since 177.2s ago] (8341832184,)
+2026-02-24 13:31:17,495 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-24 13:31:17,495 - sqlalchemy.engine.Engine - INFO - [cached since 4.424s ago] (2,)
+2026-02-24 13:31:17,601 - httpx - INFO - HTTP Request: GET https://admin.kurvpn.tech/api/users/718be7e1-9b7e-423b-a848-9aaf4278324c "HTTP/1.1 200 OK"
+2026-02-24 13:31:17,715 - httpx - INFO - HTTP Request: PATCH https://admin.kurvpn.tech/api/users "HTTP/1.1 200 OK"
+2026-02-24 13:31:17,717 - sqlalchemy.engine.Engine - INFO - UPDATE vpn_accounts SET expired_at=? WHERE vpn_accounts.id = ?
+2026-02-24 13:31:17,717 - sqlalchemy.engine.Engine - INFO - [generated in 0.00036s] ('2026-03-29 13:31:11.960000', 2)
+2026-02-24 13:31:17,728 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-24 13:31:17,747 - common.handlers_flder.puy_vpn - INFO - Подписка продлена на 30 дней для пользователя: 8341832184
+2026-02-24 13:31:17,750 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-24 13:31:17,750 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-24 13:31:17,752 - sqlalchemy.engine.Engine - INFO - [cached since 177.5s ago] (8341832184,)
+2026-02-24 13:31:17,756 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 8341832184 найден в базе.
+2026-02-24 13:31:17,760 - sqlalchemy.engine.Engine - INFO - INSERT INTO shoping (money, shop_date, user_id) VALUES (?, ?, ?)
+2026-02-24 13:31:17,763 - sqlalchemy.engine.Engine - INFO - [generated in 0.00252s] (149, '2026-02-24 13:31:17.472108', 2)
+2026-02-24 13:31:17,765 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-24 13:31:17,776 - ServiceClasses.shoping_service - INFO - Покупка создана: пользователь 2, сумма 149 Р., дата 2026-02-24 13:31:17.472108
+2026-02-24 13:31:17,777 - common.handlers_flder.puy_vpn - INFO - Запись о покупке добавлена для пользователя: 8341832184 с суммой: 149 Р. и датой: 2026-02-24 13:31:17.472108
+2026-02-24 13:31:17,915 - aiogram.event - INFO - Update id=66296263 is handled. Duration 444 ms by bot id=8543122898
+2026-02-24 13:31:19,131 - aiogram.event - INFO - Update id=66296264 is handled. Duration 140 ms by bot id=8543122898
+2026-02-24 13:31:20,449 - aiogram.event - INFO - Update id=66296265 is handled. Duration 250 ms by bot id=8543122898
+2026-02-24 13:31:21,754 - aiogram.event - INFO - Update id=66296266 is handled. Duration 242 ms by bot id=8543122898
+2026-02-24 13:31:22,817 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-24 13:31:22,818 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-24 13:31:22,818 - sqlalchemy.engine.Engine - INFO - [cached since 182.6s ago] (8341832184,)
+2026-02-24 13:31:22,819 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.created_at, subscriptions.status, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.user_id = ?
+2026-02-24 13:31:22,820 - sqlalchemy.engine.Engine - INFO - [cached since 5.328s ago] (2,)
+2026-02-24 13:31:22,820 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-24 13:31:22,820 - sqlalchemy.engine.Engine - INFO - [cached since 182.6s ago] (8341832184,)
+2026-02-24 13:31:22,821 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-24 13:31:22,821 - sqlalchemy.engine.Engine - INFO - [cached since 9.75s ago] (2,)
+2026-02-24 13:31:23,529 - httpx - INFO - HTTP Request: GET https://admin.kurvpn.tech/api/users/718be7e1-9b7e-423b-a848-9aaf4278324c "HTTP/1.1 200 OK"
+2026-02-24 13:31:23,627 - httpx - INFO - HTTP Request: PATCH https://admin.kurvpn.tech/api/users "HTTP/1.1 200 OK"
+2026-02-24 13:31:23,628 - sqlalchemy.engine.Engine - INFO - UPDATE vpn_accounts SET expired_at=? WHERE vpn_accounts.id = ?
+2026-02-24 13:31:23,628 - sqlalchemy.engine.Engine - INFO - [cached since 5.912s ago] ('2026-09-25 13:31:11.960000', 2)
+2026-02-24 13:31:23,630 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-24 13:31:23,644 - common.handlers_flder.puy_vpn - INFO - Подписка продлена на 180 дней для пользователя: 8341832184
+2026-02-24 13:31:23,644 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-24 13:31:23,646 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-24 13:31:23,647 - sqlalchemy.engine.Engine - INFO - [cached since 183.4s ago] (8341832184,)
+2026-02-24 13:31:23,648 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 8341832184 найден в базе.
+2026-02-24 13:31:23,648 - sqlalchemy.engine.Engine - INFO - INSERT INTO shoping (money, shop_date, user_id) VALUES (?, ?, ?)
+2026-02-24 13:31:23,649 - sqlalchemy.engine.Engine - INFO - [cached since 5.889s ago] (600, '2026-02-24 13:31:22.817373', 2)
+2026-02-24 13:31:23,650 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-24 13:31:23,660 - ServiceClasses.shoping_service - INFO - Покупка создана: пользователь 2, сумма 600 Р., дата 2026-02-24 13:31:22.817373
+2026-02-24 13:31:23,660 - common.handlers_flder.puy_vpn - INFO - Запись о покупке добавлена для пользователя: 8341832184 с суммой: 600 Р. и датой: 2026-02-24 13:31:22.817373
+2026-02-24 13:31:23,797 - aiogram.event - INFO - Update id=66296267 is handled. Duration 981 ms by bot id=8543122898
+2026-02-24 13:31:25,037 - aiogram.event - INFO - Update id=66296268 is handled. Duration 141 ms by bot id=8543122898
+2026-02-24 13:31:26,101 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-24 13:31:26,102 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-24 13:31:26,103 - sqlalchemy.engine.Engine - INFO - [cached since 185.9s ago] (8341832184,)
+2026-02-24 13:31:26,104 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 8341832184 найден в базе.
+2026-02-24 13:31:26,104 - sqlalchemy.engine.Engine - INFO - SELECT shoping.id, shoping.money, shoping.shop_date, shoping.user_id 
+FROM shoping 
+WHERE shoping.user_id = ?
+2026-02-24 13:31:26,105 - sqlalchemy.engine.Engine - INFO - [generated in 0.00026s] (2,)
+2026-02-24 13:31:26,105 - ServiceClasses.shoping_service - INFO - Получено 2 покупок для пользователя 2
+2026-02-24 13:31:26,375 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-24 13:31:26,376 - aiogram.event - INFO - Update id=66296269 is handled. Duration 275 ms by bot id=8543122898
+2026-02-24 13:40:47,636 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2026-02-24 13:40:47,644 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-24 13:41:09,704 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:41:09,705 - aiogram.dispatcher - WARNING - Sleep for 1.361608 seconds and try again... (tryings = 1, bot id = 8543122898)
+2026-02-24 13:41:32,128 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:41:32,129 - aiogram.dispatcher - WARNING - Sleep for 1.873073 seconds and try again... (tryings = 2, bot id = 8543122898)
+2026-02-24 13:41:55,060 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:41:55,061 - aiogram.dispatcher - WARNING - Sleep for 2.406564 seconds and try again... (tryings = 3, bot id = 8543122898)
+2026-02-24 13:42:18,527 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:42:18,528 - aiogram.dispatcher - WARNING - Sleep for 3.141031 seconds and try again... (tryings = 4, bot id = 8543122898)
+2026-02-24 13:42:42,723 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:42:42,725 - aiogram.dispatcher - WARNING - Sleep for 4.114508 seconds and try again... (tryings = 5, bot id = 8543122898)
+2026-02-24 13:43:07,898 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:43:07,899 - aiogram.dispatcher - WARNING - Sleep for 4.883824 seconds and try again... (tryings = 6, bot id = 8543122898)
+2026-02-24 13:43:33,845 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:43:33,846 - aiogram.dispatcher - WARNING - Sleep for 5.109575 seconds and try again... (tryings = 7, bot id = 8543122898)
+2026-02-24 13:44:00,013 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:44:00,014 - aiogram.dispatcher - WARNING - Sleep for 5.134799 seconds and try again... (tryings = 8, bot id = 8543122898)
+2026-02-24 13:44:26,203 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:44:26,204 - aiogram.dispatcher - WARNING - Sleep for 5.119491 seconds and try again... (tryings = 9, bot id = 8543122898)
+2026-02-24 13:44:52,362 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:44:52,363 - aiogram.dispatcher - WARNING - Sleep for 5.276993 seconds and try again... (tryings = 10, bot id = 8543122898)
+2026-02-24 13:45:18,674 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:45:18,675 - aiogram.dispatcher - WARNING - Sleep for 4.929175 seconds and try again... (tryings = 11, bot id = 8543122898)
+2026-02-24 13:45:44,663 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:45:44,664 - aiogram.dispatcher - WARNING - Sleep for 5.061959 seconds and try again... (tryings = 12, bot id = 8543122898)
+2026-02-24 13:46:10,759 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:46:10,759 - aiogram.dispatcher - WARNING - Sleep for 5.088058 seconds and try again... (tryings = 13, bot id = 8543122898)
+2026-02-24 13:46:16,909 - aiogram.dispatcher - INFO - Connection established (tryings = 14, bot id = 8543122898)
+2026-02-24 13:46:16,910 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-24 13:46:16,911 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-24 13:46:16,911 - sqlalchemy.engine.Engine - INFO - [cached since 1077s ago] (8341832184,)
+2026-02-24 13:46:16,913 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-24 13:46:16,913 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-24 13:46:16,914 - sqlalchemy.engine.Engine - INFO - [cached since 1077s ago] (8341832184,)
+2026-02-24 13:46:16,917 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 8341832184 найден в базе.
+2026-02-24 13:46:16,918 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 8341832184 найден в базе.
+2026-02-24 13:46:16,919 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-24 13:46:16,920 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-24 13:46:17,722 - aiogram.event - INFO - Update id=66296271 is handled. Duration 810 ms by bot id=8543122898
+2026-02-24 13:46:17,744 - aiogram.event - INFO - Update id=66296270 is handled. Duration 834 ms by bot id=8543122898
+2026-02-24 13:46:18,941 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-24 13:46:18,941 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-24 13:46:18,942 - sqlalchemy.engine.Engine - INFO - [cached since 1079s ago] (8341832184,)
+2026-02-24 13:46:18,943 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 8341832184 найден в базе.
+2026-02-24 13:46:18,943 - sqlalchemy.engine.Engine - INFO - SELECT shoping.id, shoping.money, shoping.shop_date, shoping.user_id 
+FROM shoping 
+WHERE shoping.user_id = ?
+2026-02-24 13:46:18,943 - sqlalchemy.engine.Engine - INFO - [cached since 892.8s ago] (2,)
+2026-02-24 13:46:18,944 - ServiceClasses.shoping_service - INFO - Получено 2 покупок для пользователя 2
+2026-02-24 13:46:19,126 - aiogram.event - INFO - Update id=66296272 is handled. Duration 292 ms by bot id=8543122898
+2026-02-24 13:46:19,281 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-24 13:46:19,282 - aiogram.event - INFO - Update id=66296273 is handled. Duration 341 ms by bot id=8543122898
+2026-02-24 13:46:20,497 - aiogram.event - INFO - Update id=66296274 is handled. Duration 258 ms by bot id=8543122898
+2026-02-24 13:46:21,677 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-24 13:46:21,678 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-24 13:46:21,678 - sqlalchemy.engine.Engine - INFO - [cached since 1081s ago] (8341832184,)
+2026-02-24 13:46:21,679 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.created_at, subscriptions.status, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.user_id = ?
+2026-02-24 13:46:21,679 - sqlalchemy.engine.Engine - INFO - [cached since 904.2s ago] (2,)
+2026-02-24 13:46:21,680 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-24 13:46:21,680 - sqlalchemy.engine.Engine - INFO - [cached since 1081s ago] (8341832184,)
+2026-02-24 13:46:21,681 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-24 13:46:21,682 - sqlalchemy.engine.Engine - INFO - [cached since 908.6s ago] (2,)
+2026-02-24 13:46:23,632 - httpx - INFO - HTTP Request: GET https://admin.kurvpn.tech/api/users/718be7e1-9b7e-423b-a848-9aaf4278324c "HTTP/1.1 200 OK"
+2026-02-24 13:46:23,756 - httpx - INFO - HTTP Request: PATCH https://admin.kurvpn.tech/api/users "HTTP/1.1 200 OK"
+2026-02-24 13:46:23,758 - sqlalchemy.engine.Engine - INFO - UPDATE vpn_accounts SET expired_at=? WHERE vpn_accounts.id = ?
+2026-02-24 13:46:23,758 - sqlalchemy.engine.Engine - INFO - [cached since 906s ago] ('2026-10-25 13:31:11.960000', 2)
+2026-02-24 13:46:23,760 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-24 13:46:23,778 - common.handlers_flder.puy_vpn - INFO - Подписка продлена на 30 дней для пользователя: 8341832184
+2026-02-24 13:46:23,778 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-24 13:46:23,778 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-24 13:46:23,779 - sqlalchemy.engine.Engine - INFO - [cached since 1084s ago] (8341832184,)
+2026-02-24 13:46:23,779 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 8341832184 найден в базе.
+2026-02-24 13:46:23,780 - sqlalchemy.engine.Engine - INFO - INSERT INTO shoping (money, shop_date, user_id) VALUES (?, ?, ?)
+2026-02-24 13:46:23,780 - sqlalchemy.engine.Engine - INFO - [cached since 906s ago] (149, '2026-02-24 13:46:21.677593', 2)
+2026-02-24 13:46:23,781 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-02-24 13:46:23,791 - ServiceClasses.shoping_service - INFO - Покупка создана: пользователь 2, сумма 149 Р., дата 2026-02-24 13:46:21.677593
+2026-02-24 13:46:23,792 - common.handlers_flder.puy_vpn - INFO - Запись о покупке добавлена для пользователя: 8341832184 с суммой: 149 Р. и датой: 2026-02-24 13:46:21.677593
+2026-02-24 13:46:23,921 - aiogram.event - INFO - Update id=66296275 is handled. Duration 2245 ms by bot id=8543122898
+2026-02-24 13:46:25,186 - aiogram.event - INFO - Update id=66296276 is handled. Duration 141 ms by bot id=8543122898
+2026-02-24 13:46:26,267 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-24 13:46:26,267 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-24 13:46:26,267 - sqlalchemy.engine.Engine - INFO - [cached since 1086s ago] (8341832184,)
+2026-02-24 13:46:26,269 - sqlalchemy.engine.Engine - INFO - SELECT subscriptions.id, subscriptions.created_at, subscriptions.status, subscriptions.user_id 
+FROM subscriptions 
+WHERE subscriptions.user_id = ?
+2026-02-24 13:46:26,269 - sqlalchemy.engine.Engine - INFO - [cached since 908.8s ago] (2,)
+2026-02-24 13:46:26,270 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-24 13:46:26,270 - sqlalchemy.engine.Engine - INFO - [cached since 1086s ago] (8341832184,)
+2026-02-24 13:46:26,271 - sqlalchemy.engine.Engine - INFO - SELECT vpn_accounts.id, vpn_accounts.vpn_tg_id, vpn_accounts."key", vpn_accounts.uuid, vpn_accounts.expired_at, vpn_accounts.user_id 
+FROM vpn_accounts 
+WHERE vpn_accounts.user_id = ?
+2026-02-24 13:46:26,271 - sqlalchemy.engine.Engine - INFO - [cached since 913.2s ago] (2,)
+2026-02-24 13:46:26,436 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-24 13:46:26,437 - aiogram.event - INFO - Update id=66296277 is handled. Duration 171 ms by bot id=8543122898
+2026-02-24 13:46:27,648 - aiogram.event - INFO - Update id=66296278 is handled. Duration 132 ms by bot id=8543122898
+2026-02-24 13:46:28,869 - aiogram.event - INFO - Update id=66296279 is handled. Duration 148 ms by bot id=8543122898
+2026-02-24 13:46:30,092 - aiogram.event - INFO - Update id=66296280 is handled. Duration 132 ms by bot id=8543122898
+2026-02-24 13:46:31,295 - aiogram.event - INFO - Update id=66296281 is handled. Duration 136 ms by bot id=8543122898
+2026-02-24 13:46:32,502 - aiogram.event - INFO - Update id=66296282 is handled. Duration 133 ms by bot id=8543122898
+2026-02-24 13:46:33,741 - aiogram.event - INFO - Update id=66296283 is handled. Duration 153 ms by bot id=8543122898
+2026-02-24 13:46:34,991 - aiogram.event - INFO - Update id=66296284 is handled. Duration 164 ms by bot id=8543122898
+2026-02-24 13:46:36,191 - aiogram.event - INFO - Update id=66296285 is handled. Duration 132 ms by bot id=8543122898
+2026-02-24 13:46:37,453 - aiogram.event - INFO - Update id=66296286 is handled. Duration 183 ms by bot id=8543122898
+2026-02-24 13:46:39,032 - aiogram.event - INFO - Update id=66296287 is handled. Duration 512 ms by bot id=8543122898
+2026-02-24 13:46:40,239 - aiogram.event - INFO - Update id=66296288 is handled. Duration 133 ms by bot id=8543122898
+2026-02-24 13:46:41,446 - aiogram.event - INFO - Update id=66296289 is handled. Duration 136 ms by bot id=8543122898
+2026-02-24 13:46:42,652 - aiogram.event - INFO - Update id=66296290 is handled. Duration 140 ms by bot id=8543122898
+2026-02-24 13:46:43,726 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-02-24 13:46:43,727 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.telegram_id, users.reg_date, users.referal_count 
+FROM users 
+WHERE users.telegram_id = ?
+2026-02-24 13:46:43,727 - sqlalchemy.engine.Engine - INFO - [cached since 1103s ago] (8341832184,)
+2026-02-24 13:46:43,728 - ServiceClasses.user_service - INFO - Пользователь с Telegram ID 8341832184 найден в базе.
+2026-02-24 13:46:43,728 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-02-24 13:46:43,892 - aiogram.event - INFO - Update id=66296291 is handled. Duration 168 ms by bot id=8543122898
+2026-02-24 13:46:45,109 - aiogram.event - INFO - Update id=66296292 is handled. Duration 133 ms by bot id=8543122898
+2026-02-24 13:46:45,583 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2026-02-24 13:46:45,609 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-24 13:47:07,662 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:47:07,662 - aiogram.dispatcher - WARNING - Sleep for 1.315223 seconds and try again... (tryings = 1, bot id = 8543122898)
+2026-02-24 13:47:30,021 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:47:30,021 - aiogram.dispatcher - WARNING - Sleep for 1.786064 seconds and try again... (tryings = 2, bot id = 8543122898)
+2026-02-24 13:47:52,845 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:47:52,846 - aiogram.dispatcher - WARNING - Sleep for 2.439697 seconds and try again... (tryings = 3, bot id = 8543122898)
+2026-02-24 13:48:16,332 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:48:16,332 - aiogram.dispatcher - WARNING - Sleep for 3.034598 seconds and try again... (tryings = 4, bot id = 8543122898)
+2026-02-24 13:48:40,411 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:48:40,411 - aiogram.dispatcher - WARNING - Sleep for 3.857481 seconds and try again... (tryings = 5, bot id = 8543122898)
+2026-02-24 13:49:05,323 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:49:05,323 - aiogram.dispatcher - WARNING - Sleep for 4.923535 seconds and try again... (tryings = 6, bot id = 8543122898)
+2026-02-24 13:49:31,277 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:49:31,277 - aiogram.dispatcher - WARNING - Sleep for 5.069735 seconds and try again... (tryings = 7, bot id = 8543122898)
+2026-02-24 13:49:57,391 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:49:57,392 - aiogram.dispatcher - WARNING - Sleep for 5.062660 seconds and try again... (tryings = 8, bot id = 8543122898)
+2026-02-24 13:50:23,497 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:50:23,497 - aiogram.dispatcher - WARNING - Sleep for 5.113049 seconds and try again... (tryings = 9, bot id = 8543122898)
+2026-02-24 13:50:49,670 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:50:49,671 - aiogram.dispatcher - WARNING - Sleep for 4.991464 seconds and try again... (tryings = 10, bot id = 8543122898)
+2026-02-24 13:51:15,705 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:51:15,706 - aiogram.dispatcher - WARNING - Sleep for 4.962558 seconds and try again... (tryings = 11, bot id = 8543122898)
+2026-02-24 13:51:41,706 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:51:41,707 - aiogram.dispatcher - WARNING - Sleep for 5.044411 seconds and try again... (tryings = 12, bot id = 8543122898)
+2026-02-24 13:52:07,794 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:52:07,794 - aiogram.dispatcher - WARNING - Sleep for 4.873563 seconds and try again... (tryings = 13, bot id = 8543122898)
+2026-02-24 13:52:33,701 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 13:52:33,701 - aiogram.dispatcher - WARNING - Sleep for 5.049349 seconds and try again... (tryings = 14, bot id = 8543122898)
+2026-02-24 13:52:50,591 - aiogram.dispatcher - INFO - Connection established (tryings = 15, bot id = 8543122898)
+2026-02-24 14:14:50,710 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2026-02-24 14:14:50,721 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-24 14:15:12,807 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:15:12,807 - aiogram.dispatcher - WARNING - Sleep for 1.364757 seconds and try again... (tryings = 1, bot id = 8543122898)
+2026-02-24 14:15:35,213 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:15:35,214 - aiogram.dispatcher - WARNING - Sleep for 1.746873 seconds and try again... (tryings = 2, bot id = 8543122898)
+2026-02-24 14:15:57,987 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:15:57,988 - aiogram.dispatcher - WARNING - Sleep for 2.304636 seconds and try again... (tryings = 3, bot id = 8543122898)
+2026-02-24 14:16:21,345 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:16:21,345 - aiogram.dispatcher - WARNING - Sleep for 3.153876 seconds and try again... (tryings = 4, bot id = 8543122898)
+2026-02-24 14:16:45,541 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:16:45,541 - aiogram.dispatcher - WARNING - Sleep for 4.035948 seconds and try again... (tryings = 5, bot id = 8543122898)
+2026-02-24 14:17:10,606 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:17:10,606 - aiogram.dispatcher - WARNING - Sleep for 4.998327 seconds and try again... (tryings = 6, bot id = 8543122898)
+2026-02-24 14:17:36,650 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:17:36,651 - aiogram.dispatcher - WARNING - Sleep for 5.026380 seconds and try again... (tryings = 7, bot id = 8543122898)
+2026-02-24 14:18:02,725 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:18:02,725 - aiogram.dispatcher - WARNING - Sleep for 5.052949 seconds and try again... (tryings = 8, bot id = 8543122898)
+2026-02-24 14:18:28,826 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:18:28,826 - aiogram.dispatcher - WARNING - Sleep for 5.076433 seconds and try again... (tryings = 9, bot id = 8543122898)
+2026-02-24 14:18:54,963 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:18:54,964 - aiogram.dispatcher - WARNING - Sleep for 4.949136 seconds and try again... (tryings = 10, bot id = 8543122898)
+2026-02-24 14:19:20,976 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:19:20,976 - aiogram.dispatcher - WARNING - Sleep for 4.991575 seconds and try again... (tryings = 11, bot id = 8543122898)
+2026-02-24 14:19:47,014 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:19:47,014 - aiogram.dispatcher - WARNING - Sleep for 4.830137 seconds and try again... (tryings = 12, bot id = 8543122898)
+2026-02-24 14:20:12,894 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:20:12,894 - aiogram.dispatcher - WARNING - Sleep for 5.210960 seconds and try again... (tryings = 13, bot id = 8543122898)
+2026-02-24 14:20:39,157 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:20:39,157 - aiogram.dispatcher - WARNING - Sleep for 5.111497 seconds and try again... (tryings = 14, bot id = 8543122898)
+2026-02-24 14:21:05,328 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:21:05,328 - aiogram.dispatcher - WARNING - Sleep for 5.009885 seconds and try again... (tryings = 15, bot id = 8543122898)
+2026-02-24 14:21:31,371 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:21:31,371 - aiogram.dispatcher - WARNING - Sleep for 4.988238 seconds and try again... (tryings = 16, bot id = 8543122898)
+2026-02-24 14:21:57,427 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:21:57,427 - aiogram.dispatcher - WARNING - Sleep for 5.054411 seconds and try again... (tryings = 17, bot id = 8543122898)
+2026-02-24 14:22:23,511 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:22:23,511 - aiogram.dispatcher - WARNING - Sleep for 5.041095 seconds and try again... (tryings = 18, bot id = 8543122898)
+2026-02-24 14:22:49,608 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:22:49,609 - aiogram.dispatcher - WARNING - Sleep for 5.061187 seconds and try again... (tryings = 19, bot id = 8543122898)
+2026-02-24 14:23:15,709 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:23:15,709 - aiogram.dispatcher - WARNING - Sleep for 5.028417 seconds and try again... (tryings = 20, bot id = 8543122898)
+2026-02-24 14:23:41,784 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:23:41,784 - aiogram.dispatcher - WARNING - Sleep for 4.933091 seconds and try again... (tryings = 21, bot id = 8543122898)
+2026-02-24 14:24:07,763 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:24:07,764 - aiogram.dispatcher - WARNING - Sleep for 5.088046 seconds and try again... (tryings = 22, bot id = 8543122898)
+2026-02-24 14:24:33,891 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:24:33,891 - aiogram.dispatcher - WARNING - Sleep for 4.839522 seconds and try again... (tryings = 23, bot id = 8543122898)
+2026-02-24 14:24:59,768 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:24:59,769 - aiogram.dispatcher - WARNING - Sleep for 4.950098 seconds and try again... (tryings = 24, bot id = 8543122898)
+2026-02-24 14:25:25,768 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:25:25,768 - aiogram.dispatcher - WARNING - Sleep for 5.085314 seconds and try again... (tryings = 25, bot id = 8543122898)
+2026-02-24 14:25:51,912 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:25:51,913 - aiogram.dispatcher - WARNING - Sleep for 4.938103 seconds and try again... (tryings = 26, bot id = 8543122898)
+2026-02-24 14:26:17,917 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:26:17,917 - aiogram.dispatcher - WARNING - Sleep for 5.031145 seconds and try again... (tryings = 27, bot id = 8543122898)
+2026-02-24 14:26:44,010 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:26:44,011 - aiogram.dispatcher - WARNING - Sleep for 4.972785 seconds and try again... (tryings = 28, bot id = 8543122898)
+2026-02-24 14:27:10,039 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:27:10,039 - aiogram.dispatcher - WARNING - Sleep for 4.998123 seconds and try again... (tryings = 29, bot id = 8543122898)
+2026-02-24 14:27:36,078 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:27:36,078 - aiogram.dispatcher - WARNING - Sleep for 5.137837 seconds and try again... (tryings = 30, bot id = 8543122898)
+2026-02-24 14:28:02,268 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:28:02,269 - aiogram.dispatcher - WARNING - Sleep for 4.990618 seconds and try again... (tryings = 31, bot id = 8543122898)
+2026-02-24 14:28:28,304 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-02-24 14:28:28,305 - aiogram.dispatcher - WARNING - Sleep for 4.961413 seconds and try again... (tryings = 32, bot id = 8543122898)
+2026-02-24 14:28:45,128 - aiogram.dispatcher - INFO - Connection established (tryings = 33, bot id = 8543122898)
+2026-02-24 14:34:29,369 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-24 14:34:29,370 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-24 14:34:29,370 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8543122898)
+2026-02-24 14:34:29,625 - aiogram.dispatcher - INFO - Polling stopped for bot @botintestin_bot id=8543122898 - '.'

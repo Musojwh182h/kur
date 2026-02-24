@@ -18,6 +18,18 @@ from aiogram import types
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import StatesGroup, State
 
+from common.keyboards import inl
+
+
+try:
+    ADMIN = [
+        int(v.strip())
+        for v in os.getenv('ADMIN', '').split(',')
+        if v.strip().isdigit()
+    ]
+except ValueError:
+    logging.exception('Значение не является числом')
+    
 logger = logging.getLogger(__name__)
 
 class Admin(StatesGroup):
@@ -42,7 +54,7 @@ class MailInact(StatesGroup):
 
 admin_router = Router()
 
-admin = os.getenv('ADMIN').split(',')
+
 
 @admin_router.callback_query(F.data == 'admin')
 async def admin_panel(callback: CallbackQuery):
@@ -175,27 +187,32 @@ async def mail_expir(callback: CallbackQuery, bot: Bot, state: FSMContext):
 
 @admin_router.message(MailAct.act)
 async def fsm_act(message: Message, state: FSMContext, bot: Bot):
-    await state.update_data(act=message.text)
-    data = await state.get_data()
-    async with AsyncSessionMaker() as session:
-            admin = AdminPanel(session)
-            admin = await admin.mailing_act()
-            if not admin:
-                await message.answer('Таких пользователей нет')
-                return await state.clear()
-            for i in admin:
-                try:
-                    await bot.send_message(chat_id=i.vpn_tg_id, text=data['act'])  
-                except TelegramRetryAfter as e:
-                    await asyncio.sleep(e.retry_after)
+    try:
+        await state.update_data(act=message.text)
+        data = await state.get_data()
+        async with AsyncSessionMaker() as session:
+                admin = AdminPanel(session)
+                admin = await admin.mailing_act()
+                if not admin:
+                    await message.answer('Таких пользователей нет')
+                    return await state.clear()
+                for i in admin:
                     try:
-                        await bot.send_message(chat_id=i.vpn_tg_id, text=data['act'])
+                        await bot.send_message(chat_id=i.vpn_tg_id, text=data['act'])  
+                    except TelegramRetryAfter as e:
+                        await asyncio.sleep(e.retry_after)
+                        try:
+                            await bot.send_message(chat_id=i.vpn_tg_id, text=data['act'])
+                        except TelegramForbiddenError:
+                            continue
                     except TelegramForbiddenError:
-                        continue
-                except Exception:
-                    continue  
-    await state.clear()
-    await message.answer('Рассылка отправлена')
+                        continue  
+        await state.clear()
+        await message.answer('Рассылка отправлена')
+    except Exception as e:
+            logger.exception(e)
+            return None
+
 
 @admin_router.callback_query(F.data == 'more_sev_day')
 async def mail_more_sev(callback: CallbackQuery, state: FSMContext):
@@ -206,23 +223,27 @@ async def mail_more_sev(callback: CallbackQuery, state: FSMContext):
 @admin_router.message(MailInact.inact)
 async def fsm_inact(message: Message, state: FSMContext, bot: Bot):
     await state.update_data(inact=message.text)
-    data = await state.get_data()
-    async with AsyncSessionMaker() as session:
-            admin = AdminPanel(session)
-            admin = await admin.mailing_inact()
-            if not admin:
-                await message.answer('Таких пользователей нет')
-                return await state.clear()
-            for i in admin:
-                try:
-                    await bot.send_message(chat_id=i.vpn_tg_id, text=data['inact'])    
-                except TelegramRetryAfter as e:
-                    await asyncio.sleep(e.retry_after)
+    try:
+        data = await state.get_data()
+        async with AsyncSessionMaker() as session:
+                admin = AdminPanel(session)
+                admin = await admin.mailing_inact()
+                if not admin:
+                    await message.answer('Таких пользователей нет')
+                    return await state.clear()
+                for i in admin:
                     try:
-                        await bot.send_message(chat_id=i.vpn_tg_id, text=data['inact']) 
+                        await bot.send_message(chat_id=i.vpn_tg_id, text=data['inact'])    
+                    except TelegramRetryAfter as e:
+                        await asyncio.sleep(e.retry_after)
+                        try:
+                            await bot.send_message(chat_id=i.vpn_tg_id, text=data['inact']) 
+                        except TelegramForbiddenError:
+                            continue
                     except TelegramForbiddenError:
                         continue
-                except TelegramForbiddenError:
-                    continue
-    await state.clear()
-    await message.answer('Рассылка отправлена')
+        await state.clear()
+        await message.answer('Рассылка отправлена')
+    except Exception as e:
+            logger.exception(e)
+            return None

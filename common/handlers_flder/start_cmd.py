@@ -1,4 +1,4 @@
-from common.text_handlers import text, photo_path
+from common.text_handlers import text
 from aiogram.filters import CommandStart, CommandObject
 
 from ServiceClasses.subscription_service import SubscrService
@@ -21,17 +21,22 @@ logger = logging.getLogger(__name__)
 
 
 start_router = Router()
-ADMIN = [
-    int(v.strip())
-    for v in os.getenv('ADMIN', '').split(',')
-    if v.strip().isdigit()
-]
+try:
+    ADMIN = [
+        int(v.strip())
+        for v in os.getenv('ADMIN', '').split(',')
+        if v.strip().isdigit()
+    ]
+except ValueError:
+    logging.exception('Значение не является числом')
+    
 @start_router.message(CommandStart())
 async def start_cmd(message: Message, command: CommandObject):
     try:
         kb = inl()
         if message.from_user.id in ADMIN:
             kb.button(text='🛠 Админ-панель', callback_data='admin')
+            kb.button(text='Рестартнуть', callback_data='reset')
             kb.adjust(1)
             
     
@@ -61,11 +66,10 @@ async def start_cmd(message: Message, command: CommandObject):
                     check_user = await user.check_user(invited_id)                
                     if not check_user:
                         logger.warning(f'Такой пригласивший пользователь не найден: {invited_id} для приглашающего пользователя: {tg_user}')
-                        return None
+                        return 
                     await ref.create_referal(tg_user, invited_id)
                     logger.info(f'Создан реферал для пользователя: {tg_user} приглашённым пользователем: {invited_id}')
                     ref_tg = await ref.get_referal(tg_user)
-                    sub_tg = await sub.get_sub(invited_id)
                     if ref_tg and not ref_tg.bonus_given:
                         await client.referal_vpn(invited_id, ref_tg)
                         logger.info(f'Реферальный бонус применён для пользователя: {invited_id} за приглашённого пользователя: {tg_user}')
@@ -75,18 +79,11 @@ async def start_cmd(message: Message, command: CommandObject):
     
     
         if not user_id:
-            await message.answer_photo(
-                photo=types.FSInputFile(
-                    path=photo_path
-                ),
-                caption=text,
-                parse_mode=ParseMode.HTML,
+            await message.answer(
+                text,
                 reply_markup=kb.as_markup())
         else:
-            await message.answer_photo(
-                photo=types.FSInputFile(
-                    path=photo_path
-                ),
+            await message.answer('Приветствую вас в VPN! 🚀',
                 reply_markup=kb.as_markup()
             )
 
